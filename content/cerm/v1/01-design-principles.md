@@ -1,0 +1,117 @@
+# Design Principles
+
+## 1. Purpose
+
+The Canonical ESG Reference Model (CERM) provides a vendor-neutral, interoperable reference architecture for sustainability reporting systems. This document establishes the foundational principles governing CERM's design, evolution, and application.
+
+CERM defines **structural and semantic conventions** for organizing sustainability data; it does not prescribe policy choices, materiality judgements, or compliance determinations.
+
+---
+
+## 2. Neutrality
+
+CERM shall remain independent of:
+- Individual software vendors or platforms
+- Specific jurisdictional requirements
+- Proprietary data formats or exchange protocols
+- Commercial certification schemes
+
+Neutrality ensures the model serves as common ground for all implementers, regardless of organizational affiliation or regulatory environment.
+
+---
+
+## 3. Interoperability
+
+CERM prioritizes machine-readable structures that enable:
+- Data exchange between heterogeneous systems
+- Transformation across reporting frameworks without information loss
+- Integration with existing enterprise architectures
+- Long-term preservation of reported data
+
+Interoperability is achieved through explicit data typing, unambiguous identifiers, and documented transformation pathways, such that reported information remains intelligible to both machines and human reviewers.
+
+---
+
+## 4. Auditability
+
+All structural elements within CERM must support:
+- Complete lineage from source assertion to reported value
+- Versioning of definitions and relationships
+- Reproducible derivation of computed values
+- Stable, citable references to external standards and methodologies
+
+Auditability requires that any compliant implementation can demonstrate how reported figures were derived and which definitions governed their calculation at the time of reporting.
+
+---
+
+## 5. Reuse
+
+CERM designs for reuse at multiple levels:
+- **Conceptual reuse**: Core definitions applicable across sectors and jurisdictions
+- **Structural reuse**: Common patterns for organizing and relating disclosures
+- **Technical reuse**: Standardized representations enabling shared tooling
+
+Reuse minimizes duplication of effort and reduces divergence in interpretation across reporting contexts.
+
+---
+
+## 6. Stability
+
+Versioned releases of CERM guarantee:
+- Backward compatibility within major versions
+- Clear deprecation pathways for obsolete elements
+- Documented migration strategies between versions
+- Immutable references to specific version identifiers
+
+Stability enables long-term planning and reduces upgrade friction for implementers.
+
+---
+
+## 7. Extensibility
+
+CERM provides explicit extension points allowing:
+- Sector-specific additions without core model modification
+- Jurisdictional overlays for localized requirements
+- Proprietary extensions clearly segregated from canonical elements
+
+Extensions must not redefine or contradict canonical elements; they may only add new structures or specialize existing ones within documented constraints.
+
+---
+
+## 8. Transparency
+
+All aspects of CERM development and maintenance are:
+- Documented in publicly accessible repositories
+- Subject to documented change control procedures
+- Available for review and comment by interested parties
+- Licensed under terms permitting unrestricted use and adaptation
+
+Transparency ensures the model evolves through collective insight rather than unilateral decision.
+
+---
+
+## 9. Non-Assertion
+
+CERM makes no claim to:
+- Regulatory authority in any jurisdiction
+- Endorsement by standards-setting bodies
+- Compatibility with specific compliance regimes
+- Fitness for any particular purpose beyond documented scope
+
+Implementers are responsible for determining CERM's applicability to their specific requirements and regulatory obligations.
+
+---
+
+## 10. Governance
+
+Changes to these design principles require:
+- Explicit documentation of rationale
+- A public comment period of not less than 30 days
+- Alignment with stated neutrality and interoperability objectives
+- A version increment indicating scope of change
+
+CERM shall be maintained by a designated steward operating under these principles. Principles may be amended but shall not be abandoned without successor principles ensuring equivalent neutrality, interoperability, auditability, and reuse.
+
+---
+
+*Version: v1.0.0*
