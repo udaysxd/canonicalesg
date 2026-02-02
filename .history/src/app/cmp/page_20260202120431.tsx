@@ -1,8 +1,4 @@
-import { DOCS } from "@/lib/docs";
-import Link from "next/link";
-
 export default function CMPPage() {
-  const pages = DOCS.cmp.pages;
   return (
     <main className="max-w-7xl mx-auto px-6 py-12">
       <div className="max-w-4xl">
@@ -62,11 +58,11 @@ export default function CMPPage() {
 
         <h2 className="text-xl font-semibold text-slate-900 mb-4 mt-8">CMP v1 Documentation</h2>
         <ul className="space-y-2 mb-8">
-          {pages.map(p => (
-            <li key={p.slug}>
-              <Link href={`/cmp/${p.slug}`} className="text-slate-600 hover:text-slate-900">{p.title}</Link>
-            </li>
-          ))}
+          <li><a href="/cmp/v1/design-principles" className="text-slate-600 hover:text-slate-900">Design Principles</a></li>
+          <li><a href="/cmp/v1/architecture" className="text-slate-600 hover:text-slate-900">Architecture</a></li>
+          <li><a href="/cmp/v1/specification" className="text-slate-600 hover:text-slate-900">Specification</a></li>
+          <li><a href="/cmp/v1/how-to-build" className="text-slate-600 hover:text-slate-900">How to Build a CMP</a></li>
+          <li><a href="/cmp/v1/registry" className="text-slate-600 hover:text-slate-900">CMP Registry</a></li>
         </ul>
 
         <p className="text-slate-600 mb-4"><strong>Current version:</strong> v1.0.0</p>
