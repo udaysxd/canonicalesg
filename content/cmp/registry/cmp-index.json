@@ -1,0 +1,32 @@
+{
+  "registry": {
+    "name": "Canonical Mapping Pack Registry",
+    "maintainer": "Canonical ESG",
+    "registry_version": "0.1",
+    "last_updated": "2026-02-02",
+    "description": "Index of published Canonical Mapping Packs (CMPs).",
+    "entries": [
+      {
+        "cmp_id": "climate-cmp-v0.1",
+        "title": "Climate Canonical Mapping Pack",
+        "version": "0.1",
+        "status": "frozen",
+        "topic": "climate",
+        "cdi_version": "v1",
+        "frameworks": [
+          { "name": "ESRS", "version": "2023" },
+          { "name": "GRI", "version": "2021" },
+          { "name": "CDP", "version": "2024" }
+        ],
+        "published_date": "2026-02-02",
+        "artifact_urls": {
+          "markdown": "/cmp/v1/examples/climate-cmp-v0.1",
+          "yaml": "/content/cmp/v1/examples/climate-cmp-v0.1.yaml",
+          "schema": "/content/cmp/v1/schema/cmp.schema.json"
+        },
+        "license": "CC-BY-4.0",
+        "notes": "Illustrative reference CMP covering ten core climate disclosure intents."
+      }
+    ]
+  }
+}
