@@ -20,7 +20,7 @@ export const DOCS = {
     pages: [
       { slug: "design-principles", file: "01-design-principles.md", title: "Design Principles" },
       { slug: "architecture", file: "02-architecture.md", title: "Architecture" },
-      { slug: "specification", file: "03-specification.md", title: "Specification" },
+      { slug: "specification", file: "03-content-specification.md", title: "Content Specification" },
       { slug: "how-to-build", file: "how-to-build.md", title: "How to Build a CMP" },
       { slug: "registry", file: "registry.md", title: "CMP Registry" }
     ]

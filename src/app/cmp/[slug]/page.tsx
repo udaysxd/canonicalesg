@@ -27,7 +27,6 @@ export default async function Page({ params }: PageProps) {
           <span className="mx-2">/</span>
           <span className="text-[#1a1a1a]">{page.title}</span>
         </nav>
-        <h1 className="text-[2.25rem] font-semibold text-[#111] mb-8 leading-tight">{page.title}</h1>
         <article 
           className="prose"
           dangerouslySetInnerHTML={{ __html: html }}
