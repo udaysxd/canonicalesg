@@ -123,10 +123,6 @@ export default function Home() {
           <p className="text-[#1a1a1a] mb-6">Users remain responsible for materiality, applicability, and regulatory compliance.</p>
           
           <p className="text-[#1a1a1a] mb-4">Canonical ESG is a reference model for a reporting ecosystem that has outgrown ad hoc interpretation.</p>
-          
-          <p className="text-[#1a1a1a] mt-8">
-            <a href="/resources/who-this-is-for" className="text-[#1a1a1a] underline underline-offset-[0.15em] decoration-[#999] hover:decoration-[#1a1a1a]">Who Canonical ESG is for</a>
-          </p>
         </div>
 
         <p className="text-sm text-[#666] mt-12">

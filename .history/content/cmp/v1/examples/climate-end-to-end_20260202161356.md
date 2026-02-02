@@ -37,6 +37,6 @@ Users must not rely on this example as compliance guidance.
 
 ## View the Example
 
-→ [End-to-End Climate Disclosure Walkthrough](/cmp/v1/examples/climate-cmp-v0.1)
+→ [End-to-End Climate Disclosure Walkthrough](/cmp/v1/examples/climate-end-to-end)
 
 This example is illustrative only. Canonical ESG makes no representations regarding accuracy, completeness, or regulatory acceptance.

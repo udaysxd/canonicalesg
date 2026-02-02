@@ -68,20 +68,8 @@ export default function CMPPage() {
             </li>
           ))}
           <li>
-            <Link href="/cmp/v1/04-schema-specification" className="text-[#1a1a1a] underline underline-offset-[0.15em] decoration-[#999] hover:decoration-[#1a1a1a]">Schema Specification</Link>
-            <p className="text-[#666] mt-1">Defines the formal JSON Schema used to validate Canonical Mapping Packs.</p>
-            <p className="mt-1">
-              <Link href="/cmp/v1/04-schema-specification" className="text-[#1a1a1a] underline underline-offset-[0.15em] decoration-[#999] hover:decoration-[#1a1a1a]">→ View CMP JSON Schema</Link>
-            </p>
-          </li>
-          <li>
             <Link href="/cmp/v1/04-schema-specification" className="text-[#1a1a1a] underline underline-offset-[0.15em] decoration-[#999] hover:decoration-[#1a1a1a]">Schema Specification (v0.1)</Link>
             <p className="text-[#666] mt-1">Machine-readable structural model for Canonical Mapping Packs.</p>
-            <ul className="mt-2 ml-4">
-              <li>
-                <Link href="/cmp/v1/schema/cmp.schema.json" className="text-[#1a1a1a] underline underline-offset-[0.15em] decoration-[#999] hover:decoration-[#1a1a1a]">JSON Schema (Draft 2020-12)</Link>
-              </li>
-            </ul>
           </li>
         </ul>
 
@@ -98,38 +86,6 @@ export default function CMPPage() {
             <p className="text-[#666] mt-1">Illustrative mapping of selected climate disclosure intents across multiple reporting frameworks.</p>
           </li>
         </ul>
-
-        <h2 className="text-[1.5rem] font-semibold text-[#1a1a1a] mb-4 mt-10">CMP Registry</h2>
-        <p className="text-[#1a1a1a] mb-4">
-          The CMP Registry provides a machine-readable index of published Canonical Mapping Packs.
-        </p>
-        <p className="text-[#1a1a1a] mb-4">
-          The registry enables discovery, version tracking, and tooling integration without asserting authority, endorsement, or compliance.
-        </p>
-        <p className="text-[#1a1a1a] mb-4">
-          <Link href="/content/cmp/registry/cmp-index.json" className="text-[#1a1a1a] underline underline-offset-[0.15em] decoration-[#999] hover:decoration-[#1a1a1a]">→ Download CMP Registry Index (cmp-index.json)</Link>
-        </p>
-
-        <h2 className="text-[1.5rem] font-semibold text-[#1a1a1a] mb-4 mt-10">For tool builders</h2>
-        <p className="text-[#1a1a1a] mb-4">
-          Canonical Mapping Packs are designed to be consumable by both humans and software systems.
-        </p>
-        <p className="text-[#1a1a1a] mb-4">
-          For teams building ESG platforms, internal tooling, or validation workflows, CMPs are accompanied by optional machine-readable artefacts, including:
-        </p>
-        <ul className="list-disc list-inside text-[#1a1a1a] mb-4 space-y-1.5">
-          <li>a formal JSON Schema defining CMP structure,</li>
-          <li>versioned identifiers for disclosure intents,</li>
-          <li>a registry index for discovery and automation.</li>
-        </ul>
-        <p className="text-[#1a1a1a] mb-4">
-          These artefacts support validation, interoperability, and reuse.
-          <br />
-          They do not assert compliance, replace professional judgement, or define reporting obligations.
-        </p>
-        <p className="text-[#1a1a1a] mb-4">
-          Human-readable CMP documentation remains the primary reference.
-        </p>
 
         <p className="text-[#1a1a1a] mb-4"><strong className="font-semibold text-[#111]">Current version:</strong> v1.0.0</p>
 

@@ -1,0 +1,62 @@
+{
+  "registry_version": "1.0",
+  "maintainer": "Canonical ESG",
+  "last_updated": "2026-02-02",
+  "description": "Registry of Canonical Mapping Packs (CMPs) published by Canonical ESG. CMPs are non-authoritative interpretation artefacts intended for transparency and reuse.",
+  "cmps": [
+    {
+      "cmp_id": "climate-cmp",
+      "topic": "climate",
+      "version": "v0.1",
+      "status": "frozen",
+      "publication_date": "2026-01-15",
+      "cdi_version": "v1",
+      "frameworks": ["ESRS E1 (2023)", "GRI 305 (2021)", "CDP Climate Change Questionnaire (2024)"],
+      "disclosure_intents": {
+        "from": "CDI-CLIM-01",
+        "to": "CDI-CLIM-10"
+      },
+      "files": {
+        "human_readable": "/cmp/v1/examples/climate-cmp-v0.1",
+        "machine_readable": "/cmp/v1/examples/climate-cmp-v0.1.yaml"
+      },
+      "notes": "Initial reference implementation covering core emissions disclosures."
+    },
+    {
+      "cmp_id": "climate-cmp",
+      "topic": "climate",
+      "version": "v0.2",
+      "status": "superseded",
+      "publication_date": "2026-01-25",
+      "cdi_version": "v1",
+      "frameworks": ["ESRS E1 (2023)", "GRI 305 (2021)", "CDP Climate Change Questionnaire (2024)"],
+      "disclosure_intents": {
+        "from": "CDI-CLIM-01",
+        "to": "CDI-CLIM-22"
+      },
+      "files": {
+        "human_readable": "/cmp/v1/examples/climate-cmp-v0.2",
+        "machine_readable": "/cmp/v1/examples/climate-cmp-v0.2.yaml"
+      },
+      "notes": "Expanded coverage to include targets, assurance, and offsets."
+    },
+    {
+      "cmp_id": "climate-cmp",
+      "topic": "climate",
+      "version": "v0.3",
+      "status": "current",
+      "publication_date": "2026-02-02",
+      "cdi_version": "v1",
+      "frameworks": ["ESRS E1 (2023)", "GRI 305 (2021)", "CDP Climate Change Questionnaire (2024)"],
+      "disclosure_intents": {
+        "from": "CDI-CLIM-01",
+        "to": "CDI-CLIM-32"
+      },
+      "files": {
+        "human_readable": "/cmp/v1/examples/climate-cmp-v0.3",
+        "machine_readable": "/cmp/v1/examples/climate-cmp-v0.3.yaml"
+      },
+      "notes": "Near-complete climate disclosure coverage including governance, transition, and data quality intents."
+    }
+  ]
+}

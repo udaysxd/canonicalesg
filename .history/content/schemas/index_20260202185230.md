@@ -1,0 +1,163 @@
+Schemas
+
+Canonical ESG provides formal, machine-readable schemas to support tooling, validation, and automation.
+
+These schemas are optional.
+They do not replace the human-readable specifications, nor do they remove the need for professional judgement.
+
+Their purpose is to make Canonical ESG artefacts structurally precise, interoperable, and verifiable for teams that wish to integrate them into software systems, data pipelines, or automated workflows.
+
+Why Schemas Exist
+
+Canonical ESG is designed to be human-first, with clear conceptual models and transparent interpretation artefacts.
+
+Schemas exist to additionally enable:
+
+consistent implementation across tools and platforms,
+
+automated validation of artefacts,
+
+version-safe integration,
+
+discoverability through registries,
+
+long-term interoperability.
+
+Schemas provide structural guarantees, not interpretive authority.
+
+Who Schemas Are For
+
+Schemas may be useful for:
+
+software vendors building ESG platforms,
+
+enterprise data and reporting teams,
+
+internal tooling teams at consultancies,
+
+assurance and validation tooling,
+
+analytics and research platforms,
+
+open-source contributors.
+
+Schemas are not required to use Canonical ESG.
+Many users—including auditors, consultants, and reviewers—will rely entirely on the human-readable specifications and artefacts.
+
+What Schemas Do — and Do Not Do
+Schemas do:
+
+define expected structure of artefacts,
+
+constrain required and optional fields,
+
+enable automated validation,
+
+support tooling and reuse,
+
+make assumptions explicit at a structural level.
+
+Schemas do not:
+
+define reporting obligations,
+
+determine materiality,
+
+assert compliance with any framework,
+
+encode professional judgement,
+
+replace narrative interpretation.
+
+All interpretive meaning remains in the human-readable specifications and mapping artefacts.
+
+Available Schemas
+Canonical Mapping Pack (CMP) Schema
+
+The CMP schema defines the machine-readable structure of Canonical Mapping Packs.
+
+It enables:
+
+consistent representation of CMP metadata,
+
+structured disclosure intent mappings,
+
+framework reference tracking,
+
+validation of CMP artefacts.
+
+Status: v0.1 (Draft 2020-12)
+Format: JSON Schema
+Scope: Structural validation only
+
+→ View CMP Schema Specification
+→ Download CMP JSON Schema
+
+Relationship to Canonical ESG Layers
+
+Schemas correspond directly to Canonical ESG layers:
+
+CERM defines canonical sustainability data concepts.
+
+CDI defines disclosure meaning and intent.
+
+CMP documents framework-specific interpretation.
+
+Schemas describe how artefacts from these layers may be represented structurally, without redefining their conceptual meaning.
+
+Versioning and Stability
+
+Schemas are versioned independently and follow conservative change principles:
+
+backward compatibility within minor versions,
+
+explicit version identifiers,
+
+append-only evolution where possible,
+
+clear deprecation paths.
+
+Schema versions do not change the meaning of published artefacts.
+
+Using Schemas Safely
+
+Use schemas when you need:
+
+validation,
+
+automation,
+
+registry integration,
+
+or programmatic processing.
+
+Do not use schemas to infer:
+
+regulatory compliance,
+
+disclosure sufficiency,
+
+or framework endorsement.
+
+Schemas are infrastructure, not guidance.
+
+Licensing
+
+All schemas are published under open licenses permitting use, adaptation, and redistribution.
+
+Refer to the governance section for licensing details.
+
+Summary
+
+Schemas are an enabling layer of Canonical ESG.
+
+They support tooling and interoperability while preserving the primacy of:
+
+human interpretation,
+
+professional judgement,
+
+and non-authoritative use.
+
+Canonical ESG remains usable without schemas.
+Schemas simply make it easier to build reliable systems around it.
