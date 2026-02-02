@@ -2,19 +2,18 @@
 
 ## 1. Purpose
 
-This specification defines the **structural components and content expectations** of a Canonical Mapping Pack (CMP).
+This document defines the **structural components and content expectations** of a Canonical Mapping Pack (CMP).
 
 It describes:
-- the information a CMP contains,
+- the information a CMP must contain to be valid,
 - how mapping information is organised,
 - what must be documented to ensure transparency and reuse.
 
-This specification is **descriptive**, not normative.  
-It does not prescribe implementation formats or tooling.
+This specification does not prescribe formats, syntax, or tooling.
 
 ---
 
-## 2. Scope of the Specification
+## 2. Scope
 
 This specification applies to:
 - topic-specific and cross-topic CMPs,
@@ -28,164 +27,139 @@ It does not define:
 
 ---
 
-## 3. CMP Structural Overview
+## 3. High-Level CMP Structure
 
-A CMP consists of the following logical sections:
+A Canonical Mapping Pack consists of the following components:
 
-1. CMP Metadata
-2. Scope and Coverage Declaration
-3. Disclosure Intent Mappings
-4. Interpretation Notes
-5. Limitations and Known Gaps
-6. Versioning and Change History
+1. **CMP Metadata**  
+2. **Scope Declaration**  
+3. **Interpretation Principles**  
+4. **Disclosure Intent Mappings**  
+5. **Cross-Framework Observations** (optional)  
+6. **Limitations and Known Gaps**  
+7. **Version History**
 
-Each section serves a distinct purpose and must be explicitly documented.
+Each component serves a distinct purpose and must be present for a CMP to be considered complete.
 
 ---
 
 ## 4. CMP Metadata
 
-### 4.1 Required Metadata Elements
+### 4.1 Purpose
+Provides identification, versioning, and provenance information for the CMP.
 
-A CMP shall document, at minimum:
-- CMP name
-- CMP identifier
-- Maintainer or author
-- Reporting framework referenced
-- Reporting framework version
-- CDI version consumed
+### 4.2 Required Elements
+- **CMP identifier**: unique identifier for the CMP
+- **CMP name**: human-readable title
+- **Version**: semantic version identifier
+- **Publication date**: date of release
+- **Maintainer**: responsible party
+- **License**: terms of use
+- **CDI version referenced**: version of CDI used
+- **Status**: draft, published, frozen, superseded
+
+---
+
+## 5. Scope Declaration
+
+### 5.1 Purpose
+Defines what the CMP covers and what it intentionally excludes.
+
+### 5.2 Required Elements
+- **Topic scope**: subject matter (e.g., climate, workforce)
+- **Covered CDIs**: list of Canonical Disclosure Intents addressed
+- **Referenced frameworks**: reporting frameworks and versions
+- **Intended use**: statement of appropriate application
+
+---
+
+## 6. Interpretation Principles
+
+### 6.1 Purpose
+Documents the interpretive posture applied throughout the CMP.
+
+### 6.2 Typical Content
+- Treatment of ambiguity
+- Relationship to materiality
+- Handling of framework overlap
+- Separation of quantity and methodology
+- Exclusion of performance evaluation
+
+---
+
+## 7. Disclosure Intent Mappings
+
+### 7.1 Structure
+Each mapping documents how a single CDI is interpreted across frameworks.
+
+### 7.2 Required Elements per Mapping
+- **CDI identifier**: reference to the Canonical Disclosure Intent
+- **CDI name**: human-readable name
+- **Intent statement**: description of disclosure meaning
+- **Framework mappings**: one entry per referenced framework
+
+### 7.3 Framework Mapping Entry
+- **Framework name**
+- **Framework version**
+- **Framework reference**: clause, standard, question ID, etc.
+- **Mapping type**: full, partial, contextual, not applicable
+- **Interpretation notes**: professional judgement and nuance
+
+---
+
+## 8. Cross-Framework Observations
+
+### 8.1 Purpose
+Documents structural observations that emerge only when comparing frameworks.
+
+### 8.2 Content
+Descriptive observations about:
+- Common disclosure foundations
+- Differences in granularity
+- Divergent materiality treatment
+- Structural alignments and misalignments
+
+Must remain descriptive and non-evaluative.
+
+---
+
+## 9. Limitations and Known Gaps
+
+### 9.1 Purpose
+Prevents over-reliance and misuse of the CMP.
+
+### 9.2 Required Acknowledgements
+- Limited disclosure coverage
+- Non-authoritative interpretation
+- Framework evolution risk
+- Exclusion of sector/jurisdiction specifics
+- No performance assessment
+
+---
+
+## 10. Version History
+
+### 10.1 Purpose
+Supports traceability and controlled evolution.
+
+### 10.2 Required Elements per Version
+- Version identifier
 - Publication date
-- CMP version
-
-### 4.2 Optional Metadata Elements
-
-Optional metadata may include:
-- jurisdictional assumptions
-- sector focus
-- licensing terms
-- intended audience
-- status (draft, stable, deprecated)
-
-Metadata enables discovery, comparison, and governance.
+- Summary of changes
+- Status (draft, published, frozen, superseded)
+- Supersession information (if applicable)
 
 ---
 
-## 5. Scope and Coverage Declaration
+## 11. Non-Goals
 
-CMPs must explicitly state:
-- which topics are covered,
-- which disclosure intents are included,
-- which framework sections are addressed,
-- any known exclusions or partial coverage.
-
-Coverage declarations:
-- do not assert completeness,
-- do not imply materiality,
-- provide transparency for users and reviewers.
+This specification does not:
+- define regulatory obligations,
+- determine materiality,
+- score or rank disclosures,
+- certify compliance,
+- replace professional judgement.
 
 ---
 
-## 6. Disclosure Intent Mappings
-
-### 6.1 Mapping Unit
-
-The fundamental unit of a CMP is a **mapping between one Disclosure Intent and one or more framework requirements**.
-
-Each mapping unit includes:
-- CDI identifier
-- Framework reference(s)
-- Mapping type (e.g. full, partial, contextual)
-
----
-
-### 6.2 Mapping Characteristics
-
-Mappings:
-- reference disclosure intent as the anchor of meaning,
-- do not redefine CDI semantics,
-- may reference multiple framework elements,
-- may be reused across CMPs.
-
----
-
-## 7. Interpretation Notes
-
-### 7.1 Purpose
-
-Interpretation Notes document the **professional judgement** applied when establishing a mapping.
-
-### 7.2 Expected Content
-
-Interpretation notes may include:
-- explanation of alignment or divergence,
-- assumptions or conditions,
-- framework-specific nuances,
-- cross-references to other intents,
-- known ambiguities.
-
-Where judgement is involved, interpretation notes are required.
-
----
-
-## 8. Limitations and Known Gaps
-
-CMPs must document:
-- known gaps in coverage,
-- unresolved ambiguities,
-- framework areas intentionally excluded,
-- dependencies on external guidance.
-
-This section prevents over-reliance and misuse.
-
----
-
-## 9. Versioning and Change History
-
-Each CMP must include:
-- version identifier,
-- summary of changes,
-- date of change,
-- impact on prior mappings.
-
-Previous versions remain referenceable.
-
----
-
-## 10. Relationship to CERM and CDI
-
-CMPs:
-- consume CDI identifiers,
-- assume canonical data is modelled using CERM,
-- do not modify or extend CERM or CDI definitions.
-
-This preserves separation of concerns.
-
----
-
-## 11. Implementation Neutrality
-
-This specification does not mandate:
-- file formats,
-- storage models,
-- APIs,
-- tooling.
-
-CMPs may be implemented using:
-- documents,
-- structured files,
-- databases,
-- software systems.
-
-The specification concerns **content and structure**, not technology.
-
----
-
-## 12. Summary
-
-This specification defines a **clear, repeatable structure** for Canonical Mapping Packs.
-
-By standardising *what* must be documented—without prescribing *how*—it enables consistent interpretation, auditability, and reuse while preserving flexibility for diverse implementations.
-
----
-
-*Version: v1.0.0*
+*Version: v1.0.1*
