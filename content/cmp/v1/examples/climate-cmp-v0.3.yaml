@@ -1,0 +1,296 @@
+cmp_metadata:
+  name: Climate Canonical Mapping Pack
+  identifier: climate-cmp
+  version: v0.3
+  status: draft
+  publication_date: 2026-02-02
+  maintainer: Canonical ESG
+  license: CC-BY-4.0
+  cdi_version: v1
+
+scope:
+  topic: climate
+  disclosure_intents:
+    - CDI-CLIM-01
+    - CDI-CLIM-02
+    - CDI-CLIM-03
+    - CDI-CLIM-04
+    - CDI-CLIM-05
+    - CDI-CLIM-06
+    - CDI-CLIM-07
+    - CDI-CLIM-08
+    - CDI-CLIM-09
+    - CDI-CLIM-10
+    - CDI-CLIM-11
+    - CDI-CLIM-12
+    - CDI-CLIM-13
+    - CDI-CLIM-14
+    - CDI-CLIM-15
+    - CDI-CLIM-16
+    - CDI-CLIM-17
+    - CDI-CLIM-18
+    - CDI-CLIM-19
+    - CDI-CLIM-20
+    - CDI-CLIM-21
+    - CDI-CLIM-22
+    - CDI-CLIM-23
+    - CDI-CLIM-24
+    - CDI-CLIM-25
+    - CDI-CLIM-26
+    - CDI-CLIM-27
+    - CDI-CLIM-28
+    - CDI-CLIM-29
+    - CDI-CLIM-30
+    - CDI-CLIM-31
+    - CDI-CLIM-32
+
+frameworks:
+  - name: ESRS
+    standard: ESRS E1
+    version: 2023
+  - name: GRI
+    standard: GRI 305
+    version: 2021
+  - name: CDP
+    standard: Climate Change Questionnaire
+    version: 2024
+
+interpretation_principles:
+  - Interpretations reflect reasoned professional judgement
+  - Framework texts remain authoritative
+  - Ambiguity is documented, not resolved
+  - Quantitative, methodological, and governance disclosures are separated
+  - No assessment of materiality, sufficiency, or ambition is performed
+
+mappings:
+  - cdi: CDI-CLIM-01
+    intent: Scope 1 GHG emissions
+    mappings:
+      ESRS: full
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-CLIM-02
+    intent: Scope 2 GHG emissions
+    mappings:
+      ESRS: partial
+      GRI: partial
+      CDP: partial
+
+  - cdi: CDI-CLIM-03
+    intent: Scope 2 accounting method
+    mappings:
+      ESRS: full
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-CLIM-04
+    intent: Scope 3 GHG emissions total
+    mappings:
+      ESRS: partial
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-CLIM-05
+    intent: Scope 3 category coverage
+    mappings:
+      ESRS: full
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-CLIM-06
+    intent: GHG emissions boundary
+    mappings:
+      ESRS: full
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-CLIM-07
+    intent: Emissions base year
+    mappings:
+      ESRS: full
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-CLIM-08
+    intent: Emissions reduction target
+    mappings:
+      ESRS: full
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-CLIM-09
+    intent: Target year
+    mappings:
+      ESRS: full
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-CLIM-10
+    intent: Emissions calculation methodology
+    mappings:
+      ESRS: full
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-CLIM-11
+    intent: Scope 2 emissions by accounting approach
+    mappings:
+      ESRS: full
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-CLIM-12
+    intent: Drivers of change in emissions
+    mappings:
+      ESRS: partial
+      GRI: partial
+      CDP: full
+
+  - cdi: CDI-CLIM-13
+    intent: Scope 3 emissions by category
+    mappings:
+      ESRS: partial
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-CLIM-14
+    intent: Scope 3 estimation methods
+    mappings:
+      ESRS: partial
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-CLIM-15
+    intent: Emissions reduction target type
+    mappings:
+      ESRS: full
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-CLIM-16
+    intent: Baseline recalculations
+    mappings:
+      ESRS: full
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-CLIM-17
+    intent: Alignment with climate pathways
+    mappings:
+      ESRS: contextual
+      GRI: contextual
+      CDP: full
+
+  - cdi: CDI-CLIM-18
+    intent: Interim targets or milestones
+    mappings:
+      ESRS: full
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-CLIM-19
+    intent: Assurance of emissions data
+    mappings:
+      ESRS: partial
+      GRI: partial
+      CDP: full
+
+  - cdi: CDI-CLIM-20
+    intent: Level and scope of assurance
+    mappings:
+      ESRS: partial
+      GRI: partial
+      CDP: full
+
+  - cdi: CDI-CLIM-21
+    intent: Emissions data restatements
+    mappings:
+      ESRS: full
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-CLIM-22
+    intent: Use of carbon credits or removals
+    mappings:
+      ESRS: contextual
+      GRI: contextual
+      CDP: full
+
+  - cdi: CDI-CLIM-23
+    intent: Data quality or uncertainty
+    mappings:
+      ESRS: partial
+      GRI: partial
+      CDP: full
+
+  - cdi: CDI-CLIM-24
+    intent: Primary vs secondary data usage
+    mappings:
+      ESRS: contextual
+      GRI: contextual
+      CDP: contextual
+
+  - cdi: CDI-CLIM-25
+    intent: Emissions intensity metrics
+    mappings:
+      ESRS: full
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-CLIM-26
+    intent: Organisational structure changes
+    mappings:
+      ESRS: full
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-CLIM-27
+    intent: Climate transition plan existence
+    mappings:
+      ESRS: full
+      GRI: contextual
+      CDP: full
+
+  - cdi: CDI-CLIM-28
+    intent: Governance oversight of climate
+    mappings:
+      ESRS: full
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-CLIM-29
+    intent: Internal carbon pricing
+    mappings:
+      ESRS: contextual
+      GRI: contextual
+      CDP: full
+
+  - cdi: CDI-CLIM-30
+    intent: Renewable energy instruments
+    mappings:
+      ESRS: contextual
+      GRI: contextual
+      CDP: contextual
+
+  - cdi: CDI-CLIM-31
+    intent: Climate policy engagement
+    mappings:
+      ESRS: full
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-CLIM-32
+    intent: Climate risk integration into strategy
+    mappings:
+      ESRS: full
+      GRI: full
+      CDP: full
+
+version_history:
+  - version: v0.3
+    description: Expanded coverage to CDI-CLIM-01 through CDI-CLIM-32
+  - version: v0.2
+    description: Expanded coverage to CDI-CLIM-01 through CDI-CLIM-22
+  - version: v0.1
+    description: Initial publication covering CDI-CLIM-01 through CDI-CLIM-10

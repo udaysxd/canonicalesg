@@ -44,7 +44,7 @@
       "cmp_id": "climate-cmp",
       "topic": "climate",
       "version": "v0.3",
-      "status": "current",
+      "status": "frozen",
       "publication_date": "2026-02-02",
       "cdi_version": "v1",
       "frameworks": ["ESRS E1 (2023)", "GRI 305 (2021)", "CDP Climate Change Questionnaire (2024)"],
