@@ -69,6 +69,20 @@ export default function CMPPage() {
           ))}
         </ul>
 
+        <h2 className="text-[1.5rem] font-semibold text-[#1a1a1a] mb-4 mt-10">Reference CMPs (Illustrative)</h2>
+        <p className="text-[#1a1a1a] mb-4">
+          The following Canonical Mapping Packs are provided as illustrative reference implementations.
+        </p>
+        <p className="text-[#1a1a1a] mb-4">
+          They demonstrate how CMPs can be constructed and applied without asserting authority, completeness, or compliance.
+        </p>
+        <ul className="space-y-2.5 mb-10">
+          <li>
+            <Link href="/cmp/v1/examples/climate-end-to-end" className="text-[#1a1a1a] underline underline-offset-[0.15em] decoration-[#999] hover:decoration-[#1a1a1a]">Climate CMP v0.1</Link>
+            <p className="text-[#666] mt-1">Illustrative mapping of selected climate disclosure intents across multiple reporting frameworks.</p>
+          </li>
+        </ul>
+
         <p className="text-[#1a1a1a] mb-4"><strong className="font-semibold text-[#111]">Current version:</strong> v1.0.0</p>
 
         <p className="text-sm text-[#666] mt-10">
