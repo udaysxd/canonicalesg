@@ -1,0 +1,17 @@
+# Governance & Licensing
+
+*Placeholder for governance and licensing documentation. Content to be authored separately.*
+
+---
+
+## Status
+
+This document is a placeholder pending content development.
+
+## Scope
+
+Governance structure, contribution guidelines, and licensing terms for the Canonical ESG Reference Architecture.
+
+---
+
+*Last updated: placeholder*
