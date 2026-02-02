@@ -67,6 +67,15 @@ export default function CMPPage() {
               <Link href={`/cmp/${p.slug}`} className="text-[#1a1a1a] underline underline-offset-[0.15em] decoration-[#999] hover:decoration-[#1a1a1a]">{p.title}</Link>
             </li>
           ))}
+          <li>
+            <Link href="/cmp/v1/04-schema-specification" className="text-[#1a1a1a] underline underline-offset-[0.15em] decoration-[#999] hover:decoration-[#1a1a1a]">Schema Specification (v0.1)</Link>
+            <p className="text-[#666] mt-1">Machine-readable structural model for Canonical Mapping Packs.</p>
+            <ul className="mt-2 ml-4">
+              <li>
+                <Link href="/cmp/v1/schema/cmp.schema.json" className="text-[#1a1a1a] underline underline-offset-[0.15em] decoration-[#999] hover:decoration-[#1a1a1a]">JSON Schema (Draft 2020-12)</Link>
+              </li>
+            </ul>
+          </li>
         </ul>
 
         <h2 className="text-[1.5rem] font-semibold text-[#1a1a1a] mb-4 mt-10">Reference CMPs (Illustrative)</h2>
@@ -82,6 +91,17 @@ export default function CMPPage() {
             <p className="text-[#666] mt-1">Illustrative mapping of selected climate disclosure intents across multiple reporting frameworks.</p>
           </li>
         </ul>
+
+        <h2 className="text-[1.5rem] font-semibold text-[#1a1a1a] mb-4 mt-10">CMP Registry</h2>
+        <p className="text-[#1a1a1a] mb-4">
+          The CMP Registry provides a machine-readable index of published Canonical Mapping Packs.
+        </p>
+        <p className="text-[#1a1a1a] mb-4">
+          The registry enables discovery, version tracking, and tooling integration without asserting authority, endorsement, or compliance.
+        </p>
+        <p className="text-[#1a1a1a] mb-4">
+          <Link href="/content/cmp/registry/cmp-index.json" className="text-[#1a1a1a] underline underline-offset-[0.15em] decoration-[#999] hover:decoration-[#1a1a1a]">→ Download CMP Registry Index (cmp-index.json)</Link>
+        </p>
 
         <p className="text-[#1a1a1a] mb-4"><strong className="font-semibold text-[#111]">Current version:</strong> v1.0.0</p>
 
