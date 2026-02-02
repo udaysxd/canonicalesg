@@ -9,27 +9,27 @@ interface PageProps {
 
 export default async function Page({ params }: PageProps) {
   const { slug } = await params;
-  const section = DOCS.cmp;
+  const section = DOCS.cdi;
   const page = section.pages.find(p => p.slug === slug);
   
   if (!page) {
     notFound();
   }
 
-  const path = `content/cmp/${section.version}/${page.file}`;
+  const path = `content/cdi/${section.version}/${page.file}`;
   const html = await renderMarkdown(path);
 
   return (
-    <main className="max-w-3xl mx-auto px-6 py-12">
-      <div>
-        <nav className="text-sm text-[#666] mb-6">
-          <Link href="/cmp" className="hover:text-[#1a1a1a] hover:underline">CMP</Link>
+    <main className="max-w-7xl mx-auto px-6 py-12">
+      <div className="max-w-4xl">
+        <nav className="text-sm text-slate-500 mb-6">
+          <Link href="/cdi" className="hover:text-slate-900">CDI</Link>
           <span className="mx-2">/</span>
-          <span className="text-[#1a1a1a]">{page.title}</span>
+          <span className="text-slate-900">{page.title}</span>
         </nav>
-        <h1 className="text-[2.25rem] font-semibold text-[#111] mb-8 leading-tight">{page.title}</h1>
+        <h1 className="text-3xl font-semibold text-slate-900 mb-8">{page.title}</h1>
         <article 
-          className="prose"
+          className="prose prose-slate max-w-none"
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
