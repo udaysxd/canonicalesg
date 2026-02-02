@@ -1,0 +1,248 @@
+cmp:
+  metadata:
+    cmp_id: "climate-cmp-v0.1"
+    title: "Climate Canonical Mapping Pack"
+    version: "0.1"
+    status: "frozen"
+    publication_date: "2026-02-02"
+    maintainer: "Canonical ESG"
+    license: "CC-BY-4.0"
+    cdi_version: "v1"
+
+  scope:
+    topic: "climate"
+    covered_cdis:
+      - "CDI-CLIM-01"
+      - "CDI-CLIM-02"
+      - "CDI-CLIM-03"
+      - "CDI-CLIM-04"
+      - "CDI-CLIM-05"
+      - "CDI-CLIM-06"
+      - "CDI-CLIM-07"
+      - "CDI-CLIM-08"
+      - "CDI-CLIM-09"
+      - "CDI-CLIM-10"
+    frameworks:
+      - name: "ESRS"
+        version: "2023"
+      - name: "GRI"
+        version: "2021"
+      - name: "CDP"
+        version: "2024"
+    intended_use: >
+      Illustrative reference mapping.
+      Non-authoritative and non-compliant by design.
+
+  interpretation_principles:
+    - "Interpretations reflect reasoned professional judgement."
+    - "Framework texts remain authoritative."
+    - "Ambiguity is documented, not resolved."
+    - "Quantitative disclosures are separated from methodology."
+    - "Materiality is not assessed."
+
+  mappings:
+    - cdi_id: "CDI-CLIM-01"
+      cdi_name: "Scope 1 GHG Emissions"
+      intent: "Disclose total direct greenhouse gas emissions for the reporting period."
+      framework_mappings:
+        - framework: "ESRS"
+          framework_version: "2023"
+          reference: "ESRS E1 — Gross Scope 1 GHG emissions"
+          mapping_type: "full"
+          interpretation_notes: >
+            ESRS requires disclosure of gross Scope 1 emissions
+            consistent with GHG Protocol definitions.
+        - framework: "GRI"
+          framework_version: "2021"
+          reference: "GRI 305-1"
+          mapping_type: "full"
+          interpretation_notes: >
+            GRI explicitly requires disclosure of Scope 1 emissions.
+        - framework: "CDP"
+          framework_version: "2024"
+          reference: "Climate Change Questionnaire — Scope 1 emissions"
+          mapping_type: "full"
+          interpretation_notes: >
+            CDP requests Scope 1 emissions with additional breakdowns.
+
+    - cdi_id: "CDI-CLIM-02"
+      cdi_name: "Scope 2 GHG Emissions"
+      intent: "Disclose total indirect energy-related greenhouse gas emissions."
+      framework_mappings:
+        - framework: "ESRS"
+          framework_version: "2023"
+          reference: "ESRS E1 — Gross Scope 2 GHG emissions"
+          mapping_type: "partial"
+          interpretation_notes: >
+            ESRS distinguishes between location-based and market-based Scope 2 emissions.
+        - framework: "GRI"
+          framework_version: "2021"
+          reference: "GRI 305-2"
+          mapping_type: "partial"
+          interpretation_notes: >
+            GRI requires Scope 2 emissions by accounting method.
+        - framework: "CDP"
+          framework_version: "2024"
+          reference: "Climate Change Questionnaire — Scope 2 emissions"
+          mapping_type: "partial"
+          interpretation_notes: >
+            CDP requires both market-based and location-based Scope 2 emissions.
+
+    - cdi_id: "CDI-CLIM-03"
+      cdi_name: "Scope 2 Accounting Method"
+      intent: "Disclose the accounting method(s) used for Scope 2 emissions."
+      framework_mappings:
+        - framework: "ESRS"
+          framework_version: "2023"
+          reference: "ESRS E1 — Scope 2 methodology"
+          mapping_type: "full"
+        - framework: "GRI"
+          framework_version: "2021"
+          reference: "GRI 305-2"
+          mapping_type: "full"
+        - framework: "CDP"
+          framework_version: "2024"
+          reference: "Climate Change Questionnaire — Scope 2 methodology"
+          mapping_type: "full"
+
+    - cdi_id: "CDI-CLIM-04"
+      cdi_name: "Scope 3 GHG Emissions (Total)"
+      intent: "Disclose total indirect value-chain greenhouse gas emissions."
+      framework_mappings:
+        - framework: "ESRS"
+          framework_version: "2023"
+          reference: "ESRS E1 — Gross Scope 3 GHG emissions"
+          mapping_type: "partial"
+          interpretation_notes: >
+            Scope 3 disclosure is subject to materiality under ESRS.
+        - framework: "GRI"
+          framework_version: "2021"
+          reference: "GRI 305-3"
+          mapping_type: "full"
+        - framework: "CDP"
+          framework_version: "2024"
+          reference: "Climate Change Questionnaire — Scope 3 emissions"
+          mapping_type: "full"
+
+    - cdi_id: "CDI-CLIM-05"
+      cdi_name: "Scope 3 Category Coverage"
+      intent: "Disclose which Scope 3 categories are included or excluded."
+      framework_mappings:
+        - framework: "ESRS"
+          framework_version: "2023"
+          reference: "ESRS E1 — Scope 3 categories"
+          mapping_type: "full"
+        - framework: "GRI"
+          framework_version: "2021"
+          reference: "GRI 305-3"
+          mapping_type: "full"
+        - framework: "CDP"
+          framework_version: "2024"
+          reference: "Climate Change Questionnaire — Scope 3 categories"
+          mapping_type: "full"
+
+    - cdi_id: "CDI-CLIM-06"
+      cdi_name: "GHG Emissions Boundary"
+      intent: "Disclose organisational and operational boundaries applied."
+      framework_mappings:
+        - framework: "ESRS"
+          framework_version: "2023"
+          reference: "ESRS E1 — Reporting boundary"
+          mapping_type: "full"
+        - framework: "GRI"
+          framework_version: "2021"
+          reference: "GRI 305 — Reporting boundary"
+          mapping_type: "full"
+        - framework: "CDP"
+          framework_version: "2024"
+          reference: "Climate Change Questionnaire — Boundary definition"
+          mapping_type: "full"
+
+    - cdi_id: "CDI-CLIM-07"
+      cdi_name: "Emissions Base Year"
+      intent: "Disclose the base year used for emissions tracking and targets."
+      framework_mappings:
+        - framework: "ESRS"
+          framework_version: "2023"
+          reference: "ESRS E1 — Base year disclosures"
+          mapping_type: "full"
+        - framework: "GRI"
+          framework_version: "2021"
+          reference: "GRI 305 — Base year"
+          mapping_type: "full"
+        - framework: "CDP"
+          framework_version: "2024"
+          reference: "Climate Change Questionnaire — Base year"
+          mapping_type: "full"
+
+    - cdi_id: "CDI-CLIM-08"
+      cdi_name: "Emissions Reduction Target"
+      intent: "Disclose emissions reduction targets and scope coverage."
+      framework_mappings:
+        - framework: "ESRS"
+          framework_version: "2023"
+          reference: "ESRS E1 — Reduction targets"
+          mapping_type: "full"
+        - framework: "GRI"
+          framework_version: "2021"
+          reference: "GRI 305 — Reduction targets"
+          mapping_type: "full"
+        - framework: "CDP"
+          framework_version: "2024"
+          reference: "Climate Change Questionnaire — Reduction targets"
+          mapping_type: "full"
+
+    - cdi_id: "CDI-CLIM-09"
+      cdi_name: "Target Year"
+      intent: "Disclose the year(s) by which emissions reductions are intended."
+      framework_mappings:
+        - framework: "ESRS"
+          framework_version: "2023"
+          reference: "ESRS E1 — Target timelines"
+          mapping_type: "full"
+        - framework: "GRI"
+          framework_version: "2021"
+          reference: "GRI 305 — Target year"
+          mapping_type: "full"
+        - framework: "CDP"
+          framework_version: "2024"
+          reference: "Climate Change Questionnaire — Target year"
+          mapping_type: "full"
+
+    - cdi_id: "CDI-CLIM-10"
+      cdi_name: "Emissions Calculation Methodology"
+      intent: "Disclose methodologies, standards, emission factors, and assumptions used."
+      framework_mappings:
+        - framework: "ESRS"
+          framework_version: "2023"
+          reference: "ESRS E1 — Methodologies and assumptions"
+          mapping_type: "full"
+        - framework: "GRI"
+          framework_version: "2021"
+          reference: "GRI 305 — Methodology"
+          mapping_type: "full"
+        - framework: "CDP"
+          framework_version: "2024"
+          reference: "Climate Change Questionnaire — Methodology"
+          mapping_type: "full"
+
+  cross_framework_observations:
+    - "All referenced frameworks require disclosure of Scope 1–3 emissions."
+    - "Granularity requirements vary across frameworks."
+    - "Materiality treatment diverges notably for Scope 3 disclosures."
+
+  limitations:
+    - "CMP covers a limited subset of climate disclosure intents."
+    - "Interpretations are non-authoritative."
+    - "Framework updates may require future revisions."
+    - "Sector- and jurisdiction-specific requirements are excluded."
+    - "No assessment of ambition or performance is performed."
+
+  version_history:
+    - version: "0.1"
+      date: "2026-02-02"
+      status: "frozen"
+      summary:
+        - "Initial publication of Climate CMP"
+        - "Covers ten core climate disclosure intents"
+        - "Serves as reference implementation of CMP schema v0.1"
