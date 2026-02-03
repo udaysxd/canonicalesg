@@ -241,7 +241,7 @@ Captures trends and significant operational changes.
 
 - All frameworks require core water withdrawal and consumption disclosure.
 - Source granularity requirements vary significantly.
-- - Water discharge volume is often conflated with quality or treatment requirements in framework texts.
+- Water discharge quality and treatment are often conflated with volume.
 - Stress context and basin-level analysis are framework-specific.
 - Water reuse and recycling definitions lack standardisation.
 

@@ -162,8 +162,7 @@ Disclose the organisation's use of groundwater sources for operational purposes.
 **CDP**: Groundwater use (Full)
 
 **Interpretation Notes**
-Some frameworks introduce additional contextual considerations alongside groundwater disclosures.
-
+May require stress context in some frameworks.
 
 ---
 
@@ -241,7 +240,7 @@ Captures trends and significant operational changes.
 
 - All frameworks require core water withdrawal and consumption disclosure.
 - Source granularity requirements vary significantly.
-- - Water discharge volume is often conflated with quality or treatment requirements in framework texts.
+- Water discharge quality and treatment are often conflated with volume.
 - Stress context and basin-level analysis are framework-specific.
 - Water reuse and recycling definitions lack standardisation.
 

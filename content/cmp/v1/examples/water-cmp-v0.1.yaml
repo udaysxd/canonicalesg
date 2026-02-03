@@ -1,0 +1,131 @@
+cmp:
+  id: cmp-water-v0.1
+  name: Water Canonical Mapping Pack
+  version: v0.1
+  status: frozen
+  topic: water
+  publication_date: 2026-02-03
+  maintainer: Canonical ESG
+  license: CC-BY-4.0
+  cdi_version: v1
+
+scope:
+  description: >
+    Illustrative interpretations of water-related disclosure intents
+    for cross-framework sustainability reporting.
+  intents:
+    - CDI-WATR-01
+    - CDI-WATR-02
+    - CDI-WATR-04
+    - CDI-WATR-06
+    - CDI-WATR-07
+    - CDI-WATR-09
+    - CDI-WATR-10
+    - CDI-WATR-11
+    - CDI-WATR-12
+    - CDI-WATR-14
+    - CDI-WATR-19
+    - CDI-WATR-20
+
+frameworks:
+  - name: ESRS
+    reference: ESRS E3
+    version: 2023
+  - name: GRI
+    reference: GRI 303
+    version: 2021
+  - name: CDP
+    reference: Water Security Questionnaire
+    version: 2024
+
+mappings:
+  - cdi: CDI-WATR-01
+    intent: Total water withdrawn
+    mappings:
+      ESRS: full
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-WATR-02
+    intent: Water withdrawal by source type
+    mappings:
+      ESRS: partial
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-WATR-04
+    intent: Total water consumed
+    mappings:
+      ESRS: full
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-WATR-06
+    intent: Total water discharged
+    mappings:
+      ESRS: full
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-WATR-07
+    intent: Water discharge by destination
+    mappings:
+      ESRS: partial
+      GRI: full
+      CDP: partial
+
+  - cdi: CDI-WATR-09
+    intent: Use of surface water sources
+    mappings:
+      ESRS: partial
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-WATR-10
+    intent: Use of groundwater sources
+    mappings:
+      ESRS: partial
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-WATR-11
+    intent: Use of third-party or municipal water supply
+    mappings:
+      ESRS: partial
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-WATR-12
+    intent: Volume of water reused or recycled
+    mappings:
+      ESRS: partial
+      GRI: contextual
+      CDP: partial
+
+  - cdi: CDI-WATR-14
+    intent: Water intensity metric
+    mappings:
+      ESRS: partial
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-WATR-19
+    intent: Operational dependency on specific water sources
+    mappings:
+      ESRS: contextual
+      GRI: contextual
+      CDP: contextual
+
+  - cdi: CDI-WATR-20
+    intent: Changes in water use patterns
+    mappings:
+      ESRS: partial
+      GRI: full
+      CDP: full
+
+limitations:
+  - Water quality and discharge standards are excluded
+  - Sector-specific water disclosures are excluded
+  - Jurisdictional water stress requirements are not addressed
+  - Interpretations are non-authoritative
+  - No performance benchmarking is provided
