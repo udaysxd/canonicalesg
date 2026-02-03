@@ -1,8 +1,7 @@
 import { renderMarkdown } from "@/lib/markdown";
-import Link from "next/link";
 
-export default async function GovernancePage() {
-  const html = await renderMarkdown('content/governance/index.md');
+export default async function ResourcesPage() {
+  const html = await renderMarkdown('content/resources/index.md');
 
   return (
     <main className="max-w-3xl mx-auto px-6 py-12">

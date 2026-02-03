@@ -60,28 +60,6 @@ CDIs do not determine whether a disclosure is required or material.
 
 ---
 
-## Why Canonical Disclosure Intents (CDI) Matter
-
-Canonical Disclosure Intents (CDIs) provide the **stable semantic layer** of Canonical ESG.
-
-They allow organisations to:
-- define disclosure meaning once,
-- reuse that meaning across multiple reporting frameworks,
-- avoid reinterpreting disclosure requirements each reporting cycle.
-
-CDIs sit between:
-- **CERM**, which structures sustainability data, and
-- **CMP**, which documents framework-specific interpretation.
-
-In practice:
-- auditors review disclosures at the CDI level,
-- consultants interpret frameworks through CMPs,
-- systems and tools implement CERM-aligned data models.
-
-→ [Explore Canonical Disclosure Intents](/cdi)
-
----
-
 ## Step 3: Document Framework Interpretation (CMP)
 
 Interpretation of reporting frameworks is unavoidable.

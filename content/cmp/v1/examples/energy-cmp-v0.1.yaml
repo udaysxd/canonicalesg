@@ -1,0 +1,130 @@
+cmp:
+  id: cmp-energy-v0.1
+  name: Energy Canonical Mapping Pack
+  version: v0.1
+  status: frozen
+  topic: energy
+  publication_date: 2026-02-03
+  maintainer: Canonical ESG
+  license: CC-BY-4.0
+  cdi_version: v1
+
+scope:
+  description: >
+    Illustrative interpretations of energy-related disclosure intents
+    for cross-framework sustainability reporting.
+  intents:
+    - CDI-ENG-01
+    - CDI-ENG-02
+    - CDI-ENG-03
+    - CDI-ENG-04
+    - CDI-ENG-05
+    - CDI-ENG-06
+    - CDI-ENG-07
+    - CDI-ENG-08
+    - CDI-ENG-09
+    - CDI-ENG-10
+    - CDI-ENG-11
+    - CDI-ENG-12
+
+frameworks:
+  - name: ESRS
+    reference: ESRS E1
+    version: 2023
+  - name: GRI
+    reference: GRI 302
+    version: 2021
+  - name: CDP
+    reference: Climate Change Questionnaire
+    version: 2024
+
+mappings:
+  - cdi: CDI-ENG-01
+    intent: Total energy consumption
+    mappings:
+      ESRS: full
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-ENG-02
+    intent: Energy consumption by source
+    mappings:
+      ESRS: partial
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-ENG-03
+    intent: Renewable energy consumption
+    mappings:
+      ESRS: partial
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-ENG-04
+    intent: Non-renewable energy consumption
+    mappings:
+      ESRS: partial
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-ENG-05
+    intent: Energy consumption by geography
+    mappings:
+      ESRS: partial
+      GRI: contextual
+      CDP: partial
+
+  - cdi: CDI-ENG-06
+    intent: Purchased energy
+    mappings:
+      ESRS: partial
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-ENG-07
+    intent: Onsite energy generation
+    mappings:
+      ESRS: partial
+      GRI: partial
+      CDP: full
+
+  - cdi: CDI-ENG-08
+    intent: Energy sold or exported
+    mappings:
+      ESRS: contextual
+      GRI: contextual
+      CDP: partial
+
+  - cdi: CDI-ENG-09
+    intent: Energy efficiency initiatives
+    mappings:
+      ESRS: full
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-ENG-10
+    intent: Energy intensity metric
+    mappings:
+      ESRS: partial
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-ENG-11
+    intent: Changes in energy consumption
+    mappings:
+      ESRS: partial
+      GRI: full
+      CDP: full
+
+  - cdi: CDI-ENG-12
+    intent: Methodology and assumptions for energy data
+    mappings:
+      ESRS: full
+      GRI: full
+      CDP: full
+
+limitations:
+  - Sector-specific energy disclosures are excluded
+  - Jurisdictional requirements are not addressed
+  - Interpretations are non-authoritative
+  - No performance benchmarking is provided

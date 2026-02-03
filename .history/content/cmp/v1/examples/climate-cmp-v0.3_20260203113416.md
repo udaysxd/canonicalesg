@@ -1,7 +1,6 @@
 # Climate Canonical Mapping Pack (CMP v0.3)
 
-This CMP is accompanied by a machine-readable YAML representation that is structurally equivalent to this document and validates against CMP Schema v0.1 (JSON Schema Draft 2020-12).
-
+This CMP is accompanied by a machine-readable YAML representation that validates against CMP Schema v0.1 (Draft 2020-12).
 
 ---
 

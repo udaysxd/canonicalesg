@@ -1,0 +1,174 @@
+# Canonical Mapping Packs (CMP)
+
+Canonical Mapping Packs (CMPs) document how **Canonical Disclosure Intents (CDIs)** are interpreted by specific sustainability reporting frameworks.
+
+CMPs make interpretation explicit, transparent, and reviewable — without asserting authority, compliance, or endorsement.
+
+They answer the question:
+
+> *How does a reporting framework interpret a given disclosure intent?*
+
+CMPs do **not** define what must be disclosed, how data should be calculated, or whether a disclosure is sufficient.
+
+---
+
+## Purpose of CMP
+
+Sustainability reporting frameworks often request similar disclosures using different:
+- terminology,
+- structure,
+- scope,
+- aggregation rules,
+- presentation formats.
+
+Interpreting these requirements involves professional judgement.
+
+CMPs exist to:
+
+- document interpretation decisions explicitly,
+- make assumptions and limitations visible,
+- reduce undocumented and inconsistent interpretation,
+- support reuse of disclosure meaning across frameworks,
+- improve traceability and auditability of reported information.
+
+CMPs are **non-authoritative interpretation artefacts**.
+
+---
+
+## Relationship to Canonical Disclosure Intents (CDI)
+
+Canonical Mapping Packs are explicitly anchored to **Canonical Disclosure Intents (CDIs)**.
+
+Each CMP:
+- references one or more CDI identifiers,
+- does not redefine disclosure meaning,
+- documents how existing disclosure intent is interpreted by a specific reporting framework.
+
+CDIs provide the **stable semantic layer** that enables CMPs to be versioned, reviewed, and compared even as reporting frameworks evolve.
+
+→ [Learn more about Canonical Disclosure Intents](/cdi)
+
+---
+
+## Position in Canonical ESG
+
+Canonical ESG separates sustainability reporting concerns into three layers:
+
+- **CERM** defines *how sustainability data is structured*
+- **CDI** defines *what a disclosure means*
+- **CMP** documents *how disclosure meaning maps to specific frameworks*
+
+CMPs sit at the boundary between **semantic meaning** and **framework-specific requirements**.
+
+They must not modify or extend CERM or CDI.
+
+---
+
+## CMP Domains
+
+CMPs are organised by sustainability topic domain.
+
+Each domain may have one or more CMPs, depending on framework coverage and versioning.
+
+---
+
+## Climate Canonical Mapping Packs
+
+Climate CMPs document interpretations of **climate-related disclosure intents**, including:
+
+- governance and strategy disclosures,
+- climate-related risks and opportunities,
+- policies and commitments,
+- targets and transition planning,
+- greenhouse gas emissions,
+- energy and mitigation actions,
+- methodology and assumptions.
+
+Climate CMPs reference **Climate CDIs (CDI v1)** and map them to frameworks such as:
+- ESRS E1,
+- GRI 305,
+- CDP Climate Change questionnaires.
+
+→ [View Climate CMP examples](/cmp/v1/examples)
+
+---
+
+## Energy Canonical Mapping Packs
+
+Energy CMPs document interpretations of **energy-related disclosure intents**, including:
+
+- energy consumption,
+- energy sources and mix,
+- energy procurement and generation,
+- energy intensity and efficiency,
+- energy boundaries and methodologies.
+
+Energy CMPs reference **Energy CDIs (CDI v1)** and map them to energy-related requirements in sustainability reporting frameworks and energy standards.
+
+Energy CMPs are distinct from climate CMPs and do not address greenhouse gas emissions.
+
+---
+
+## CMP Registry
+
+Canonical ESG maintains a **CMP Registry** that records all published Canonical Mapping Packs.
+
+The registry provides:
+- a machine-readable index of available CMPs,
+- topic domain and framework coverage,
+- CDI version referenced,
+- CMP version and status,
+- links to human-readable and machine-readable representations.
+
+The registry is intended for:
+- software tools that need to discover CMPs programmatically,
+- auditors and reviewers validating interpretation provenance,
+- implementers tracking CMP versions over time.
+
+→ **View CMP Registry (JSON)**:  
+`/cmp/registry`
+
+---
+
+## What CMPs Do and Do Not Do
+
+### CMPs Do
+
+- Map Canonical Disclosure Intents to framework requirements
+- Document interpretation choices and assumptions
+- Enable traceability and review
+- Support consistency across reporting outputs
+- Allow multiple interpretations to coexist transparently
+
+### CMPs Do Not
+
+- Define reporting obligations
+- Determine materiality
+- Assert compliance or sufficiency
+- Replace professional judgement
+- Provide regulatory or assurance advice
+
+---
+
+## Status and Versioning
+
+CMPs are versioned artefacts.
+
+Each CMP documents:
+- the CDI version referenced,
+- the reporting framework version interpreted,
+- known limitations and gaps,
+- a clear change history.
+
+Frozen CMPs remain referenceable for historical use.
+
+---
+
+## Non-Authority Statement
+
+CMPs:
+- are not endorsed by any standards-setting body,
+- do not represent official interpretations,
+- do not carry regulatory or legal authority.
+
+All use of CMPs requires professional judgement.
