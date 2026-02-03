@@ -1,0 +1,54 @@
+cmp:
+  id: cmp-materials-v0.1
+  name: Materials and Circularity Canonical Mapping Pack
+  version: v0.1
+  status: frozen
+  topic: materials
+  publication_date: 2026-02-03
+  maintainer: Canonical ESG
+  license: CC-BY-4.0
+  cdi_version: v1
+
+scope:
+  description: >
+    Illustrative interpretations of materials and circularity-related
+    disclosure intents for cross-framework sustainability reporting.
+  intents:
+    - CDI-MATR-01
+    - CDI-MATR-02
+    - CDI-MATR-03
+    - CDI-MATR-04
+    - CDI-MATR-05
+    - CDI-MATR-06
+    - CDI-MATR-07
+    - CDI-MATR-08
+    - CDI-MATR-09
+    - CDI-MATR-10
+    - CDI-MATR-11
+    - CDI-MATR-12
+    - CDI-MATR-13
+    - CDI-MATR-14
+    - CDI-MATR-15
+    - CDI-MATR-16
+    - CDI-MATR-17
+    - CDI-MATR-18
+    - CDI-MATR-19
+    - CDI-MATR-20
+
+frameworks:
+  - name: ESRS
+    reference: ESRS E5
+    version: 2023
+  - name: GRI
+    reference: GRI 301–306
+    version: 2021
+  - name: CDP
+    reference: Materials and Circularity-related disclosures
+    version: 2024
+
+limitations:
+  - Product-level circularity claims are excluded
+  - Lifecycle assessment disclosures are excluded
+  - Value-chain circularity beyond operations is excluded
+  - Interpretations are non-authoritative
+  - No performance benchmarking is provided
