@@ -124,8 +124,8 @@ mappings:
       CDP: full
 
 limitations:
-  - Water quality and discharge standards are not covered
+  - Water quality and discharge standards are excluded
   - Sector-specific water disclosures are excluded
-  - - Jurisdictional water-related requirements are not addressed
+  - Jurisdictional water stress requirements are not addressed
   - Interpretations are non-authoritative
   - No performance benchmarking is provided
