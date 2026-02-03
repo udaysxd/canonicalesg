@@ -1,0 +1,56 @@
+cmp:
+  id: cmp-workforce-v0.1
+  name: Workforce Canonical Mapping Pack
+  version: v0.1
+  status: frozen
+  topic: workforce
+  publication_date: 2026-02-03
+  maintainer: Canonical ESG
+  license: CC-BY-4.0
+  cdi_version: v1
+
+scope:
+  description: >
+    Illustrative interpretations of workforce-related disclosure intents
+    for cross-framework sustainability reporting.
+  intents:
+    - CDI-WORK-01
+    - CDI-WORK-02
+    - CDI-WORK-03
+    - CDI-WORK-04
+    - CDI-WORK-05
+    - CDI-WORK-06
+    - CDI-WORK-07
+    - CDI-WORK-08
+    - CDI-WORK-09
+    - CDI-WORK-10
+    - CDI-WORK-11
+    - CDI-WORK-12
+    - CDI-WORK-13
+    - CDI-WORK-14
+    - CDI-WORK-15
+    - CDI-WORK-16
+    - CDI-WORK-17
+    - CDI-WORK-18
+    - CDI-WORK-19
+    - CDI-WORK-20
+    - CDI-WORK-21
+    - CDI-WORK-22
+
+frameworks:
+  - name: ESRS
+    reference: ESRS S1
+    version: 2023
+  - name: GRI
+    reference: GRI 401–404, 403
+    version: 2021
+  - name: SASB
+    reference: Industry Metrics
+    version: 2023
+
+limitations:
+  - Value-chain workforce disclosures are excluded
+  - Human rights and DEI outcomes are excluded
+  - Pay equity and living wage disclosures are excluded
+  - Interpretations are non-authoritative
+  - No performance benchmarking is provided
