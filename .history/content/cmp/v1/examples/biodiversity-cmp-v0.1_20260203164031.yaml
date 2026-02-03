@@ -1,0 +1,51 @@
+cmp:
+  id: cmp-biodiversity-v0.1
+  name: Biodiversity Canonical Mapping Pack
+  version: v0.1
+  status: frozen
+  topic: biodiversity
+  publication_date: 2026-02-03
+  maintainer: Canonical ESG
+  license: CC-BY-4.0
+  cdi_version: v1
+
+scope:
+  description: >
+    Illustrative interpretations of biodiversity-related disclosure intents
+    describing organisational interaction with natural systems.
+  intents:
+    - CDI-BIOD-01
+    - CDI-BIOD-02
+    - CDI-BIOD-03
+    - CDI-BIOD-04
+    - CDI-BIOD-05
+    - CDI-BIOD-06
+    - CDI-BIOD-07
+    - CDI-BIOD-08
+    - CDI-BIOD-09
+    - CDI-BIOD-10
+    - CDI-BIOD-11
+    - CDI-BIOD-12
+    - CDI-BIOD-13
+    - CDI-BIOD-14
+    - CDI-BIOD-15
+    - CDI-BIOD-16
+    - CDI-BIOD-17
+    - CDI-BIOD-18
+
+frameworks:
+  - name: ESRS
+    reference: ESRS E4
+    version: 2023
+  - name: GRI
+    reference: GRI 304
+    version: 2016
+  - name: CDP
+    reference: Forests and Biodiversity Disclosures
+    version: 2024
+
+limitations:
+  - No ecological impact or risk assessment
+  - No species or habitat condition metrics
+  - Interpretations are non-authoritative
+  - No regulatory classification or thresholds

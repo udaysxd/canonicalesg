@@ -155,50 +155,6 @@
         "machine_readable": "/cmp/v1/examples/waste-cmp-v0.1.yaml"
       },
       "notes": "Reference implementation covering core operational waste generation, composition, destination, and intensity disclosures."
-    },
-    {
-      "cmp_id": "biodiversity-cmp",
-      "topic": "biodiversity",
-      "version": "v0.1",
-      "status": "frozen",
-      "publication_date": "2026-02-03",
-      "cdi_version": "v1",
-      "frameworks": [
-        "ESRS E4 (2023)",
-        "GRI 304 (2016)",
-        "CDP Forests and Biodiversity (2024)"
-      ],
-      "disclosure_intents": {
-        "from": "CDI-BIOD-01",
-        "to": "CDI-BIOD-18"
-      },
-      "files": {
-        "human_readable": "/cmp/v1/examples/biodiversity-cmp-v0.1",
-        "machine_readable": "/cmp/v1/examples/biodiversity-cmp-v0.1.yaml"
-      },
-      "notes": "Reference implementation covering organisational interaction with biodiversity and ecosystem dependencies."
-    },
-    {
-      "cmp_id": "pollution-cmp",
-      "topic": "pollution",
-      "version": "v0.1",
-      "status": "frozen",
-      "publication_date": "2026-02-03",
-      "cdi_version": "v1",
-      "frameworks": [
-        "ESRS E2 (2023)",
-        "GRI Pollution-related disclosures (2021)",
-        "SASB Industry Metrics (2023)"
-      ],
-      "disclosure_intents": {
-        "from": "CDI-POLL-01",
-        "to": "CDI-POLL-16"
-      },
-      "files": {
-        "human_readable": "/cmp/v1/examples/pollution-cmp-v0.1",
-        "machine_readable": "/cmp/v1/examples/pollution-cmp-v0.1.yaml"
-      },
-      "notes": "Reference implementation covering non-GHG pollution releases, management practices, and incident reporting."
     }
   ]
 }

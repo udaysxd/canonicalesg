@@ -1,0 +1,50 @@
+cmp:
+  id: cmp-pollution-v0.1
+  name: Pollution Canonical Mapping Pack
+  version: v0.1
+  status: frozen
+  topic: pollution
+  publication_date: 2026-02-03
+  maintainer: Canonical ESG
+  license: CC-BY-4.0
+  cdi_version: v1
+
+scope:
+  description: >
+    Illustrative interpretations of pollution-related disclosure intents
+    covering non-greenhouse-gas air emissions, water pollution,
+    soil contamination, and pollution management practices.
+  intents:
+    - CDI-POLL-01
+    - CDI-POLL-02
+    - CDI-POLL-03
+    - CDI-POLL-04
+    - CDI-POLL-05
+    - CDI-POLL-06
+    - CDI-POLL-07
+    - CDI-POLL-08
+    - CDI-POLL-09
+    - CDI-POLL-10
+    - CDI-POLL-11
+    - CDI-POLL-12
+    - CDI-POLL-13
+    - CDI-POLL-14
+    - CDI-POLL-15
+    - CDI-POLL-16
+
+frameworks:
+  - name: ESRS
+    reference: ESRS E2
+    version: 2023
+  - name: GRI
+    reference: Pollution-related disclosures
+    version: 2021
+  - name: SASB
+    reference: Industry-specific environmental metrics
+    version: 2023
+
+limitations:
+  - No regulatory thresholds or compliance assertions
+  - No toxicity or impact severity assessment
+  - Interpretations are non-authoritative
+  - Sector-specific pollutant requirements excluded
