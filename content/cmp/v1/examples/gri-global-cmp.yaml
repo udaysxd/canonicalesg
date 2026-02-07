@@ -1,0 +1,146 @@
+cmp:
+  metadata:
+    cmp_id: gri-global-cmp
+    title: GRI Global Canonical Mapping Pack
+    version: complete
+    status: frozen
+    publication_date: 2026-02-07
+    maintainer: Canonical ESG
+    license: CC-BY-4.0
+    cdi_version: v1
+    cmp_type: topic
+
+  scope:
+    topic: cross-domain
+    covered_cdis:
+      - ALL CDI v1 DOMAINS INCLUDING ECONOMIC
+    frameworks:
+      - name: GRI
+        version: 2021
+    intended_use: >
+      Cross-framework interpretation of GRI Standards against CDI v1.
+      Non-authoritative and infrastructure-oriented.
+
+  interpretation_principles:
+    - CDI remains semantically independent.
+    - GRI defines disclosure expectations.
+    - Impact materiality is external to CDI.
+    - No compliance assertion is made.
+
+  mappings:
+
+  ####################################################################
+  # GOVERNANCE
+  ####################################################################
+
+    - cdi_id: CDI-GOVR-01
+      cdi_name: Governance oversight
+      intent: Governance structures and oversight
+      framework_mappings:
+        - framework: GRI
+          framework_version: 2021
+          reference: GRI 2
+          mapping_type: full
+
+    - cdi_id: CDI-GOVR-12
+      cdi_name: Ethics policy
+      intent: Code of conduct
+      framework_mappings:
+        - framework: GRI
+          framework_version: 2021
+          reference: GRI 205
+          mapping_type: full
+
+    - cdi_id: CDI-ECON-26
+      cdi_name: Anti-competitive legal actions
+      intent: Legal actions for anti-competitive behaviour
+      framework_mappings:
+        - framework: GRI
+          framework_version: 2021
+          reference: GRI 206
+          mapping_type: full
+
+  ####################################################################
+  # ECONOMIC
+  ####################################################################
+
+    - cdi_id: CDI-ECON-01
+      cdi_name: Economic value generated
+      intent: Total economic value generated
+      framework_mappings:
+        - framework: GRI
+          framework_version: 2021
+          reference: GRI 201
+          mapping_type: full
+
+    - cdi_id: CDI-ECON-22
+      cdi_name: Tax strategy
+      intent: Tax disclosure
+      framework_mappings:
+        - framework: GRI
+          framework_version: 2021
+          reference: GRI 207
+          mapping_type: full
+
+  ####################################################################
+  # ENVIRONMENTAL
+  ####################################################################
+
+    - cdi_id: CDI-CLIM-16
+      cdi_name: Scope 1 emissions
+      intent: Direct GHG emissions
+      framework_mappings:
+        - framework: GRI
+          framework_version: 2021
+          reference: GRI 305
+          mapping_type: full
+
+    - cdi_id: CDI-WATR-01
+      cdi_name: Water withdrawal
+      intent: Water withdrawal disclosure
+      framework_mappings:
+        - framework: GRI
+          framework_version: 2021
+          reference: GRI 303
+          mapping_type: full
+
+  ####################################################################
+  # SOCIAL
+  ####################################################################
+
+    - cdi_id: CDI-WORK-01
+      cdi_name: Workforce size
+      intent: Employment disclosure
+      framework_mappings:
+        - framework: GRI
+          framework_version: 2021
+          reference: GRI 401
+          mapping_type: full
+
+    - cdi_id: CDI-CONS-01
+      cdi_name: Consumer safety
+      intent: Customer health and safety
+      framework_mappings:
+        - framework: GRI
+          framework_version: 2021
+          reference: GRI 416
+          mapping_type: full
+
+  cross_framework_observations:
+    - GRI focuses on impact materiality.
+    - GRI is voluntary.
+    - GRI spans environmental, social, governance, and economic domains.
+
+  limitations:
+    - Sector standards not separately mapped.
+    - Indicator-level granularity abstracted to CDI level.
+    - No regulatory enforcement modelled.
+
+  version_history:
+    - version: complete
+      date: 2026-02-07
+      status: frozen
+      summary:
+        - Full GRI Universal and Topic Standards coverage
+        - Includes Economic domain
+        - Structurally complete cross-framework mapping

@@ -1,17 +1,26 @@
 CDI Taxonomy Overview
+
 1. Purpose
 
 This document provides an overview of the Canonical Disclosure Intent (CDI) taxonomy structure for CDI v1.
 
 The CDI taxonomy defines stable, framework-independent disclosure intents that capture the semantic meaning of commonly requested sustainability information across global reporting frameworks.
 
+The taxonomy is designed to support full structural coverage of major sustainability architectures including:
+
+• ESRS (European Sustainability Reporting Standards)
+• ISSB / IFRS Sustainability Standards
+• GRI Standards (including Economic, Environmental and Social)
+• Other voluntary and regulatory frameworks
+
 Each domain within the CDI taxonomy maintains its own dedicated taxonomy document. This separation enables:
 
-independent domain evolution,
+• independent domain evolution,
+• clear domain boundaries,
+• extensibility for new sustainability topics,
+• full-spectrum sustainability modelling without semantic drift.
 
-clear domain boundaries,
-
-extensibility for new sustainability topics.
+---
 
 2. Taxonomy Principles
 
@@ -19,53 +28,49 @@ The CDI taxonomy follows these cross-domain principles.
 
 2.1 Independence from Reporting Standards
 
-CDIs are independent of any reporting standard or framework.
-
-CDIs do not prescribe disclosure obligations.
-
-CDIs do not assert completeness or compliance.
-
-Framework-specific interpretations are handled exclusively through Canonical Mapping Packs (CMPs).
+• CDIs are independent of any reporting standard or framework.
+• CDIs do not prescribe disclosure obligations.
+• CDIs do not assert completeness or compliance.
+• CDIs do not encode regulatory logic.
+• Framework-specific interpretations are handled exclusively through Canonical Mapping Packs (CMPs).
 
 2.2 Semantic Stability
 
-Each CDI represents a single semantic concept.
-
-CDI identifiers are stable across versions.
-
-Deprecated CDIs remain referenceable for historical disclosures.
-
-New CDIs are added only through formal version updates.
-
-Extensions do not alter the semantic meaning of existing CDIs.
+• Each CDI represents a single semantic concept.
+• CDI identifiers are stable across versions.
+• Deprecated CDIs remain referenceable for historical disclosures.
+• Extensions do not alter the semantic meaning of existing CDIs.
+• Structural expansion does not introduce framework bias.
 
 2.3 Structural Consistency
 
 Each disclosure intent:
 
-has a unique identifier,
+• has a unique identifier,
+• represents a single semantic concept,
+• may be quantitative, narrative, or hybrid,
+• may reference one or more canonical data elements,
+• remains independent of jurisdiction or regulatory interpretation.
 
-represents a single semantic concept,
+2.4 Full-Spectrum Sustainability Coverage
 
-may be quantitative, narrative, or hybrid,
+The taxonomy is designed to cover:
 
-may reference one or more canonical data elements.
+• Environmental sustainability
+• Social sustainability
+• Governance architecture
+• Economic sustainability impacts and performance
 
-2.4 Non-Exhaustiveness
+This ensures structural alignment with global sustainability frameworks while preserving semantic neutrality.
 
-The taxonomy is extensible through new domains.
-
-Each CDI may map to multiple framework requirements.
-
-Domains may be added as new sustainability topics emerge.
-
-The addition of new domains does not change the semantic meaning of existing CDIs.
+---
 
 3. Domain Taxonomies
 
-The CDI v1 taxonomy is structured across three high-level categories:
+The CDI v1 taxonomy is structured across four high-level sustainability dimensions:
 
-Environmental Domains
+I. Environmental Domains
+
 Climate Taxonomy
 
 Governance, strategy, risks, targets, greenhouse gas emissions, energy interactions, transition planning, and methodology.
@@ -108,7 +113,10 @@ Material inputs, throughput, recycled and secondary materials, efficiency, recov
 
 → /cdi/v1/taxonomy/materials
 
-Social Domains
+---
+
+II. Social Domains
+
 Workforce Taxonomy
 
 Organisation’s own workforce composition, employment structure, training, health and safety, worker representation, governance, and reporting methodology.
@@ -133,32 +141,52 @@ Impacts on consumers or end-users, including product safety, information transpa
 
 → /cdi/v1/taxonomy/consumers
 
-Governance Domain
+---
+
+III. Governance Domain
+
 Governance Taxonomy
 
-Governance oversight, roles and responsibilities, governance processes, policy architecture, ethics structures, internal controls, and reporting scope.
+Governance oversight, roles and responsibilities, governance processes, policy architecture, ethics structures, internal controls, transparency mechanisms, and reporting scope.
 
 → /cdi/v1/taxonomy/governance
+
+---
+
+IV. Economic Domain
+
+Economic Sustainability Taxonomy
+
+Economic performance, value creation and distribution, market presence, indirect economic impacts, procurement practices, anti-competitive behaviour, public policy contributions, and economic transparency.
+
+This domain enables structural alignment with:
+
+• GRI 200 series
+• ESRS financial interaction disclosures
+• ISSB financial materiality architecture
+
+→ /cdi/v1/taxonomy/economic
+
+---
 
 4. Taxonomy Characteristics
 
 Across all domains, the CDI taxonomy exhibits:
 
-Framework Independence
-
-Semantic Precision
-
-Reusability through CMP
-
-Version Safety
-
-Historical Traceability
-
-Domain Isolation with Cross-Domain Interoperability
+• Framework Independence
+• Semantic Precision
+• Reusability through CMP
+• Version Safety
+• Historical Traceability
+• Domain Isolation with Cross-Domain Interoperability
+• Regulatory Neutrality
+• Structural Completeness across ESG + Economic sustainability
 
 CDIs define meaning.
 CMPs define interpretation.
 Jurisdiction CMPs define regulatory alignment.
+
+---
 
 5. Three-Layer Architecture
 
@@ -166,43 +194,56 @@ Canonical ESG operates through a layered structure:
 
 Layer 1 — Semantic Model
 
-CDI defines stable disclosure meaning.
+CDI defines stable disclosure meaning independent of frameworks or law.
 
 Layer 2 — Cross-Framework Mapping
 
-CMPs interpret CDIs across voluntary and global frameworks.
+Topic CMPs interpret CDIs across global standards such as ESRS, ISSB, and GRI.
 
 Layer 3 — Jurisdictional Mapping
 
-Jurisdiction CMPs map CDIs to legal and regulatory obligations.
+Jurisdiction CMPs align CDIs to binding legal and regulatory regimes.
 
-This layered separation ensures long-term interoperability across evolving sustainability standards.
+This layered separation ensures long-term interoperability across evolving sustainability architectures.
+
+---
 
 6. Freeze Declaration
 
-The CDI v1 taxonomy establishes a complete semantic foundation for environmental, social, and governance disclosures.
+The CDI v1 taxonomy establishes a complete semantic foundation for:
+
+• Environmental sustainability
+• Social sustainability
+• Governance architecture
+• Economic sustainability impacts and performance
 
 All domains listed above are frozen under CDI v1.
 
-No new CDIs will be added to CDI v1.
-Future extensions require a new major version.
+No further structural domains will be added to CDI v1.
+
+Future structural expansions require a new major version.
+
+---
 
 7. Summary
 
-The CDI v1 taxonomy establishes a complete semantic foundation for environmental, social, and governance disclosures.
+The CDI v1 taxonomy establishes a full-spectrum sustainability semantic foundation supporting:
+
+• ESRS
+• ISSB
+• GRI (including Economic standards)
+• Global regulatory adoption models
 
 Each domain defines a stable vocabulary for modelling sustainability information independent of frameworks or regulation.
 
 This structure enables:
 
-single-source semantic modelling,
+• single-source semantic modelling,
+• multi-framework reuse,
+• jurisdictional alignment without semantic drift,
+• full ESG + Economic coverage,
+• long-term structural stability across regulatory evolution.
 
-multi-framework reuse,
-
-jurisdictional alignment without semantic drift,
-
-long-term stability across regulatory evolution.
-
-CDI Taxonomy Overview Version: v1.0.0
-Status: Frozen
+CDI Taxonomy Overview Version: v1.0.0  
+Status: Frozen  
 Effective Version: CDI v1

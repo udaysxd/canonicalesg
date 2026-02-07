@@ -162,7 +162,8 @@
       "publication_date": "2026-02-03",
       "cdi_version": "v1",
       "frameworks": [
-        "ESRS S1 (2023)"
+        "ESRS S1 (2023)",
+        "GRI 401–404 (2021)"
       ],
       "disclosure_intents": {
         "from": "CDI-WORK-01",
@@ -182,7 +183,8 @@
       "publication_date": "2026-02-07",
       "cdi_version": "v1",
       "frameworks": [
-        "ESRS S2 (2023)"
+        "ESRS S2 (2023)",
+        "GRI 413 (2021)"
       ],
       "disclosure_intents": {
         "from": "CDI-VCWR-01",
@@ -202,7 +204,8 @@
       "publication_date": "2026-02-07",
       "cdi_version": "v1",
       "frameworks": [
-        "ESRS S3 (2023)"
+        "ESRS S3 (2023)",
+        "GRI 413 (2021)"
       ],
       "disclosure_intents": {
         "from": "CDI-COMM-01",
@@ -222,7 +225,8 @@
       "publication_date": "2026-02-07",
       "cdi_version": "v1",
       "frameworks": [
-        "ESRS S4 (2023)"
+        "ESRS S4 (2023)",
+        "GRI 416, 418 (2021)"
       ],
       "disclosure_intents": {
         "from": "CDI-CONS-01",
@@ -243,7 +247,8 @@
       "cdi_version": "v1",
       "frameworks": [
         "ESRS G1 (2023)",
-        "ISSB IFRS S1 (2023)"
+        "ISSB IFRS S1 (2023)",
+        "GRI 2, 205, 206 (2021)"
       ],
       "disclosure_intents": {
         "from": "CDI-GOVR-01",
@@ -258,7 +263,7 @@
     {
       "cmp_id": "issb-global-cmp",
       "topic": "cross-framework",
-      "version": "v0.1",
+      "version": "complete",
       "status": "frozen",
       "publication_date": "2026-02-08",
       "cdi_version": "v1",
@@ -267,13 +272,36 @@
         "IFRS S2 (2023)"
       ],
       "disclosure_intents": {
-        "scope": "Climate and General Sustainability (IFRS S1 & S2)"
+        "scope": "General sustainability and climate disclosures"
       },
       "files": {
         "human_readable": "/cmp/v1/examples/issb-global-cmp",
         "machine_readable": "/cmp/v1/examples/issb-global-cmp.yaml"
       },
-      "notes": "Global cross-framework baseline mapping for ISSB IFRS S1 and IFRS S2."
+      "notes": "Structurally complete global baseline CMP for ISSB."
+    },
+
+    {
+      "cmp_id": "gri-global-cmp",
+      "topic": "cross-framework",
+      "version": "complete",
+      "status": "frozen",
+      "publication_date": "2026-02-08",
+      "cdi_version": "v1",
+      "frameworks": [
+        "GRI Universal Standards (2021)",
+        "GRI 200 Economic",
+        "GRI 300 Environmental",
+        "GRI 400 Social"
+      ],
+      "disclosure_intents": {
+        "scope": "Economic, Environmental, Social, and Governance"
+      },
+      "files": {
+        "human_readable": "/cmp/v1/examples/gri-global-cmp",
+        "machine_readable": "/cmp/v1/examples/gri-global-cmp.yaml"
+      },
+      "notes": "Structurally complete global cross-framework mapping for GRI, including the Economic domain."
     },
 
     {
@@ -294,7 +322,7 @@
         "human_readable": "/cmp/v1/examples/eu-cmp-v0.1",
         "machine_readable": "/cmp/v1/examples/eu-cmp-v0.1.yaml"
       },
-      "notes": "Complete jurisdiction-level implementation covering ESRS 1–G1 and all topical standards."
+      "notes": "Complete jurisdiction-level implementation covering ESRS 1–2, E1–E5, S1–S4, and G1."
     }
 
   ]

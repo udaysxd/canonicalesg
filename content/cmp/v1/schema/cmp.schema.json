@@ -13,7 +13,6 @@
       "required": [
         "metadata",
         "scope",
-        "mappings",
         "limitations",
         "version_history"
       ],
@@ -38,20 +37,9 @@
 
           "properties": {
 
-            "cmp_id": {
-              "type": "string",
-              "minLength": 1
-            },
-
-            "title": {
-              "type": "string",
-              "minLength": 1
-            },
-
-            "version": {
-              "type": "string",
-              "minLength": 1
-            },
+            "cmp_id": { "type": "string", "minLength": 1 },
+            "title": { "type": "string", "minLength": 1 },
+            "version": { "type": "string", "minLength": 1 },
 
             "status": {
               "type": "string",
@@ -63,20 +51,9 @@
               "format": "date"
             },
 
-            "maintainer": {
-              "type": "string",
-              "minLength": 1
-            },
-
-            "license": {
-              "type": "string",
-              "minLength": 1
-            },
-
-            "cdi_version": {
-              "type": "string",
-              "minLength": 1
-            },
+            "maintainer": { "type": "string", "minLength": 1 },
+            "license": { "type": "string", "minLength": 1 },
+            "cdi_version": { "type": "string", "minLength": 1 },
 
             "cmp_type": {
               "type": "string",
@@ -125,10 +102,7 @@
 
           "properties": {
 
-            "topic": {
-              "type": "string",
-              "minLength": 1
-            },
+            "topic": { "type": "string", "minLength": 1 },
 
             "covered_cdis": {
               "type": "array",
@@ -150,10 +124,7 @@
               }
             },
 
-            "intended_use": {
-              "type": "string",
-              "minLength": 1
-            }
+            "intended_use": { "type": "string", "minLength": 1 }
 
           }
         },
@@ -209,9 +180,7 @@
                       ]
                     },
 
-                    "interpretation_notes": {
-                      "type": "string"
-                    }
+                    "interpretation_notes": { "type": "string" }
 
                   }
                 }
@@ -280,7 +249,7 @@
           "then": {
             "properties": {
               "metadata": {
-                "required": ["jurisdiction"]
+                "required": ["jurisdiction", "legal_status"]
               }
             }
           }
@@ -291,31 +260,15 @@
             "properties": {
               "metadata": {
                 "properties": {
-                  "cmp_type": { "const": "topic" }
+                  "cmp_type": {
+                    "enum": ["topic", "cross_framework"]
+                  }
                 }
               }
             }
           },
           "then": {
-            "properties": {
-              "mappings": {
-                "minItems": 1
-              }
-            }
-          }
-        },
-
-        {
-          "if": {
-            "properties": {
-              "metadata": {
-                "properties": {
-                  "cmp_type": { "const": "cross_framework" }
-                }
-              }
-            }
-          },
-          "then": {
+            "required": ["mappings"],
             "properties": {
               "mappings": {
                 "minItems": 1
@@ -325,6 +278,7 @@
         }
 
       ]
+
     }
   }
 }
