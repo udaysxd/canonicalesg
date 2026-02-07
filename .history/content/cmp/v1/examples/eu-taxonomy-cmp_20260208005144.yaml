@@ -1,0 +1,96 @@
+cmp:
+  metadata:
+    cmp_id: eu-taxonomy-cmp
+    title: EU Taxonomy Jurisdiction Canonical Mapping Pack
+    version: complete
+    status: frozen
+    publication_date: 2026-02-09
+    maintainer: Canonical ESG
+    license: CC BY 4.0
+    cdi_version: v1
+    cmp_type: jurisdiction
+    jurisdiction:
+      name: European Union
+      region: EU
+      authority: European Commission
+    legal_status: regulatory
+    regulatory_basis: EU Taxonomy Regulation (2020/852)
+
+  scope:
+    topic: Regulatory Classification
+    covered_cdis:
+      - CDI-CLIM-01 to CDI-CLIM-32
+      - CDI-WATR-01 to CDI-WATR-20
+      - CDI-POLL-01 to CDI-POLL-16
+      - CDI-BIOD-01 to CDI-BIOD-18
+      - CDI-MATR-01 to CDI-MATR-20
+      - CDI-ECON-01 to CDI-ECON-25
+      - CDI-GOVR-01 to CDI-GOVR-22
+      - CDI-WORK-01 to CDI-WORK-22
+      - CDI-VCWR-01 to CDI-VCWR-20
+    frameworks:
+      - name: EU Taxonomy Regulation
+        version: 2020/852
+      - name: Climate Delegated Act
+        version: 2021
+      - name: Environmental Delegated Act
+        version: 2023
+    intended_use: Regulatory alignment modelling for EU Taxonomy classification and Article 8 disclosures.
+
+  interpretation_principles:
+    - CDI semantics remain unchanged.
+    - EU Taxonomy classification is mapped at jurisdiction level only.
+    - DNSH is modelled as cross-domain protection logic.
+    - Minimum safeguards are interpreted via governance and social CDIs.
+    - Financial alignment metrics are mapped to Economic CDIs.
+
+  mappings:
+    - cdi_id: CDI-ECON-01
+      cdi_name: Revenue Composition
+      intent: Percentage of revenue derived from taxonomy-aligned activities.
+      framework_mappings:
+        - framework: EU Taxonomy Regulation
+          framework_version: 2020/852
+          reference: Article 8
+          mapping_type: full
+
+    - cdi_id: CDI-ECON-02
+      cdi_name: Capital Expenditure Allocation
+      intent: CapEx aligned with taxonomy-eligible or aligned activities.
+      framework_mappings:
+        - framework: EU Taxonomy Regulation
+          framework_version: 2020/852
+          reference: Article 8
+          mapping_type: full
+
+    - cdi_id: CDI-ECON-03
+      cdi_name: Operational Expenditure Allocation
+      intent: OpEx aligned with taxonomy-eligible or aligned activities.
+      framework_mappings:
+        - framework: EU Taxonomy Regulation
+          framework_version: 2020/852
+          reference: Article 8
+          mapping_type: full
+
+    - cdi_id: CDI-GOVR-05
+      cdi_name: Due Diligence Processes
+      intent: Minimum safeguards compliance.
+      framework_mappings:
+        - framework: EU Taxonomy Regulation
+          framework_version: 2020/852
+          reference: Article 18
+          mapping_type: full
+
+  limitations:
+    - Technical Screening Criteria numeric thresholds not embedded.
+    - Sector-specific classification tables not enumerated.
+    - XBRL tagging excluded.
+
+  version_history:
+    - version: complete
+      date: 2026-02-09
+      status: frozen
+      summary:
+        - Full modelling of EU Taxonomy Regulation
+        - Substantial Contribution, DNSH, and Minimum Safeguards integrated
+        - Article 8 financial alignment mapped

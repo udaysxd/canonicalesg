@@ -1,0 +1,143 @@
+cmp:
+  metadata:
+    cmp_id: sasb-global-cmp
+    title: SASB Global Canonical Mapping Pack
+    version: v0.1
+    status: frozen
+    publication_date: 2026-02-08
+    maintainer: Canonical ESG
+    license: CC-BY-4.0
+    cdi_version: v1
+    cmp_type: cross_framework
+
+  scope:
+    topic: cross-framework
+    covered_cdis:
+      - CDI-CLIM-01
+      - CDI-CLIM-32
+      - CDI-ENER-01
+      - CDI-WATR-01
+      - CDI-WSTE-01
+      - CDI-POLL-01
+      - CDI-BIOD-01
+      - CDI-MATR-01
+      - CDI-WORK-01
+      - CDI-VCWR-01
+      - CDI-COMM-01
+      - CDI-CONS-01
+      - CDI-GOVR-01
+      - CDI-GOVR-22
+      - CDI-ECON-01
+      - CDI-ECON-20
+
+    frameworks:
+      - name: SASB Standards
+        version: 2023
+
+    intended_use: >
+      Cross-framework interpretation of SASB Standards mapped to
+      Canonical Disclosure Intents (CDI v1). Non-authoritative and
+      infrastructure-oriented.
+
+  interpretation_principles:
+    - CDI remains semantically independent of SASB.
+    - SASB defines industry-specific accounting metrics.
+    - Financial materiality is framework-specific.
+    - Industry specificity does not introduce new CDI domains.
+    - No compliance assertion is made.
+
+  mappings:
+
+    # ENVIRONMENTAL TOPIC FAMILY
+
+    - cdi_id: CDI-CLIM-16
+      cdi_name: Gross Scope 1 greenhouse gas emissions
+      intent: Direct GHG emissions disclosure
+      framework_mappings:
+        - framework: SASB
+          framework_version: 2023
+          reference: Environment — GHG Emissions
+          mapping_type: full
+
+    - cdi_id: CDI-WATR-01
+      cdi_name: Water withdrawal
+      intent: Total water withdrawal
+      framework_mappings:
+        - framework: SASB
+          framework_version: 2023
+          reference: Environment — Water Management
+          mapping_type: full
+
+    - cdi_id: CDI-POLL-01
+      cdi_name: Non-GHG air emissions
+      intent: Air pollutant emissions
+      framework_mappings:
+        - framework: SASB
+          framework_version: 2023
+          reference: Environment — Air Quality
+          mapping_type: full
+
+    # HUMAN CAPITAL
+
+    - cdi_id: CDI-WORK-01
+      cdi_name: Workforce size
+      intent: Workforce disclosure
+      framework_mappings:
+        - framework: SASB
+          framework_version: 2023
+          reference: Human Capital — Employee Health & Safety
+          mapping_type: full
+
+    # SOCIAL CAPITAL
+
+    - cdi_id: CDI-CONS-01
+      cdi_name: Consumer safety
+      intent: Product safety and customer impacts
+      framework_mappings:
+        - framework: SASB
+          framework_version: 2023
+          reference: Social Capital — Product Safety
+          mapping_type: full
+
+    # LEADERSHIP & GOVERNANCE
+
+    - cdi_id: CDI-GOVR-13
+      cdi_name: Anti-corruption and anti-bribery controls
+      intent: Anti-corruption governance
+      framework_mappings:
+        - framework: SASB
+          framework_version: 2023
+          reference: Leadership & Governance — Business Ethics
+          mapping_type: full
+
+    # ECONOMIC DOMAIN
+
+    - cdi_id: CDI-ECON-01
+      cdi_name: Economic value generated and distributed
+      intent: Economic performance disclosure
+      framework_mappings:
+        - framework: SASB
+          framework_version: 2023
+          reference: Business Model & Innovation — Financial Impacts
+          mapping_type: contextual
+
+  cross_framework_observations:
+    - SASB provides industry-specific metric granularity.
+    - Financial materiality orientation aligns with ISSB.
+    - Environmental and social metrics structurally overlap with ESRS.
+    - No new semantic domains beyond CDI v1 are introduced.
+
+  limitations:
+    - Individual industry standards are not enumerated.
+    - Technical protocols are excluded.
+    - Regulatory adoption overlays are excluded.
+    - Interpretations are non-authoritative.
+
+  version_history:
+    - version: v0.1
+      date: 2026-02-08
+      status: frozen
+      summary:
+        - Complete SASB cross-framework mapping
+        - Covers all SASB topic families
+        - Validated against CDI v1 domains

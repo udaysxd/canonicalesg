@@ -21,28 +21,23 @@ export default function RootLayout({
                 canonicalesg.org
               </a>
               <ul className="flex gap-6 text-sm">
+                <li><a href="/about" className="text-[#666] hover:text-[#1a1a1a] hover:underline">About</a></li>
+                <li><a href="/framework-coverage" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Coverage</a></li>
                 <li><a href="/cerm" className="text-[#666] hover:text-[#1a1a1a] hover:underline">CERM</a></li>
                 <li><a href="/cdi" className="text-[#666] hover:text-[#1a1a1a] hover:underline">CDI</a></li>
                 <li><a href="/cmp" className="text-[#666] hover:text-[#1a1a1a] hover:underline">CMP</a></li>
                 <li><a href="/schemas" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Schemas</a></li>
                 <li><a href="/resources" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Resources</a></li>
                 <li><a href="/governance" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Governance</a></li>
+                <li><a href="/contact" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Contact</a></li>
               </ul>
             </nav>
           </div>
         </header>
         {children}
         <footer className="border-t border-[#eee] mt-20">
-          <div className="max-w-3xl mx-auto px-6 py-8">
-            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-              <p className="text-sm text-[#666]">Canonical ESG Reference Architecture — Open Documentation</p>
-              <ul className="flex gap-6 text-sm">
-                <li><a href="/about" className="text-[#666] hover:text-[#1a1a1a] hover:underline">About</a></li>
-                <li><a href="/contribute" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Contribute</a></li>
-                <li><a href="/framework-coverage" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Coverage</a></li>
-                <li><a href="/contact" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Contact</a></li>
-              </ul>
-            </div>
+          <div className="max-w-3xl mx-auto px-6 py-8 text-sm text-[#666]">
+            <p>Canonical ESG Reference Architecture — Open Documentation</p>
           </div>
         </footer>
       </body>

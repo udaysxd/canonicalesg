@@ -1,7 +1,7 @@
 {
   "registry_version": "1.0",
   "maintainer": "Canonical ESG",
-  "last_updated": "2026-02-11",
+  "last_updated": "2026-02-09",
   "description": "Registry of Canonical Mapping Packs (CMPs) published by Canonical ESG. CMPs are non-authoritative interpretation artefacts intended for transparency and reuse.",
   "cmps": [
 
@@ -359,27 +359,8 @@
       "files": {
         "human_readable": "/cmp/v1/examples/unsdg-global-cmp",
         "machine_readable": "/cmp/v1/examples/unsdg-global-cmp.yaml"
-      }
-    },
-
-    {
-      "cmp_id": "tnfd-global-cmp",
-      "topic": "cross-framework",
-      "version": "complete",
-      "status": "frozen",
-      "publication_date": "2026-02-10",
-      "cdi_version": "v1",
-      "frameworks": [
-        "TNFD Final Recommendations (2023)"
-      ],
-      "disclosure_intents": {
-        "scope": "Nature-related governance, strategy, risk management, metrics, and targets"
       },
-      "files": {
-        "human_readable": "/cmp/v1/examples/tnfd-global-cmp",
-        "machine_readable": "/cmp/v1/examples/tnfd-global-cmp.yaml"
-      },
-      "notes": "Structurally complete TNFD cross-framework mapping aligned with biodiversity, water, climate, governance, value chain, and economic CDI domains."
+      "notes": "Structurally complete cross-framework interpretive mapping between SDGs and all CDI v1 domains."
     },
 
     {
@@ -400,28 +381,6 @@
         "human_readable": "/cmp/v1/examples/eu-cmp-v0.1",
         "machine_readable": "/cmp/v1/examples/eu-cmp-v0.1.yaml"
       }
-    },
-
-    {
-      "cmp_id": "eu-taxonomy-cmp",
-      "topic": "jurisdiction",
-      "version": "complete",
-      "status": "frozen",
-      "publication_date": "2026-02-10",
-      "cdi_version": "v1",
-      "frameworks": [
-        "EU Taxonomy Regulation (EU) 2020/852",
-        "EU Climate Delegated Act",
-        "EU Environmental Delegated Act"
-      ],
-      "disclosure_intents": {
-        "scope": "Taxonomy eligibility, alignment, technical screening criteria, DNSH, minimum safeguards, and KPI disclosures"
-      },
-      "files": {
-        "human_readable": "/cmp/v1/examples/eu-taxonomy-cmp",
-        "machine_readable": "/cmp/v1/examples/eu-taxonomy-cmp.yaml"
-      },
-      "notes": "Structurally complete regulatory modelling of EU Taxonomy including eligibility, alignment, CapEx, OpEx, turnover KPIs, DNSH assessment, and minimum safeguards."
     }
 
   ]

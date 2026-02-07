@@ -1,7 +1,7 @@
 {
   "registry_version": "1.0",
   "maintainer": "Canonical ESG",
-  "last_updated": "2026-02-11",
+  "last_updated": "2026-02-08",
   "description": "Registry of Canonical Mapping Packs (CMPs) published by Canonical ESG. CMPs are non-authoritative interpretation artefacts intended for transparency and reuse.",
   "cmps": [
 
@@ -318,68 +318,8 @@
       "files": {
         "human_readable": "/cmp/v1/examples/sasb-global-cmp",
         "machine_readable": "/cmp/v1/examples/sasb-global-cmp.yaml"
-      }
-    },
-
-    {
-      "cmp_id": "cdp-global-cmp",
-      "topic": "cross-framework",
-      "version": "complete",
-      "status": "frozen",
-      "publication_date": "2026-02-09",
-      "cdi_version": "v1",
-      "frameworks": [
-        "CDP Climate Change Questionnaire (2024)",
-        "CDP Water Security (2024)",
-        "CDP Forests (2024)",
-        "CDP Supply Chain (2024)"
-      ],
-      "disclosure_intents": {
-        "scope": "Climate, Water, Forests, Supply Chain"
       },
-      "files": {
-        "human_readable": "/cmp/v1/examples/cdp-global-cmp",
-        "machine_readable": "/cmp/v1/examples/cdp-global-cmp.yaml"
-      }
-    },
-
-    {
-      "cmp_id": "unsdg-global-cmp",
-      "topic": "cross-framework",
-      "version": "complete",
-      "status": "frozen",
-      "publication_date": "2026-02-09",
-      "cdi_version": "v1",
-      "frameworks": [
-        "United Nations Sustainable Development Goals (2015–2030 Agenda)"
-      ],
-      "disclosure_intents": {
-        "scope": "All 17 Sustainable Development Goals"
-      },
-      "files": {
-        "human_readable": "/cmp/v1/examples/unsdg-global-cmp",
-        "machine_readable": "/cmp/v1/examples/unsdg-global-cmp.yaml"
-      }
-    },
-
-    {
-      "cmp_id": "tnfd-global-cmp",
-      "topic": "cross-framework",
-      "version": "complete",
-      "status": "frozen",
-      "publication_date": "2026-02-10",
-      "cdi_version": "v1",
-      "frameworks": [
-        "TNFD Final Recommendations (2023)"
-      ],
-      "disclosure_intents": {
-        "scope": "Nature-related governance, strategy, risk management, metrics, and targets"
-      },
-      "files": {
-        "human_readable": "/cmp/v1/examples/tnfd-global-cmp",
-        "machine_readable": "/cmp/v1/examples/tnfd-global-cmp.yaml"
-      },
-      "notes": "Structurally complete TNFD cross-framework mapping aligned with biodiversity, water, climate, governance, value chain, and economic CDI domains."
+      "notes": "Structurally complete SASB cross-framework mapping aligned with all CDI v1 domains."
     },
 
     {
@@ -400,28 +340,6 @@
         "human_readable": "/cmp/v1/examples/eu-cmp-v0.1",
         "machine_readable": "/cmp/v1/examples/eu-cmp-v0.1.yaml"
       }
-    },
-
-    {
-      "cmp_id": "eu-taxonomy-cmp",
-      "topic": "jurisdiction",
-      "version": "complete",
-      "status": "frozen",
-      "publication_date": "2026-02-10",
-      "cdi_version": "v1",
-      "frameworks": [
-        "EU Taxonomy Regulation (EU) 2020/852",
-        "EU Climate Delegated Act",
-        "EU Environmental Delegated Act"
-      ],
-      "disclosure_intents": {
-        "scope": "Taxonomy eligibility, alignment, technical screening criteria, DNSH, minimum safeguards, and KPI disclosures"
-      },
-      "files": {
-        "human_readable": "/cmp/v1/examples/eu-taxonomy-cmp",
-        "machine_readable": "/cmp/v1/examples/eu-taxonomy-cmp.yaml"
-      },
-      "notes": "Structurally complete regulatory modelling of EU Taxonomy including eligibility, alignment, CapEx, OpEx, turnover KPIs, DNSH assessment, and minimum safeguards."
     }
 
   ]

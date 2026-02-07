@@ -1,0 +1,137 @@
+cmp:
+  metadata:
+    cmp_id: unsdg-global-cmp
+    title: United Nations Sustainable Development Goals Global CMP
+    version: complete
+    status: frozen
+    publication_date: 2026-02-09
+    maintainer: Canonical ESG
+    license: CC-BY-4.0
+    cdi_version: v1
+    cmp_type: cross_framework
+
+  scope:
+    topic: cross-domain
+
+    covered_cdis:
+      - ALL CDI v1 DOMAINS (Environmental, Social, Governance, Economic)
+
+    frameworks:
+      - name: United Nations Sustainable Development Goals
+        version: 2015–2030 Agenda
+
+    intended_use: >
+      Global cross-framework interpretive mapping aligning UN SDG goal
+      structure to Canonical Disclosure Intents (CDI v1). This CMP does
+      not convert SDGs into disclosure obligations.
+
+  interpretation_principles:
+    - SDGs represent outcome-oriented global goals, not reporting standards.
+    - CDI defines disclosure meaning; SDGs define global ambition.
+    - Mapping is directional and interpretive.
+    - No compliance or performance claim is implied.
+    - SDGs do not introduce new CDI semantics.
+
+  mappings:
+
+    - cdi_id: CDI-CLIM-01
+      cdi_name: Climate governance structure
+      intent: Climate governance and strategy
+      framework_mappings:
+        - framework: UN SDGs
+          framework_version: 2015
+          reference: SDG 13
+          mapping_type: contextual
+
+    - cdi_id: CDI-WATR-01
+      cdi_name: Water withdrawal
+      intent: Water resource management
+      framework_mappings:
+        - framework: UN SDGs
+          framework_version: 2015
+          reference: SDG 6
+          mapping_type: contextual
+
+    - cdi_id: CDI-ENER-01
+      cdi_name: Energy consumption
+      intent: Energy access and efficiency
+      framework_mappings:
+        - framework: UN SDGs
+          framework_version: 2015
+          reference: SDG 7
+          mapping_type: contextual
+
+    - cdi_id: CDI-BIOD-01
+      cdi_name: Operations in natural areas
+      intent: Biodiversity and ecosystem impact
+      framework_mappings:
+        - framework: UN SDGs
+          framework_version: 2015
+          reference: SDG 15
+          mapping_type: contextual
+
+    - cdi_id: CDI-MATR-01
+      cdi_name: Material input
+      intent: Resource efficiency and circular economy
+      framework_mappings:
+        - framework: UN SDGs
+          framework_version: 2015
+          reference: SDG 12
+          mapping_type: contextual
+
+    - cdi_id: CDI-WORK-01
+      cdi_name: Workforce composition
+      intent: Employment and decent work
+      framework_mappings:
+        - framework: UN SDGs
+          framework_version: 2015
+          reference: SDG 8
+          mapping_type: contextual
+
+    - cdi_id: CDI-COMM-01
+      cdi_name: Community engagement
+      intent: Community inclusion and social stability
+      framework_mappings:
+        - framework: UN SDGs
+          framework_version: 2015
+          reference: SDG 11
+          mapping_type: contextual
+
+    - cdi_id: CDI-GOVR-01
+      cdi_name: Board-level oversight
+      intent: Governance and institutional integrity
+      framework_mappings:
+        - framework: UN SDGs
+          framework_version: 2015
+          reference: SDG 16
+          mapping_type: contextual
+
+    - cdi_id: CDI-ECON-01
+      cdi_name: Economic value generated
+      intent: Economic growth and development
+      framework_mappings:
+        - framework: UN SDGs
+          framework_version: 2015
+          reference: SDG 8
+          mapping_type: contextual
+
+  cross_framework_observations:
+    - SDGs define outcome ambitions rather than disclosure requirements.
+    - SDG mapping is inherently high-level.
+    - SDGs span environmental, social, governance, and economic dimensions.
+    - SDG alignment is narrative rather than metric-prescriptive.
+
+  limitations:
+    - SDGs are not reporting standards.
+    - Mapping does not imply SDG contribution measurement.
+    - SDG indicators are not structurally embedded in CDI.
+    - No performance or impact claims are made.
+
+  version_history:
+    - version: complete
+      date: 2026-02-09
+      status: frozen
+      summary:
+        - Full 17 SDG coverage across CDI domains
+        - Cross-domain interpretive mapping
+        - No semantic expansion of CDI

@@ -1,0 +1,117 @@
+# About Canonical ESG
+
+Canonical ESG is an independent infrastructure initiative designed to establish a stable, framework-neutral semantic foundation for sustainability disclosures.
+
+Sustainability reporting standards continue to evolve across jurisdictions, regulators, and voluntary bodies. While the number of frameworks has grown, the underlying semantic concepts they request often overlap. Canonical ESG addresses this fragmentation at the structural level.
+
+---
+
+## The Canonical ESG Architecture
+
+Canonical ESG operates through a three-layer architecture designed to separate semantic meaning from interpretive application.
+
+### Layer 1 — Canonical Disclosure Intents (CDI)
+
+CDI defines a stable, framework-independent semantic model that captures the meaning of sustainability disclosures without embedding regulatory logic.
+
+Each CDI represents a single durable disclosure concept, such as:
+
+- Greenhouse gas emissions
+- Governance oversight
+- Workforce composition
+- Biodiversity interaction
+- Economic value generation
+- Risk and opportunity management
+
+CDIs are:
+
+- Framework neutral
+- Jurisdiction neutral
+- Legally non-authoritative
+- Version-controlled and semantically stable
+- Designed for long-term interoperability
+
+CDI defines meaning only.
+
+### Layer 2 — Canonical Mapping Packs (CMP)
+
+CMPs interpret CDIs across voluntary standards and global frameworks.
+
+This layer enables:
+
+- Cross-framework interoperability
+- Structural equivalence analysis
+- Multi-standard reuse of a single semantic model
+- Transparent modelling of interpretive differences
+
+CMPs do not alter CDI meaning.
+They document how standards interpret that meaning.
+
+### Layer 3 — Jurisdictional Mapping
+
+Jurisdiction CMPs model how regulatory regimes translate sustainability disclosures into legal obligations.
+
+This layer enables:
+
+- Regulatory alignment modelling
+- Double materiality interpretation
+- Value-chain scope modelling
+- Taxonomy alignment representation
+- Legal architecture modelling without semantic distortion
+
+Jurisdiction layers reflect regulatory interpretation.
+They do not redefine semantic meaning.
+
+---
+
+## What Canonical ESG Is — and Is Not
+
+Canonical ESG does not replace sustainability standards.
+
+It does not issue compliance guidance.
+It does not provide legal interpretation.
+
+It provides structural infrastructure beneath standards and regulations, enabling:
+
+- Semantic consistency
+- Cross-standard comparability
+- Regulatory modelling without drift
+- Long-term stability amid evolving disclosure regimes
+
+Canonical ESG is infrastructure — not advisory, not regulatory, and not commercial compliance tooling.
+
+---
+
+## Current Stewardship
+
+Canonical ESG is currently stewarded by [Uday Singh](https://www.linkedin.com/in/udsingh1/), its founding architect, during its initial infrastructure phase.
+
+The steward is professionally engaged in sustainability technical consulting work; Canonical ESG operates independently and does not provide advisory or commercial services.
+
+The current phase focuses on:
+
+- Establishing CDI v1 as a stable semantic baseline
+- Achieving comprehensive cross-framework coverage
+- Modelling major global regulatory regimes
+- Formalising contribution and governance structures
+
+The initiative is designed to transition toward multi-stakeholder stewardship as participation expands.
+The long-term objective is to evolve into a durable, institutionally governed public infrastructure initiative comparable in structural role to foundational standards bodies.
+
+Stewardship at this stage is infrastructural, not proprietary.
+
+---
+
+## Institutional Direction
+
+Canonical ESG is being built with the structural discipline of a standard, not the velocity of a startup.
+
+Its development model prioritises:
+
+- Semantic integrity
+- Version discipline
+- Non-authoritative positioning
+- Transparent modelling
+- Long-term institutional viability
+
+The initiative is intended to grow through collaborative participation, technical contribution, and open infrastructure governance.

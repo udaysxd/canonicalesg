@@ -38,7 +38,6 @@ export default function RootLayout({
               <p className="text-sm text-[#666]">Canonical ESG Reference Architecture — Open Documentation</p>
               <ul className="flex gap-6 text-sm">
                 <li><a href="/about" className="text-[#666] hover:text-[#1a1a1a] hover:underline">About</a></li>
-                <li><a href="/contribute" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Contribute</a></li>
                 <li><a href="/framework-coverage" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Coverage</a></li>
                 <li><a href="/contact" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Contact</a></li>
               </ul>

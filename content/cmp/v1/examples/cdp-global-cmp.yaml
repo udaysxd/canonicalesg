@@ -1,0 +1,114 @@
+cmp:
+  metadata:
+    cmp_id: cdp-global-cmp
+    title: CDP Global Canonical Mapping Pack
+    version: complete
+    status: frozen
+    publication_date: 2026-02-08
+    maintainer: Canonical ESG
+    license: CC-BY-4.0
+    cdi_version: v1
+    cmp_type: cross_framework
+
+  scope:
+    topic: cross-framework
+    covered_cdis:
+      - ALL CDI v1 DOMAINS (Environmental, Social, Governance, Economic)
+    frameworks:
+      - name: CDP Climate Change Questionnaire
+        version: 2024
+      - name: CDP Water Security
+        version: 2024
+      - name: CDP Forests
+        version: 2024
+      - name: CDP Supply Chain
+        version: 2024
+    intended_use: >
+      Cross-framework semantic alignment of CDP questionnaires
+      to CDI v1. Non-authoritative and infrastructure-oriented.
+
+  interpretation_principles:
+    - CDP scoring methodology is excluded.
+    - Questionnaire sections are mapped to semantic disclosure intents.
+    - No compliance or scoring equivalence is asserted.
+    - CDP narrative responses map to narrative CDIs.
+    - CDP quantitative disclosures map to metric CDIs.
+
+  mappings:
+
+    - cdi_id: CDI-CLIM-16
+      cdi_name: Gross Scope 1 greenhouse gas emissions
+      intent: Scope 1 emissions disclosure
+      framework_mappings:
+        - framework: CDP Climate Change Questionnaire
+          framework_version: 2024
+          reference: C6 Emissions data
+          mapping_type: full
+
+    - cdi_id: CDI-CLIM-19
+      cdi_name: Gross Scope 3 greenhouse gas emissions
+      intent: Scope 3 emissions disclosure
+      framework_mappings:
+        - framework: CDP Climate Change Questionnaire
+          framework_version: 2024
+          reference: C6.5 Scope 3 emissions
+          mapping_type: full
+
+    - cdi_id: CDI-CLIM-31
+      cdi_name: Use of climate scenarios
+      intent: Scenario analysis disclosure
+      framework_mappings:
+        - framework: CDP Climate Change Questionnaire
+          framework_version: 2024
+          reference: C3 Climate-related risks and opportunities
+          mapping_type: full
+
+    - cdi_id: CDI-WATR-01
+      cdi_name: Water withdrawal
+      intent: Water withdrawal disclosure
+      framework_mappings:
+        - framework: CDP Water Security
+          framework_version: 2024
+          reference: W1 Water accounting
+          mapping_type: full
+
+    - cdi_id: CDI-BIOD-01
+      cdi_name: Operations in natural areas
+      intent: Exposure to biodiversity-sensitive areas
+      framework_mappings:
+        - framework: CDP Forests
+          framework_version: 2024
+          reference: F1 Forest risk assessment
+          mapping_type: full
+
+    - cdi_id: CDI-VCWR-01
+      cdi_name: Value chain workers governance
+      intent: Supplier engagement processes
+      framework_mappings:
+        - framework: CDP Supply Chain
+          framework_version: 2024
+          reference: SC Supplier engagement
+          mapping_type: full
+
+    - cdi_id: CDI-GOVR-01
+      cdi_name: Board-level oversight
+      intent: Governance oversight
+      framework_mappings:
+        - framework: CDP Climate Change Questionnaire
+          framework_version: 2024
+          reference: C1 Governance
+          mapping_type: full
+
+  limitations:
+    - CDP scoring logic excluded.
+    - CDP weighting and grading excluded.
+    - CDP sector methodology excluded.
+    - Mapping reflects structural alignment only.
+
+  version_history:
+    - version: complete
+      date: 2026-02-08
+      status: frozen
+      summary:
+        - Complete CDP structural mapping
+        - Climate, Water, Forests, Supply Chain modules covered
