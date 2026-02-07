@@ -1,0 +1,147 @@
+cmp:
+  id: cmp-governance-v0.1
+  name: Governance Canonical Mapping Pack
+  version: v0.1
+  status: frozen
+  topic: governance
+  publication_date: 2026-02-03
+  maintainer: Canonical ESG
+  license: CC-BY-4.0
+  cdi_version: v1
+
+scope:
+  description: >
+    Illustrative interpretations of sustainability-related governance
+    disclosure intents for cross-framework reporting.
+  intents:
+    - CDI-GOVR-01
+    - CDI-GOVR-02
+    - CDI-GOVR-03
+    - CDI-GOVR-04
+    - CDI-GOVR-05
+    - CDI-GOVR-06
+    - CDI-GOVR-07
+    - CDI-GOVR-08
+    - CDI-GOVR-09
+    - CDI-GOVR-10
+    - CDI-GOVR-11
+    - CDI-GOVR-12
+    - CDI-GOVR-13
+    - CDI-GOVR-14
+
+frameworks:
+  - name: ESRS
+    reference: ESRS G1
+    version: 2023
+  - name: GRI
+    reference: GRI 2
+    version: 2021
+  - name: ISSB
+    reference: IFRS Sustainability Governance
+    version: 2023
+
+mappings:
+  - cdi: CDI-GOVR-01
+    intent: Board-level oversight of sustainability matters
+    mappings:
+      ESRS: full
+      GRI: full
+      ISSB: full
+
+  - cdi: CDI-GOVR-02
+    intent: Sustainability-related board committees
+    mappings:
+      ESRS: partial
+      GRI: partial
+      ISSB: partial
+
+  - cdi: CDI-GOVR-03
+    intent: Management-level sustainability oversight
+    mappings:
+      ESRS: full
+      GRI: full
+      ISSB: full
+
+  - cdi: CDI-GOVR-04
+    intent: Assignment of sustainability governance responsibilities
+    mappings:
+      ESRS: partial
+      GRI: partial
+      ISSB: partial
+
+  - cdi: CDI-GOVR-05
+    intent: Senior management responsibility for sustainability
+    mappings:
+      ESRS: partial
+      GRI: partial
+      ISSB: partial
+
+  - cdi: CDI-GOVR-06
+    intent: Reporting lines for sustainability governance
+    mappings:
+      ESRS: partial
+      GRI: contextual
+      ISSB: partial
+
+  - cdi: CDI-GOVR-07
+    intent: Governance processes for sustainability oversight
+    mappings:
+      ESRS: full
+      GRI: partial
+      ISSB: partial
+
+  - cdi: CDI-GOVR-08
+    intent: Frequency of sustainability governance review
+    mappings:
+      ESRS: partial
+      GRI: contextual
+      ISSB: contextual
+
+  - cdi: CDI-GOVR-09
+    intent: Integration of sustainability into organisational governance processes
+    mappings:
+      ESRS: partial
+      GRI: partial
+      ISSB: partial
+
+  - cdi: CDI-GOVR-10
+    intent: Existence of sustainability governance policies
+    mappings:
+      ESRS: full
+      GRI: partial
+      ISSB: partial
+
+  - cdi: CDI-GOVR-11
+    intent: Scope of sustainability governance policies
+    mappings:
+      ESRS: partial
+      GRI: partial
+      ISSB: partial
+
+  - cdi: CDI-GOVR-12
+    intent: Governance reporting boundary
+    mappings:
+      ESRS: full
+      GRI: full
+      ISSB: full
+
+  - cdi: CDI-GOVR-13
+    intent: Methodology for governance disclosures
+    mappings:
+      ESRS: full
+      GRI: full
+      ISSB: full
+
+  - cdi: CDI-GOVR-14
+    intent: Changes in governance structure or processes
+    mappings:
+      ESRS: partial
+      GRI: contextual
+      ISSB: contextual
+
+limitations:
+  - Governance effectiveness is not assessed
+  - Ethics, integrity, and anti-corruption outcomes are excluded
+  - Executive remuneration is excluded
+  - Jurisdiction-specific governance requirements are excluded
+  - Interpretations are non-authoritative

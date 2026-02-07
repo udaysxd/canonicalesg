@@ -1,0 +1,86 @@
+cmp:
+  metadata:
+    cmp_id: eu-cmp-v0.1
+    title: European Union Jurisdiction Canonical Mapping Pack
+    version: v0.1
+    status: frozen
+    publication_date: 2026-02-03
+    maintainer: Canonical ESG
+    license: CC-BY-4.0
+    cdi_version: v1
+
+    cmp_type: jurisdiction
+
+    jurisdiction:
+      name: European Union
+      region: EU
+      authority: European Commission / EFRAG
+
+    legal_status: mandatory
+
+    regulatory_basis: Corporate Sustainability Reporting Directive (CSRD)
+
+  scope:
+    topic: cross-domain
+    covered_cdis:
+      - CDI-CLIM-01
+      - CDI-CLIM-32
+      - CDI-ENER-01
+      - CDI-ENER-12
+      - CDI-WATR-01
+      - CDI-WATR-20
+      - CDI-WSTE-01
+      - CDI-WSTE-19
+      - CDI-BIOD-01
+      - CDI-BIOD-18
+      - CDI-POLL-01
+      - CDI-POLL-16
+      - CDI-MATR-01
+      - CDI-MATR-20
+      - CDI-WORK-01
+      - CDI-WORK-22
+      - CDI-GOVR-01
+      - CDI-GOVR-20
+
+    frameworks:
+      - name: CSRD
+        version: 2023
+      - name: ESRS
+        version: 2023
+
+    intended_use: >
+      Infrastructure-level interpretation of EU sustainability reporting
+      obligations under CSRD and ESRS, mapped to Canonical Disclosure
+      Intents (CDI v1). This CMP is illustrative and non-authoritative.
+
+  interpretation_principles:
+    - CDI semantics remain framework independent.
+    - EU reporting obligations arise from CSRD and ESRS.
+    - Double materiality is a regulatory construct external to CDI.
+    - Value chain scope extends beyond operational boundary.
+    - Assurance requirements are jurisdiction-specific.
+    - No legal interpretation or compliance assertion is made.
+
+  mappings: []
+
+  cross_framework_observations:
+    - EU introduces mandatory double materiality assessment.
+    - EU requires structured digital tagging under ESEF.
+    - ESRS integrates governance disclosures across domains.
+    - Phased implementation applies based on company size and listing status.
+
+  limitations:
+    - Sector-specific ESRS standards are excluded.
+    - EU Taxonomy alignment is not mapped.
+    - Digital tagging implementation details are not modelled.
+    - Interpretations are non-authoritative.
+    - Legal compliance determinations are outside scope.
+
+  version_history:
+    - version: v0.1
+      date: 2026-02-03
+      status: frozen
+      summary:
+        - Initial EU jurisdiction CMP
+        - Covers ESRS cross-cutting and topical standards
+        - Introduces jurisdiction-level metadata structure

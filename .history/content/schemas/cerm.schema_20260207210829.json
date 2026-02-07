@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://canonicalesg.org/schemas/cerm.schema.json",
+  "title": "Canonical ESG Reference Model (CERM) Schema",
+  "description": "Structural schema for Canonical ESG Reference Model elements. Defines canonical element types and structural integrity constraints without embedding reporting framework semantics.",
+  "type": "object",
+  "required": ["elements"],
+  "properties": {
+    "elements": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/CanonicalElement" }
+    }
+  },
+
+  "$defs": {
+
+    "CanonicalElement": {
+      "type": "object",
+      "required": ["id", "type", "version"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "Entity",
+            "Activity",
+            "Metric",
+            "MetricIdentifier",
+            "Boundary",
+            "GeospatialBoundary",
+            "TimePeriod",
+            "Target",
+            "Trajectory",
+            "Methodology",
+            "Evidence",
+            "Assurance",
+            "Assertion"
+          ]
+        },
+        "attributes": {
+          "type": "object",
+          "description": "Element-specific attributes. Must not contain reporting framework semantics."
+        },
+        "relationships": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/Relationship" }
+        },
+        "version": {
+          "type": "string",
+          "description": "Version identifier for the canonical element."
+        }
+      },
+      "additionalProperties": false,
+
+      "allOf": [
+
+        {
+          "if": { "properties": { "type": { "const": "Metric" } } },
+          "then": {
+            "properties": {
+              "relationships": {
+                "contains": {
+                  "type": "object",
+                  "properties": {
+                    "type": { "const": "applies_within" }
+                  }
+                }
+              }
+            }
+          }
+        },
+
+        {
+          "if": { "properties": { "type": { "const": "Assertion" } } },
+          "then": {
+            "properties": {
+              "relationships": {
+                "allOf": [
+                  {
+                    "contains": {
+                      "type": "object",
+                      "properties": {
+                        "type": { "const": "occurs_during" }
+                      }
+                    }
+                  },
+                  {
+                    "contains": {
+                      "type": "object",
+                      "properties": {
+                        "type": { "const": "applies_within" }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+
+        {
+          "if": { "properties": { "type": { "const": "Assurance" } } },
+          "then": {
+            "properties": {
+              "relationships": {
+                "contains": {
+                  "type": "object",
+                  "properties": {
+                    "type": { "const": "evaluates" }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+      ]
+    },
+
+    "Relationship": {
+      "type": "object",
+      "required": ["type", "target"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "performs",
+            "generates",
+            "applies_within",
+            "occurs_during",
+            "references",
+            "supports",
+            "governs",
+            "supports_evidence",
+            "evaluates",
+            "tagged_by",
+            "located_in"
+          ]
+        },
+        "target": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    }
+
+  }
+}

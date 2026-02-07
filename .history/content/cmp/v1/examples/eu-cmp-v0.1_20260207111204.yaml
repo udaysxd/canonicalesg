@@ -1,0 +1,69 @@
+cmp:
+  metadata:
+    cmp_id: eu-cmp-v0.1
+    title: European Union Jurisdiction Canonical Mapping Pack
+    version: v0.1
+    status: frozen
+    publication_date: 2026-02-03
+    maintainer: Canonical ESG
+    license: CC-BY-4.0
+    cdi_version: v1
+
+  scope:
+    topic: jurisdiction
+    covered_cdis:
+      - CDI-CLIM-01
+      - CDI-CLIM-32
+      - CDI-ENER-01
+      - CDI-ENER-12
+      - CDI-WATR-01
+      - CDI-WATR-20
+      - CDI-WSTE-01
+      - CDI-WSTE-19
+      - CDI-BIOD-01
+      - CDI-BIOD-18
+      - CDI-POLL-01
+      - CDI-POLL-16
+      - CDI-MATR-01
+      - CDI-MATR-20
+      - CDI-WORK-01
+      - CDI-WORK-22
+      - CDI-GOVR-01
+      - CDI-GOVR-20
+    frameworks:
+      - name: CSRD
+        version: 2023
+      - name: ESRS
+        version: 2023
+    intended_use: >
+      Infrastructure-level interpretation of EU sustainability reporting obligations.
+
+  interpretation_principles:
+    - CDI semantics remain framework independent.
+    - EU obligations arise from CSRD and ESRS.
+    - Double materiality is jurisdiction-specific.
+    - Value chain scope is broader than operational scope.
+    - Assurance requirements are regulatory.
+    - No legal interpretation is asserted.
+
+  mappings: []
+
+  cross_framework_observations:
+    - EU introduces mandatory double materiality.
+    - EU requires digital tagging.
+    - EU integrates governance across domains.
+    - Phased implementation applies.
+
+  limitations:
+    - Sector-specific ESRS standards excluded.
+    - EU Taxonomy alignment not mapped.
+    - Digital tagging not modelled.
+    - Non-authoritative interpretation.
+
+  version_history:
+    - version: v0.1
+      date: 2026-02-03
+      status: frozen
+      summary:
+        - Initial EU jurisdiction mapping
+        - Covers ESRS cross-cutting and topical standards

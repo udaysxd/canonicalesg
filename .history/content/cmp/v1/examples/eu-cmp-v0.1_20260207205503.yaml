@@ -1,0 +1,291 @@
+cmp:
+  metadata:
+    cmp_id: eu-cmp-v0.1
+    title: European Union Jurisdiction Canonical Mapping Pack
+    version: v0.1
+    status: frozen
+    publication_date: 2026-02-03
+    maintainer: Canonical ESG
+    license: CC-BY-4.0
+    cdi_version: v1
+
+    cmp_type: jurisdiction
+
+    jurisdiction:
+      name: European Union
+      region: EU
+      authority: European Commission / EFRAG
+
+    legal_status: mandatory
+    regulatory_basis: Corporate Sustainability Reporting Directive (CSRD)
+
+  scope:
+    topic: cross-domain
+
+    covered_cdis:
+      - ALL CDI v1 domains (Climate, Energy, Water, Waste, Pollution,
+        Biodiversity, Materials, Workforce, Value Chain Workers,
+        Affected Communities, Consumers, Governance)
+
+    frameworks:
+      - name: CSRD
+        version: 2023
+      - name: ESRS
+        version: 2023
+
+    intended_use: >
+      Jurisdiction-level interpretation of EU sustainability reporting
+      obligations under CSRD and ESRS, mapped to Canonical Disclosure
+      Intents (CDI v1). Non-authoritative and infrastructure-oriented.
+
+  interpretation_principles:
+    - CDI remains semantically independent of EU regulation.
+    - ESRS defines disclosure obligations; CDI defines meaning.
+    - Double materiality is interpreted at jurisdiction level only.
+    - Value chain extension is regulatory, not semantic.
+    - Assurance obligations are regulatory, not semantic.
+    - No compliance assertion is made.
+
+  mappings:
+
+  ####################################################################
+  # ESRS CROSS-CUTTING (ESRS 2)
+  ####################################################################
+
+    - cdi_id: CDI-GOVR-01
+      cdi_name: Board-level oversight
+      intent: Governance oversight of sustainability matters
+      framework_mappings:
+        - framework: ESRS
+          framework_version: 2023
+          reference: ESRS 2 GOV-1
+          mapping_type: full
+
+    - cdi_id: CDI-GOVR-02
+      cdi_name: Governance structure and committees
+      intent: Governance roles and oversight architecture
+      framework_mappings:
+        - framework: ESRS
+          framework_version: 2023
+          reference: ESRS 2 GOV-2
+          mapping_type: full
+
+    - cdi_id: CDI-GOVR-10
+      cdi_name: Strategy integration
+      intent: Sustainability integration into business model and strategy
+      framework_mappings:
+        - framework: ESRS
+          framework_version: 2023
+          reference: ESRS 2 SBM-1
+          mapping_type: full
+
+    - cdi_id: CDI-GOVR-11
+      cdi_name: Impacts, risks and opportunities identification
+      intent: Identification of sustainability IROs
+      framework_mappings:
+        - framework: ESRS
+          framework_version: 2023
+          reference: ESRS 2 SBM-2
+          mapping_type: full
+
+    - cdi_id: CDI-GOVR-12
+      cdi_name: Double materiality methodology
+      intent: Description of materiality assessment process
+      framework_mappings:
+        - framework: ESRS
+          framework_version: 2023
+          reference: ESRS 2 IRO-1
+          mapping_type: full
+
+    - cdi_id: CDI-GOVR-13
+      cdi_name: Sustainability policies
+      intent: Policies addressing sustainability matters
+      framework_mappings:
+        - framework: ESRS
+          framework_version: 2023
+          reference: ESRS 2 MDR-P
+          mapping_type: full
+
+    - cdi_id: CDI-GOVR-14
+      cdi_name: Actions and resources
+      intent: Sustainability actions and allocation of resources
+      framework_mappings:
+        - framework: ESRS
+          framework_version: 2023
+          reference: ESRS 2 MDR-A
+          mapping_type: full
+
+    - cdi_id: CDI-GOVR-15
+      cdi_name: Sustainability targets
+      intent: Disclosure of targets
+      framework_mappings:
+        - framework: ESRS
+          framework_version: 2023
+          reference: ESRS 2 MDR-T
+          mapping_type: full
+
+    - cdi_id: CDI-GOVR-16
+      cdi_name: Sustainability metrics
+      intent: Disclosure of performance metrics
+      framework_mappings:
+        - framework: ESRS
+          framework_version: 2023
+          reference: ESRS 2 MDR-M
+          mapping_type: full
+
+  ####################################################################
+  # ENVIRONMENTAL STANDARDS
+  ####################################################################
+
+    - cdi_id: CDI-CLIM-16
+      cdi_name: Scope 1 emissions
+      intent: Gross Scope 1 GHG emissions
+      framework_mappings:
+        - framework: ESRS
+          framework_version: 2023
+          reference: ESRS E1-6
+          mapping_type: full
+
+    - cdi_id: CDI-CLIM-17
+      cdi_name: Scope 2 emissions
+      intent: Gross Scope 2 GHG emissions
+      framework_mappings:
+        - framework: ESRS
+          framework_version: 2023
+          reference: ESRS E1-6
+          mapping_type: full
+
+    - cdi_id: CDI-CLIM-19
+      cdi_name: Scope 3 emissions
+      intent: Gross Scope 3 GHG emissions
+      framework_mappings:
+        - framework: ESRS
+          framework_version: 2023
+          reference: ESRS E1-6
+          mapping_type: full
+
+    - cdi_id: CDI-ENER-01
+      cdi_name: Total energy consumption
+      intent: Energy consumption disclosure
+      framework_mappings:
+        - framework: ESRS
+          framework_version: 2023
+          reference: ESRS E1-5
+          mapping_type: full
+
+    - cdi_id: CDI-WATR-01
+      cdi_name: Water withdrawal
+      intent: Total water withdrawal
+      framework_mappings:
+        - framework: ESRS
+          framework_version: 2023
+          reference: ESRS E3-4
+          mapping_type: full
+
+    - cdi_id: CDI-WSTE-01
+      cdi_name: Total waste generated
+      intent: Waste generation disclosure
+      framework_mappings:
+        - framework: ESRS
+          framework_version: 2023
+          reference: ESRS E5-5
+          mapping_type: full
+
+    - cdi_id: CDI-BIOD-01
+      cdi_name: Operations in natural areas
+      intent: Presence in biodiversity-sensitive areas
+      framework_mappings:
+        - framework: ESRS
+          framework_version: 2023
+          reference: ESRS E4-1
+          mapping_type: full
+
+    - cdi_id: CDI-POLL-01
+      cdi_name: Non-GHG air emissions
+      intent: Air pollutant emissions
+      framework_mappings:
+        - framework: ESRS
+          framework_version: 2023
+          reference: ESRS E2-4
+          mapping_type: full
+
+    - cdi_id: CDI-MATR-01
+      cdi_name: Total material input
+      intent: Resource inflow disclosure
+      framework_mappings:
+        - framework: ESRS
+          framework_version: 2023
+          reference: ESRS E5-4
+          mapping_type: full
+
+  ####################################################################
+  # SOCIAL STANDARDS
+  ####################################################################
+
+    - cdi_id: CDI-WORK-01
+      cdi_name: Workforce size
+      intent: Own workforce disclosure
+      framework_mappings:
+        - framework: ESRS
+          framework_version: 2023
+          reference: ESRS S1-6
+          mapping_type: full
+
+    - cdi_id: CDI-VCWR-01
+      cdi_name: Value chain workers conditions
+      intent: Workers in value chain
+      framework_mappings:
+        - framework: ESRS
+          framework_version: 2023
+          reference: ESRS S2-1
+          mapping_type: full
+
+    - cdi_id: CDI-COMM-01
+      cdi_name: Community engagement
+      intent: Affected communities engagement
+      framework_mappings:
+        - framework: ESRS
+          framework_version: 2023
+          reference: ESRS S3-1
+          mapping_type: full
+
+    - cdi_id: CDI-CONS-01
+      cdi_name: Consumer safety
+      intent: Consumers and end-users impacts
+      framework_mappings:
+        - framework: ESRS
+          framework_version: 2023
+          reference: ESRS S4-1
+          mapping_type: full
+
+    - cdi_id: CDI-GOVR-04
+      cdi_name: Anti-corruption governance
+      intent: Business conduct
+      framework_mappings:
+        - framework: ESRS
+          framework_version: 2023
+          reference: ESRS G1-1
+          mapping_type: full
+
+  cross_framework_observations:
+    - EU mandates double materiality.
+    - EU requires structured digital tagging.
+    - Governance disclosures are cross-cutting.
+    - Value chain scope is mandatory.
+    - Assurance is legally required.
+
+  limitations:
+    - Sector-specific ESRS standards excluded.
+    - EU Taxonomy disclosures excluded.
+    - Digital tagging implementation not modelled.
+    - Interpretations are non-authoritative.
+    - Legal compliance determination is outside scope.
+
+  version_history:
+    - version: v0.1
+      date: 2026-02-03
+      status: frozen
+      summary:
+        - Complete ESRS cross-cutting mapping
+        - Environmental, Social, Governance standards mapped
+        - Jurisdiction-level metadata included

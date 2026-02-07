@@ -1,0 +1,184 @@
+cmp:
+  metadata:
+    cmp_id: issb-global-cmp
+    title: ISSB Global Baseline Canonical Mapping Pack
+    status: frozen
+    publication_date: 2026-02-07
+    maintainer: Canonical ESG
+    license: CC-BY-4.0
+    cdi_version: v1
+
+    cmp_type: topic
+
+  scope:
+    topic: global-framework
+
+    covered_cdis:
+      - CDI-GOVR-01
+      - CDI-GOVR-02
+      - CDI-GOVR-03
+      - CDI-GOVR-04
+      - CDI-GOVR-05
+      - CDI-GOVR-06
+      - CDI-GOVR-07
+      - CDI-GOVR-08
+      - CDI-GOVR-09
+      - CDI-GOVR-10
+      - CDI-GOVR-11
+      - CDI-GOVR-12
+      - CDI-GOVR-13
+      - CDI-GOVR-14
+      - CDI-GOVR-15
+      - CDI-GOVR-16
+      - CDI-GOVR-17
+      - CDI-GOVR-18
+      - CDI-GOVR-19
+      - CDI-GOVR-20
+      - CDI-GOVR-21
+      - CDI-GOVR-22
+
+      - CDI-CLIM-01
+      - CDI-CLIM-02
+      - CDI-CLIM-03
+      - CDI-CLIM-04
+      - CDI-CLIM-05
+      - CDI-CLIM-06
+      - CDI-CLIM-07
+      - CDI-CLIM-08
+      - CDI-CLIM-09
+      - CDI-CLIM-10
+      - CDI-CLIM-11
+      - CDI-CLIM-12
+      - CDI-CLIM-13
+      - CDI-CLIM-14
+      - CDI-CLIM-15
+      - CDI-CLIM-16
+      - CDI-CLIM-17
+      - CDI-CLIM-18
+      - CDI-CLIM-19
+      - CDI-CLIM-20
+      - CDI-CLIM-21
+      - CDI-CLIM-22
+      - CDI-CLIM-23
+      - CDI-CLIM-24
+      - CDI-CLIM-25
+      - CDI-CLIM-26
+      - CDI-CLIM-27
+      - CDI-CLIM-28
+      - CDI-CLIM-29
+      - CDI-CLIM-30
+      - CDI-CLIM-31
+      - CDI-CLIM-32
+
+    frameworks:
+      - name: IFRS S1
+        version: 2023
+      - name: IFRS S2
+        version: 2023
+
+    intended_use: >
+      Cross-framework mapping of Canonical Disclosure Intents (CDI v1)
+      to IFRS Sustainability Disclosure Standards (ISSB).
+      Non-authoritative and infrastructure-oriented.
+
+  interpretation_principles:
+    - CDI semantics remain framework independent.
+    - ISSB defines disclosure architecture, not semantic meaning.
+    - Financial materiality focus is framework-specific.
+    - No jurisdictional compliance logic is embedded.
+    - No legal interpretation or compliance assertion is made.
+
+  mappings:
+
+  ####################################################################
+  # IFRS S1 — GENERAL REQUIREMENTS
+  ####################################################################
+
+    - cdi_id: CDI-GOVR-01
+      cdi_name: Board-level oversight
+      intent: Governance oversight of sustainability matters
+      framework_mappings:
+        - framework: IFRS S1
+          framework_version: 2023
+          reference: IFRS S1 Governance
+          mapping_type: full
+
+    - cdi_id: CDI-GOVR-09
+      cdi_name: Integration into governance processes
+      intent: Integration into enterprise governance
+      framework_mappings:
+        - framework: IFRS S1
+          framework_version: 2023
+          reference: IFRS S1 Strategy
+          mapping_type: full
+
+    - cdi_id: CDI-GOVR-07
+      cdi_name: Governance processes
+      intent: Risk management processes
+      framework_mappings:
+        - framework: IFRS S1
+          framework_version: 2023
+          reference: IFRS S1 Risk Management
+          mapping_type: full
+
+  ####################################################################
+  # IFRS S2 — CLIMATE DISCLOSURES
+  ####################################################################
+
+    - cdi_id: CDI-CLIM-16
+      cdi_name: Scope 1 emissions
+      intent: Gross Scope 1 emissions
+      framework_mappings:
+        - framework: IFRS S2
+          framework_version: 2023
+          reference: IFRS S2 Metrics and Targets
+          mapping_type: full
+
+    - cdi_id: CDI-CLIM-17
+      cdi_name: Scope 2 emissions
+      intent: Gross Scope 2 emissions
+      framework_mappings:
+        - framework: IFRS S2
+          framework_version: 2023
+          reference: IFRS S2 Metrics and Targets
+          mapping_type: full
+
+    - cdi_id: CDI-CLIM-19
+      cdi_name: Scope 3 emissions
+      intent: Gross Scope 3 emissions
+      framework_mappings:
+        - framework: IFRS S2
+          framework_version: 2023
+          reference: IFRS S2 Metrics and Targets
+          mapping_type: full
+
+    - cdi_id: CDI-CLIM-07
+      cdi_name: Strategy resilience under scenarios
+      intent: Climate resilience analysis
+      framework_mappings:
+        - framework: IFRS S2
+          framework_version: 2023
+          reference: IFRS S2 Strategy
+          mapping_type: full
+
+  cross_framework_observations:
+    - ISSB uses financial materiality focus.
+    - Architecture mirrors TCFD structure.
+    - Climate is currently the only issued topical standard.
+    - Industry-based metrics may derive from SASB lineage.
+
+  limitations:
+    - Only IFRS S1 and S2 included.
+    - Industry metric granularity not individually enumerated.
+    - Jurisdiction adoption logic excluded.
+    - Digital taxonomy not modelled.
+    - Interpretations are non-authoritative.
+
+  version_history:
+    - version: baseline
+      date: 2026-02-07
+      status: frozen
+      summary:
+        - Full structural mapping for IFRS S1 and S2
+        - Climate architecture completely aligned
+        - Governance architecture structurally aligned

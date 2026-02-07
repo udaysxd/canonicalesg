@@ -1,0 +1,133 @@
+{
+  "elements": [
+
+    {
+      "id": "entity-002",
+      "type": "Entity",
+      "attributes": {
+        "name": "Example Manufacturing Group",
+        "jurisdiction": "European Union"
+      },
+      "version": "v1.0.0"
+    },
+
+    {
+      "id": "boundary-002",
+      "type": "Boundary",
+      "attributes": {
+        "boundary_type": "operational_control",
+        "description": "Workforce within operational control boundary"
+      },
+      "version": "v1.0.0"
+    },
+
+    {
+      "id": "geo-002",
+      "type": "GeospatialBoundary",
+      "attributes": {
+        "countries": ["Germany", "France"],
+        "region": "European Union"
+      },
+      "version": "v1.0.0"
+    },
+
+    {
+      "id": "period-2025",
+      "type": "TimePeriod",
+      "attributes": {
+        "start_date": "2025-01-01",
+        "end_date": "2025-12-31",
+        "label": "FY2025"
+      },
+      "version": "v1.0.0"
+    },
+
+    {
+      "id": "metric-work-001",
+      "type": "Metric",
+      "attributes": {
+        "name": "Total employees",
+        "unit": "count",
+        "value": 4500
+      },
+      "relationships": [
+        { "type": "applies_within", "target": "boundary-002" },
+        { "type": "geographically_within", "target": "geo-002" },
+        { "type": "occurs_during", "target": "period-2025" }
+      ],
+      "version": "v1.0.0"
+    },
+
+    {
+      "id": "metric-work-002",
+      "type": "Metric",
+      "attributes": {
+        "name": "Reportable injuries",
+        "unit": "count",
+        "value": 12
+      },
+      "relationships": [
+        { "type": "applies_within", "target": "boundary-002" },
+        { "type": "occurs_during", "target": "period-2025" }
+      ],
+      "version": "v1.0.0"
+    },
+
+    {
+      "id": "metric-work-003",
+      "type": "Metric",
+      "attributes": {
+        "name": "Lost-time injury rate",
+        "unit": "rate",
+        "value": 0.8
+      },
+      "relationships": [
+        { "type": "applies_within", "target": "boundary-002" },
+        { "type": "occurs_during", "target": "period-2025" }
+      ],
+      "version": "v1.0.0"
+    },
+
+    {
+      "id": "metric-id-work-001",
+      "type": "MetricIdentifier",
+      "attributes": {
+        "external_framework": "ESRS S1",
+        "external_reference": "S1-6",
+        "taxonomy_tag": "ESRS_S1_6_Workforce"
+      },
+      "relationships": [
+        { "type": "identifies", "target": "metric-work-001" }
+      ],
+      "version": "v1.0.0"
+    },
+
+    {
+      "id": "assertion-work-001",
+      "type": "Assertion",
+      "attributes": {
+        "type": "quantitative_disclosure",
+        "description": "Total employees and injury metrics for FY2025"
+      },
+      "relationships": [
+        { "type": "declares", "target": "metric-work-001" }
+      ],
+      "version": "v1.0.0"
+    },
+
+    {
+      "id": "assurance-work-001",
+      "type": "Assurance",
+      "attributes": {
+        "level": "limited",
+        "provider_type": "independent_auditor",
+        "standard_used": "ISAE 3000"
+      },
+      "relationships": [
+        { "type": "assures", "target": "assertion-work-001" }
+      ],
+      "version": "v1.0.0"
+    }
+
+  ]
+}

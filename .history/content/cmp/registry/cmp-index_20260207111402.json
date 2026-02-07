@@ -1,10 +1,53 @@
 {
   "registry_version": "1.0",
   "maintainer": "Canonical ESG",
-  "last_updated": "2026-02-08",
+  "last_updated": "2026-02-07",
   "description": "Registry of Canonical Mapping Packs (CMPs) published by Canonical ESG. CMPs are non-authoritative interpretation artefacts intended for transparency and reuse.",
   "cmps": [
-
+    {
+      "cmp_id": "climate-cmp",
+      "topic": "climate",
+      "version": "v0.1",
+      "status": "frozen",
+      "publication_date": "2026-01-15",
+      "cdi_version": "v1",
+      "frameworks": [
+        "ESRS E1 (2023)",
+        "GRI 305 (2021)",
+        "CDP Climate Change Questionnaire (2024)"
+      ],
+      "disclosure_intents": {
+        "from": "CDI-CLIM-01",
+        "to": "CDI-CLIM-10"
+      },
+      "files": {
+        "human_readable": "/cmp/v1/examples/climate-cmp-v0.1",
+        "machine_readable": "/cmp/v1/examples/climate-cmp-v0.1.yaml"
+      },
+      "notes": "Initial reference implementation covering core emissions disclosures."
+    },
+    {
+      "cmp_id": "climate-cmp",
+      "topic": "climate",
+      "version": "v0.2",
+      "status": "superseded",
+      "publication_date": "2026-01-25",
+      "cdi_version": "v1",
+      "frameworks": [
+        "ESRS E1 (2023)",
+        "GRI 305 (2021)",
+        "CDP Climate Change Questionnaire (2024)"
+      ],
+      "disclosure_intents": {
+        "from": "CDI-CLIM-01",
+        "to": "CDI-CLIM-22"
+      },
+      "files": {
+        "human_readable": "/cmp/v1/examples/climate-cmp-v0.2",
+        "machine_readable": "/cmp/v1/examples/climate-cmp-v0.2.yaml"
+      },
+      "notes": "Expanded coverage to include targets, assurance, and offsets."
+    },
     {
       "cmp_id": "climate-cmp",
       "topic": "climate",
@@ -15,8 +58,7 @@
       "frameworks": [
         "ESRS E1 (2023)",
         "GRI 305 (2021)",
-        "CDP Climate Change Questionnaire (2024)",
-        "ISSB IFRS S2 (2023)"
+        "CDP Climate Change Questionnaire (2024)"
       ],
       "disclosure_intents": {
         "from": "CDI-CLIM-01",
@@ -26,9 +68,8 @@
         "human_readable": "/cmp/v1/examples/climate-cmp-v0.3",
         "machine_readable": "/cmp/v1/examples/climate-cmp-v0.3.yaml"
       },
-      "notes": "Complete climate disclosure coverage including governance, transition, metrics, targets, scenarios, and methodology. Covers ESRS E1 and ISSB IFRS S2."
+      "notes": "Near-complete climate disclosure coverage including governance, transition, and data quality intents."
     },
-
     {
       "cmp_id": "energy-cmp",
       "topic": "energy",
@@ -39,7 +80,7 @@
       "frameworks": [
         "ESRS E1 (Energy)",
         "GRI 302 (2021)",
-        "ISSB IFRS S2 (Energy metrics)"
+        "CDP Climate Change Questionnaire (Energy)"
       ],
       "disclosure_intents": {
         "from": "CDI-ENER-01",
@@ -48,9 +89,9 @@
       "files": {
         "human_readable": "/cmp/v1/examples/energy-cmp-v0.1",
         "machine_readable": "/cmp/v1/examples/energy-cmp-v0.1.yaml"
-      }
+      },
+      "notes": "Complete reference implementation covering all Energy disclosure intents defined in CDI v1."
     },
-
     {
       "cmp_id": "water-cmp",
       "topic": "water",
@@ -60,7 +101,8 @@
       "cdi_version": "v1",
       "frameworks": [
         "ESRS E3 (2023)",
-        "GRI 303 (2021)"
+        "GRI 303 (2021)",
+        "CDP Water Security Questionnaire (2024)"
       ],
       "disclosure_intents": {
         "from": "CDI-WATR-01",
@@ -69,9 +111,9 @@
       "files": {
         "human_readable": "/cmp/v1/examples/water-cmp-v0.1",
         "machine_readable": "/cmp/v1/examples/water-cmp-v0.1.yaml"
-      }
+      },
+      "notes": "Reference implementation covering core water withdrawal, consumption, discharge, sourcing, and intensity disclosures."
     },
-
     {
       "cmp_id": "waste-cmp",
       "topic": "waste",
@@ -81,7 +123,8 @@
       "cdi_version": "v1",
       "frameworks": [
         "ESRS E5 (2023)",
-        "GRI 306 (2021)"
+        "GRI 306 (2021)",
+        "CDP Waste-related disclosures (2024)"
       ],
       "disclosure_intents": {
         "from": "CDI-WSTE-01",
@@ -90,9 +133,53 @@
       "files": {
         "human_readable": "/cmp/v1/examples/waste-cmp-v0.1",
         "machine_readable": "/cmp/v1/examples/waste-cmp-v0.1.yaml"
-      }
+      },
+      "notes": "Reference implementation covering core operational waste generation, composition, destination, and intensity disclosures."
     },
-
+    {
+      "cmp_id": "biodiversity-cmp",
+      "topic": "biodiversity",
+      "version": "v0.1",
+      "status": "frozen",
+      "publication_date": "2026-02-03",
+      "cdi_version": "v1",
+      "frameworks": [
+        "ESRS E4 (2023)",
+        "GRI 304 (2016)",
+        "CDP Forests and Biodiversity (2024)"
+      ],
+      "disclosure_intents": {
+        "from": "CDI-BIOD-01",
+        "to": "CDI-BIOD-18"
+      },
+      "files": {
+        "human_readable": "/cmp/v1/examples/biodiversity-cmp-v0.1",
+        "machine_readable": "/cmp/v1/examples/biodiversity-cmp-v0.1.yaml"
+      },
+      "notes": "Reference implementation covering organisational interaction with biodiversity and ecosystem dependencies."
+    },
+    {
+      "cmp_id": "pollution-cmp",
+      "topic": "pollution",
+      "version": "v0.1",
+      "status": "frozen",
+      "publication_date": "2026-02-03",
+      "cdi_version": "v1",
+      "frameworks": [
+        "ESRS E2 (2023)",
+        "GRI Pollution-related disclosures (2021)",
+        "SASB Industry Metrics (2023)"
+      ],
+      "disclosure_intents": {
+        "from": "CDI-POLL-01",
+        "to": "CDI-POLL-16"
+      },
+      "files": {
+        "human_readable": "/cmp/v1/examples/pollution-cmp-v0.1",
+        "machine_readable": "/cmp/v1/examples/pollution-cmp-v0.1.yaml"
+      },
+      "notes": "Reference implementation covering non-GHG pollution releases, management practices, and incident reporting."
+    },
     {
       "cmp_id": "materials-cmp",
       "topic": "materials",
@@ -102,7 +189,8 @@
       "cdi_version": "v1",
       "frameworks": [
         "ESRS E5 (2023)",
-        "GRI 301–306 (2021)"
+        "GRI 301–306 (2021)",
+        "CDP Materials and Circularity-related disclosures (2024)"
       ],
       "disclosure_intents": {
         "from": "CDI-MATR-01",
@@ -111,49 +199,9 @@
       "files": {
         "human_readable": "/cmp/v1/examples/materials-cmp-v0.1",
         "machine_readable": "/cmp/v1/examples/materials-cmp-v0.1.yaml"
-      }
-    },
-
-    {
-      "cmp_id": "pollution-cmp",
-      "topic": "pollution",
-      "version": "v0.1",
-      "status": "frozen",
-      "publication_date": "2026-02-03",
-      "cdi_version": "v1",
-      "frameworks": [
-        "ESRS E2 (2023)"
-      ],
-      "disclosure_intents": {
-        "from": "CDI-POLL-01",
-        "to": "CDI-POLL-16"
       },
-      "files": {
-        "human_readable": "/cmp/v1/examples/pollution-cmp-v0.1",
-        "machine_readable": "/cmp/v1/examples/pollution-cmp-v0.1.yaml"
-      }
+      "notes": "Reference implementation covering operational material inputs, flows, efficiency, and circular practices."
     },
-
-    {
-      "cmp_id": "biodiversity-cmp",
-      "topic": "biodiversity",
-      "version": "v0.1",
-      "status": "frozen",
-      "publication_date": "2026-02-03",
-      "cdi_version": "v1",
-      "frameworks": [
-        "ESRS E4 (2023)"
-      ],
-      "disclosure_intents": {
-        "from": "CDI-BIOD-01",
-        "to": "CDI-BIOD-18"
-      },
-      "files": {
-        "human_readable": "/cmp/v1/examples/biodiversity-cmp-v0.1",
-        "machine_readable": "/cmp/v1/examples/biodiversity-cmp-v0.1.yaml"
-      }
-    },
-
     {
       "cmp_id": "workforce-cmp",
       "topic": "workforce",
@@ -162,7 +210,9 @@
       "publication_date": "2026-02-03",
       "cdi_version": "v1",
       "frameworks": [
-        "ESRS S1 (2023)"
+        "ESRS S1 (2023)",
+        "GRI 401–404, 403 (2021)",
+        "SASB Industry Metrics (2023)"
       ],
       "disclosure_intents": {
         "from": "CDI-WORK-01",
@@ -171,69 +221,9 @@
       "files": {
         "human_readable": "/cmp/v1/examples/workforce-cmp-v0.1",
         "machine_readable": "/cmp/v1/examples/workforce-cmp-v0.1.yaml"
-      }
-    },
-
-    {
-      "cmp_id": "value-chain-workers-cmp",
-      "topic": "value-chain-workers",
-      "version": "v0.1",
-      "status": "frozen",
-      "publication_date": "2026-02-07",
-      "cdi_version": "v1",
-      "frameworks": [
-        "ESRS S2 (2023)"
-      ],
-      "disclosure_intents": {
-        "from": "CDI-VCWR-01",
-        "to": "CDI-VCWR-20"
       },
-      "files": {
-        "human_readable": "/cmp/v1/examples/value-chain-workers-cmp-v0.1",
-        "machine_readable": "/cmp/v1/examples/value-chain-workers-cmp-v0.1.yaml"
-      }
+      "notes": "Reference implementation covering organisation’s own workforce size, composition, training, health and safety, and governance disclosures."
     },
-
-    {
-      "cmp_id": "affected-communities-cmp",
-      "topic": "affected-communities",
-      "version": "v0.1",
-      "status": "frozen",
-      "publication_date": "2026-02-07",
-      "cdi_version": "v1",
-      "frameworks": [
-        "ESRS S3 (2023)"
-      ],
-      "disclosure_intents": {
-        "from": "CDI-COMM-01",
-        "to": "CDI-COMM-20"
-      },
-      "files": {
-        "human_readable": "/cmp/v1/examples/affected-communities-cmp-v0.1",
-        "machine_readable": "/cmp/v1/examples/affected-communities-cmp-v0.1.yaml"
-      }
-    },
-
-    {
-      "cmp_id": "consumers-cmp",
-      "topic": "consumers",
-      "version": "v0.1",
-      "status": "frozen",
-      "publication_date": "2026-02-07",
-      "cdi_version": "v1",
-      "frameworks": [
-        "ESRS S4 (2023)"
-      ],
-      "disclosure_intents": {
-        "from": "CDI-CONS-01",
-        "to": "CDI-CONS-20"
-      },
-      "files": {
-        "human_readable": "/cmp/v1/examples/consumers-cmp-v0.1",
-        "machine_readable": "/cmp/v1/examples/consumers-cmp-v0.1.yaml"
-      }
-    },
-
     {
       "cmp_id": "governance-cmp",
       "topic": "governance",
@@ -243,39 +233,19 @@
       "cdi_version": "v1",
       "frameworks": [
         "ESRS G1 (2023)",
-        "ISSB IFRS S1 (2023)"
+        "GRI 2, 205, 206 (2021)",
+        "SASB Industry Metrics (2023)"
       ],
       "disclosure_intents": {
         "from": "CDI-GOVR-01",
-        "to": "CDI-GOVR-22"
+        "to": "CDI-GOVR-18"
       },
       "files": {
         "human_readable": "/cmp/v1/examples/governance-cmp-v0.1",
         "machine_readable": "/cmp/v1/examples/governance-cmp-v0.1.yaml"
-      }
-    },
-
-    {
-      "cmp_id": "issb-global-cmp",
-      "topic": "cross-framework",
-      "version": "v0.1",
-      "status": "frozen",
-      "publication_date": "2026-02-08",
-      "cdi_version": "v1",
-      "frameworks": [
-        "IFRS S1 (2023)",
-        "IFRS S2 (2023)"
-      ],
-      "disclosure_intents": {
-        "scope": "Climate and General Sustainability (IFRS S1 & S2)"
       },
-      "files": {
-        "human_readable": "/cmp/v1/examples/issb-global-cmp",
-        "machine_readable": "/cmp/v1/examples/issb-global-cmp.yaml"
-      },
-      "notes": "Global cross-framework baseline mapping for ISSB IFRS S1 and IFRS S2."
+      "notes": "Reference implementation covering governance structures, oversight, ethics, risk management, and reporting processes."
     },
-
     {
       "cmp_id": "eu-cmp",
       "topic": "jurisdiction",
@@ -288,14 +258,14 @@
         "ESRS (2023)"
       ],
       "disclosure_intents": {
-        "scope": "ALL CDI v1 DOMAINS"
+        "from": "CDI-CLIM-01",
+        "to": "CDI-GOVR-18"
       },
       "files": {
         "human_readable": "/cmp/v1/examples/eu-cmp-v0.1",
         "machine_readable": "/cmp/v1/examples/eu-cmp-v0.1.yaml"
       },
-      "notes": "Complete jurisdiction-level implementation covering ESRS 1–G1 and all topical standards."
+      "notes": "Jurisdiction-level reference implementation covering EU CSRD and ESRS sustainability reporting architecture."
     }
-
   ]
 }

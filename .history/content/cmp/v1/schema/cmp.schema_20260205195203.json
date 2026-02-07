@@ -1,0 +1,177 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://canonicalesg.org/schemas/cmp.schema.json",
+  "title": "Canonical Mapping Pack (CMP) Schema",
+  "description": "Schema for representing Canonical Mapping Packs (CMPs). CMPs document non-authoritative interpretations of Canonical Disclosure Intents (CDIs) across reporting frameworks.",
+  "type": "object",
+  "required": ["cmp"],
+  "properties": {
+    "cmp": {
+      "type": "object",
+      "required": [
+        "metadata",
+        "scope",
+        "mappings",
+        "limitations",
+        "version_history"
+      ],
+      "properties": {
+
+        "metadata": {
+          "type": "object",
+          "required": [
+            "cmp_id",
+            "title",
+            "version",
+            "status",
+            "publication_date",
+            "maintainer",
+            "license",
+            "cdi_version"
+          ],
+          "properties": {
+            "cmp_id": { "type": "string" },
+            "title": { "type": "string" },
+            "version": { "type": "string" },
+            "status": {
+              "type": "string",
+              "enum": ["draft", "illustrative", "frozen", "deprecated"]
+            },
+            "publication_date": {
+              "type": "string",
+              "format": "date"
+            },
+            "maintainer": { "type": "string" },
+            "license": { "type": "string" },
+            "cdi_version": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+
+        "scope": {
+          "type": "object",
+          "required": ["topic", "covered_cdis", "frameworks", "intended_use"],
+          "properties": {
+            "topic": { "type": "string" },
+
+            "covered_cdis": {
+              "type": "array",
+              "items": { "type": "string" },
+              "minItems": 1
+            },
+
+            "frameworks": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "required": ["name", "version"],
+                "properties": {
+                  "name": { "type": "string" },
+                  "version": { "type": "string" }
+                },
+                "additionalProperties": false
+              }
+            },
+
+            "intended_use": {
+              "type": "string",
+              "description": "Statement clarifying the non-authoritative, illustrative purpose of the CMP."
+            }
+          },
+          "additionalProperties": false
+        },
+
+        "interpretation_principles": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Optional explicit principles guiding interpretation. May be omitted if documented narratively."
+        },
+
+        "mappings": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["cdi_id", "cdi_name", "intent", "framework_mappings"],
+            "properties": {
+              "cdi_id": { "type": "string" },
+              "cdi_name": { "type": "string" },
+              "intent": { "type": "string" },
+
+              "framework_mappings": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "framework",
+                    "framework_version",
+                    "reference",
+                    "mapping_type"
+                  ],
+                  "properties": {
+                    "framework": { "type": "string" },
+                    "framework_version": { "type": "string" },
+                    "reference": { "type": "string" },
+                    "mapping_type": {
+                      "type": "string",
+                      "enum": [
+                        "full",
+                        "partial",
+                        "contextual",
+                        "not_applicable"
+                      ]
+                    },
+                    "interpretation_notes": { "type": "string" }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+
+        "cross_framework_observations": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Optional high-level observations comparing framework treatment."
+        },
+
+        "limitations": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string" }
+        },
+
+        "version_history": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["version", "date", "status", "summary"],
+            "properties": {
+              "version": { "type": "string" },
+              "date": {
+                "type": "string",
+                "format": "date"
+              },
+              "status": {
+                "type": "string",
+                "enum": ["draft", "frozen", "deprecated"]
+              },
+              "summary": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

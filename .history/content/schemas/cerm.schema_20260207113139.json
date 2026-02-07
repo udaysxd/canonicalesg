@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://canonicalesg.org/schemas/cerm.schema.json",
+  "title": "Canonical ESG Reference Model (CERM) Schema",
+  "description": "Structural schema for Canonical ESG Reference Model elements. Defines canonical element types and relationships without embedding reporting framework semantics.",
+  "type": "object",
+  "required": ["elements"],
+  "properties": {
+    "elements": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/CanonicalElement"
+      }
+    }
+  },
+
+  "$defs": {
+
+    "CanonicalElement": {
+      "type": "object",
+      "required": ["id", "type"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable unique identifier for the canonical element."
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "Entity",
+            "Activity",
+            "Metric",
+            "Boundary",
+            "GeospatialBoundary",
+            "TimePeriod",
+            "Target",
+            "Trajectory",
+            "Methodology",
+            "Evidence",
+            "Assertion",
+            "MetricIdentifier",
+            "Assurance"
+          ]
+        },
+        "attributes": {
+          "type": "object",
+          "description": "Element-specific attributes."
+        },
+        "relationships": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Relationship"
+          }
+        },
+        "version": {
+          "type": "string",
+          "description": "Version identifier for the canonical element."
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Relationship": {
+      "type": "object",
+      "required": ["type", "target"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Describes the relationship type (e.g., performs, generates, applies_within)."
+        },
+        "target": {
+          "type": "string",
+          "description": "Identifier of the related canonical element."
+        }
+      },
+      "additionalProperties": false
+    }
+
+  }
+}
