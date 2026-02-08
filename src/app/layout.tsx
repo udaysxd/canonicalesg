@@ -19,7 +19,7 @@ export default function RootLayout({
             <nav className="flex items-center justify-between">
               <a href="/" className="flex items-center">
                 <img 
-                  src="/logo.png" 
+                  src="/logo.png?v=2" 
                   alt="Canonical ESG" 
                   className="h-8 w-auto"
                 />
