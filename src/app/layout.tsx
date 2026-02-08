@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Canonical ESG Reference Architecture",
@@ -19,11 +18,9 @@ export default function RootLayout({
           <div className="max-w-3xl mx-auto px-6 py-4">
             <nav className="flex items-center justify-between">
               <a href="/" className="flex items-center">
-                <Image 
+                <img 
                   src="/logo.png" 
                   alt="Canonical ESG" 
-                  width={180} 
-                  height={40}
                   className="h-8 w-auto"
                 />
               </a>
