@@ -5,7 +5,7 @@ import path from "path";
 export async function GET() {
   const registryPath = path.join(
     process.cwd(),
-    "content",
+    "public",
     "cmp",
     "registry",
     "cmp-index.json"
