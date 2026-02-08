@@ -1,4 +1,1 @@
-{
-  "buildCommand": "next build",
-  "outputDirectory": "dist"
-}
+{}
