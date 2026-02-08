@@ -1,0 +1,4 @@
+{
+  "buildCommand": "rm -rf .next && next build",
+  "outputDirectory": "dist"
+}
