@@ -9,7 +9,7 @@ export default function MultiFrameworkClimatePage() {
 
       <section className="mb-14 border-b border-[#e5e5e5] pb-12">
         <h2 className="font-serif text-[#1a1a1a] text-xl font-medium mb-6">Scenario</h2>
-        <div className="prose prose-neutral max-w-none">
+        <div className="prose max-w-none">
           <p className="text-[#333] leading-relaxed text-base mb-4">
             A large EU-based manufacturing company must:
           </p>
@@ -29,7 +29,7 @@ export default function MultiFrameworkClimatePage() {
 
       <section className="mb-14 border-b border-[#e5e5e5] pb-12">
         <h2 className="font-serif text-[#1a1a1a] text-xl font-medium mb-6">Traditional Reporting Workflow</h2>
-        <div className="prose prose-neutral max-w-none">
+        <div className="prose max-w-none">
           <p className="text-[#333] leading-relaxed text-base mb-4">
             In most engagements, consultants:
           </p>
@@ -144,7 +144,7 @@ export default function MultiFrameworkClimatePage() {
 
       <section className="mb-14 border-b border-[#e5e5e5] pb-12">
         <h2 className="font-serif text-[#1a1a1a] text-xl font-medium mb-6">Resulting Structure</h2>
-        <div className="prose prose-neutral max-w-none">
+        <div className="prose max-w-none">
           <p className="text-[#333] leading-relaxed text-base mb-4">
             Instead of three climate chapters, the organisation has:
           </p>
@@ -196,7 +196,7 @@ export default function MultiFrameworkClimatePage() {
 
       <section className="mb-14 border-b border-[#e5e5e5] pb-12">
         <h2 className="font-serif text-[#1a1a1a] text-xl font-medium mb-6">Why This Matters in Multi-Standard Environments</h2>
-        <div className="prose prose-neutral max-w-none">
+        <div className="prose max-w-none">
           <p className="text-[#333] leading-relaxed text-base mb-4">
             As sustainability standards proliferate:
           </p>
@@ -216,7 +216,7 @@ export default function MultiFrameworkClimatePage() {
 
       <section className="mb-12">
         <h2 className="font-serif text-[#1a1a1a] text-xl font-medium mb-6">Summary</h2>
-        <div className="prose prose-neutral max-w-none">
+        <div className="prose max-w-none">
           <p className="text-[#333] leading-relaxed text-base mb-4">
             Canonical ESG does not replace ESRS, ISSB, or GRI.
           </p>

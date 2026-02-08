@@ -12,7 +12,7 @@ export default function FlagshipCaseStudyPage() {
 
       <section className="mb-14 border-b border-[#e5e5e5] pb-12">
         <h2 className="font-serif text-[#1a1a1a] text-2xl font-medium mb-6">Executive Summary</h2>
-        <div className="prose prose-neutral max-w-none">
+        <div className="prose max-w-none">
           <p className="text-[#333] leading-relaxed text-base mb-4">
             A multinational industrial manufacturer faced overlapping sustainability reporting obligations across ESRS, ISSB, GRI and CDP.
           </p>
@@ -369,7 +369,7 @@ export default function FlagshipCaseStudyPage() {
 
       <section className="mb-14 border-b border-[#e5e5e5] pb-12">
         <h2 className="font-serif text-[#1a1a1a] text-2xl font-medium mb-6">Strategic Insight</h2>
-        <div className="prose prose-neutral max-w-none">
+        <div className="prose max-w-none">
           <p className="text-[#333] leading-relaxed text-base mb-4">
             The architectural shift was simple but profound:
           </p>
@@ -421,7 +421,7 @@ export default function FlagshipCaseStudyPage() {
 
       <section className="mb-14 border-b border-[#e5e5e5] pb-12">
         <h2 className="font-serif text-[#1a1a1a] text-2xl font-medium mb-6">What This Case Demonstrates</h2>
-        <div className="prose prose-neutral max-w-none">
+        <div className="prose max-w-none">
           <p className="text-[#333] leading-relaxed text-base mb-4">
             Canonical ESG:
           </p>
@@ -444,7 +444,7 @@ export default function FlagshipCaseStudyPage() {
 
       <section className="mb-12">
         <h2 className="font-serif text-[#1a1a1a] text-xl font-medium mb-6">Explore Further</h2>
-        <div className="prose prose-neutral max-w-none">
+        <div className="prose max-w-none">
           <ul className="list-disc list-inside space-y-2 text-[#333]">
             <li>
               <a href="/applications/cross-framework-climate-modelling" className="text-[#333] hover:text-[#111] border-b border-[#333] hover:border-[#111]">
