@@ -18,9 +18,7 @@ Canonical ESG is an open infrastructure initiative.
 
 **Email:** contact@canonicalesg.org
 
-**GitHub:** [github.com/udaysxd/canonical-esg](https://github.com/udaysxd/canonical-esg)
-
-**Technical Documentation:** [/docs](/docs)
+**GitHub:** [github.com/udaysxd/canonicalesg](https://github.com/udaysxd/canonicalesg)
 
 ---
 

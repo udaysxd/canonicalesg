@@ -104,7 +104,7 @@ Canonical ESG is infrastructure — not advisory, not regulatory, and not commer
 
 ## Current Stewardship
 
-Canonical ESG is currently stewarded by its founding architect, Uday Singh, during its initial infrastructure phase.
+Canonical ESG is currently stewarded by its founding architect, [Uday Singh](https://www.linkedin.com/in/udsingh1/), during its initial infrastructure phase.
 
 The steward is professionally engaged in sustainability technical consulting work; Canonical ESG operates independently and does not provide advisory, assurance, or commercial services.
 

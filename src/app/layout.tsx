@@ -39,13 +39,13 @@ export default function RootLayout({
         </header>
         {children}
         <footer className="border-t border-[#eee] mt-20">
-          <div className="max-w-3xl mx-auto px-6 py-8">
-            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-              <div>
-                <p className="text-sm text-[#666]">Canonical ESG Reference Architecture — Open Documentation</p>
-                <p className="text-xs text-[#888] mt-1">Content licensed under CC BY 4.0. Machine-readable schemas licensed under MIT.</p>
+          <div className="max-w-3xl mx-auto px-6 py-10">
+            <div className="flex flex-col lg:flex-row justify-between items-start gap-8">
+              <div className="max-w-md">
+                <p className="text-sm text-[#666] leading-relaxed">Canonical ESG Reference Architecture — Open Documentation</p>
+                <p className="text-xs text-[#888] mt-2 leading-relaxed">Content licensed under CC BY 4.0. Machine-readable schemas licensed under MIT.</p>
               </div>
-              <ul className="flex gap-6 text-sm">
+              <ul className="flex flex-wrap gap-x-6 gap-y-3 text-sm">
                 <li><a href="/about" className="text-[#666] hover:text-[#1a1a1a] hover:underline">About</a></li>
                 <li><a href="/contribute" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Contribute</a></li>
                 <li><a href="/framework-coverage" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Coverage</a></li>
