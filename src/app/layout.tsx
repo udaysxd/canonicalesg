@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Canonical ESG Reference Architecture",
@@ -17,14 +18,21 @@ export default function RootLayout({
         <header className="border-b border-[#eee] bg-white">
           <div className="max-w-3xl mx-auto px-6 py-4">
             <nav className="flex items-center justify-between">
-              <a href="/" className="text-base font-semibold text-[#111] hover:text-[#1a1a1a]">
-                canonicalesg.org
+              <a href="/" className="flex items-center">
+                <Image 
+                  src="/logo.png" 
+                  alt="Canonical ESG" 
+                  width={180} 
+                  height={40}
+                  className="h-8 w-auto"
+                />
               </a>
               <ul className="flex gap-6 text-sm">
                 <li><a href="/cerm" className="text-[#666] hover:text-[#1a1a1a] hover:underline">CERM</a></li>
                 <li><a href="/cdi" className="text-[#666] hover:text-[#1a1a1a] hover:underline">CDI</a></li>
                 <li><a href="/cmp" className="text-[#666] hover:text-[#1a1a1a] hover:underline">CMP</a></li>
                 <li><a href="/schemas" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Schemas</a></li>
+                <li><a href="/applications" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Applications</a></li>
                 <li><a href="/resources" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Resources</a></li>
                 <li><a href="/governance" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Governance</a></li>
               </ul>
@@ -43,6 +51,7 @@ export default function RootLayout({
                 <li><a href="/about" className="text-[#666] hover:text-[#1a1a1a] hover:underline">About</a></li>
                 <li><a href="/contribute" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Contribute</a></li>
                 <li><a href="/framework-coverage" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Coverage</a></li>
+                <li><a href="/applications" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Applications</a></li>
                 <li><a href="/contact" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Contact</a></li>
                 <li><a href="/licensing" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Licensing</a></li>
               </ul>
