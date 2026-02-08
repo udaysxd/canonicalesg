@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+// Force deployment refresh
 export const metadata: Metadata = {
   title: "Canonical ESG Reference Architecture",
   description: "Open, non-authoritative reference architecture for sustainability reporting",
