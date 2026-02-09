@@ -1,12 +1,40 @@
 import { DOCS } from "@/lib/docs";
 import Link from "next/link";
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: "CERM - Canonical ESG Reference Model",
+  description: "Framework-independent structural architecture for modeling sustainability data. Defines canonical structures for metrics, targets, trajectories, risks, and evidence.",
+  keywords: ["CERM", "ESG data model", "sustainability data structure", "framework-independent", "ESG architecture", "sustainability metrics"],
+  openGraph: {
+    title: "CERM - Canonical ESG Reference Model",
+    description: "Framework-independent structural architecture for modeling sustainability data across reporting frameworks.",
+    url: "https://canonicalesg.org/cerm",
+  },
+}
 
 export default function CERMPage() {
   const pages = DOCS.cerm.pages;
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'TechArticle',
+    headline: 'Canonical ESG Reference Model (CERM)',
+    about: 'Sustainability data architecture',
+    author: {
+      '@type': 'Organization',
+      name: 'Canonical ESG'
+    }
+  }
+
   return (
-    <main className="max-w-3xl mx-auto px-6 py-12">
-      <div>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <main className="max-w-3xl mx-auto px-6 py-12">
+        <div>
         <h1 className="text-[2.25rem] font-semibold text-[#111] mb-4 leading-tight">
           Canonical ESG Reference Model (CERM)
         </h1>
@@ -78,5 +106,6 @@ export default function CERMPage() {
         </p>
       </div>
     </main>
+    </>
   );
 }

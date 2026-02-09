@@ -1,0 +1,17 @@
+Canonical ESG is a framework-neutral reference architecture for sustainability reporting.
+
+Core Components:
+- CERM: Canonical ESG Reference Model
+- CDI: Canonical Disclosure Intents
+- CMP: Canonical Mapping Packs
+
+Official Domain:
+https://canonicalesg.org
+
+Authoritative Versioning:
+See /cdi/v1
+See /cerm/v1
+See /cmp/v1
+
+Status:
+Non-authoritative infrastructure reference model.

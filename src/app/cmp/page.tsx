@@ -1,12 +1,45 @@
 import { DOCS } from "@/lib/docs";
 import Link from "next/link";
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: "CMP - Canonical Mapping Packs",
+  description: "Explicit documentation of how disclosure intents are interpreted across sustainability reporting frameworks. Maps CDIs to ESRS, GRI, ISSB, CDP, and other standards.",
+  keywords: ["CMP", "mapping packs", "framework mapping", "ESRS mapping", "GRI mapping", "ISSB mapping", "CDP mapping", "disclosure interpretation"],
+  openGraph: {
+    title: "CMP - Canonical Mapping Packs",
+    description: "Explicit documentation of how disclosure intents are interpreted across sustainability reporting frameworks.",
+    url: "https://canonicalesg.org/cmp",
+  },
+}
 
 export default function CMPPage() {
   const pages = DOCS.cmp.pages;
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'TechArticle',
+    headline: 'Canonical Mapping Packs (CMP)',
+    description: 'Explicit documentation of how disclosure intents are interpreted across sustainability reporting frameworks',
+    url: 'https://canonicalesg.org/cmp',
+    author: {
+      '@type': 'Organization',
+      name: 'Canonical ESG',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Canonical ESG',
+    },
+  }
+
   return (
-    <main className="max-w-3xl mx-auto px-6 py-12">
-      <div>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <main className="max-w-3xl mx-auto px-6 py-12">
+        <div>
         <h1 className="text-[2.25rem] font-semibold text-[#111] mb-4 leading-tight">
           Canonical Mapping Packs (CMP)
         </h1>
@@ -140,5 +173,6 @@ export default function CMPPage() {
         </p>
       </div>
     </main>
+    </>
   );
 }

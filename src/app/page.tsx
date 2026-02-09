@@ -1,7 +1,41 @@
+import { Metadata } from 'next'
+import Script from 'next/script'
+
+export const metadata: Metadata = {
+  title: "Canonical ESG Reference Architecture",
+  description: "Open, non-authoritative semantic infrastructure for sustainability reporting. Model sustainability data once and reuse it across ESRS, GRI, ISSB, CDP, and other frameworks.",
+  keywords: ["ESG", "sustainability reporting", "ESRS", "GRI", "ISSB", "CDP", "sustainability data model", "disclosure framework", "CERM", "CDI", "CMP"],
+  openGraph: {
+    title: "Canonical ESG Reference Architecture",
+    description: "Model sustainability data once. Reuse it across ESRS, GRI, ISSB, CDP, and other reporting frameworks.",
+    url: "https://canonicalesg.org",
+    siteName: "Canonical ESG",
+    type: "website",
+  },
+}
+
 export default function Home() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Canonical ESG',
+    url: 'https://canonicalesg.org',
+    description: 'Framework-neutral reference architecture for sustainability reporting.',
+    founder: {
+      '@type': 'Person',
+      name: 'Uday Singh',
+      url: 'https://www.linkedin.com/in/udsingh1/'
+    }
+  }
+
   return (
-    <main className="max-w-3xl mx-auto px-6 py-16">
-      <div>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <main className="max-w-3xl mx-auto px-6 py-16">
+        <div>
         <h1 className="text-[2.25rem] font-semibold text-[#111] mb-4 leading-tight">
           Model sustainability data once. Reuse it across standards.
         </h1>
@@ -204,5 +238,6 @@ export default function Home() {
         </p>
       </div>
     </main>
+    </>
   );
 }

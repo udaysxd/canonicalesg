@@ -1,12 +1,45 @@
 import { DOCS } from "@/lib/docs";
 import Link from "next/link";
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: "CDI - Canonical Disclosure Intents",
+  description: "Stable, framework-independent disclosure meaning for sustainability reporting. Define what you intend to disclose once, reuse across ESRS, GRI, ISSB, and other frameworks.",
+  keywords: ["CDI", "disclosure intents", "sustainability disclosure", "ESG disclosure", "framework-neutral", "semantic layer"],
+  openGraph: {
+    title: "CDI - Canonical Disclosure Intents",
+    description: "Stable, framework-independent disclosure meaning for sustainability reporting.",
+    url: "https://canonicalesg.org/cdi",
+  },
+}
 
 export default function CDIPage() {
   const pages = DOCS.cdi.pages;
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'TechArticle',
+    headline: 'Canonical Disclosure Intents (CDI)',
+    description: 'Stable, framework-independent disclosure meaning for sustainability reporting',
+    url: 'https://canonicalesg.org/cdi',
+    author: {
+      '@type': 'Organization',
+      name: 'Canonical ESG',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Canonical ESG',
+    },
+  }
+
   return (
-    <main className="max-w-3xl mx-auto px-6 py-12">
-      <div>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <main className="max-w-3xl mx-auto px-6 py-12">
+        <div>
         <h1 className="text-[2.25rem] font-semibold text-[#111] mb-4 leading-tight">
           Canonical Disclosure Intents (CDI)
         </h1>
@@ -188,5 +221,6 @@ export default function CDIPage() {
         </p>
       </div>
     </main>
+    </>
   );
 }
