@@ -1,0 +1,17 @@
+# Canonical ESG
+
+## Description
+Framework-neutral reference architecture for sustainability reporting.
+
+## Core Concepts
+- CERM: Data modeling layer
+- CDI: Disclosure meaning layer  
+- CMP: Framework interpretation layer
+
+## Key URLs
+- https://canonicalesg.org/cdi/v1
+- https://canonicalesg.org/cerm/v1
+- https://canonicalesg.org/cmp/v1
+
+## Contact
+contact@canonicalesg.org
