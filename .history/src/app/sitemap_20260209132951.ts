@@ -83,19 +83,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'yearly',
       priority: 0.5,
     },
-    // Whitepapers
-    {
-      url: `${baseUrl}/whitepapers`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/whitepapers/gcc-sustainability-reporting-foundation`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.95,
-    },
     // CERM documentation
     {
       url: `${baseUrl}/cerm/v1/01-design-principles`,
