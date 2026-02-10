@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   keywords: ["GCC ESG", "sustainability reporting", "GCC infrastructure", "regional alignment", "ESG framework", "ISSB", "UAE", "Saudi Arabia", "climate disclosure", "Canonical ESG"],
   authors: [{ name: "Uday Singh" }],
   openGraph: {
-    title: "Building a Unified ESG Reporting Foundation for the Gulf Cooperation Council (GCC)",
+    title: "Building a Unified ESG Reporting Foundation for the GCC",
     description: "A Practical Infrastructure Proposal for Regional Alignment",
     url: "https://canonicalesg.org/whitepapers/gcc-sustainability-reporting-foundation",
     type: "article",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Building a Unified ESG Reporting Foundation for the Gulf Cooperation Council (GCC)",
+    title: "Building a Unified ESG Reporting Foundation for the GCC",
     description: "A Practical Infrastructure Proposal for Regional Alignment",
   },
   alternates: {
