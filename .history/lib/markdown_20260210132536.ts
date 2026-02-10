@@ -99,17 +99,15 @@ export function getDocumentNames(section: string, version: string): string[] {
     .map(file => file.replace(/\.md$/, ''));
 }
 
-export function getVersions(section: string): string[] {
-  const sectionPath = path.join(contentDirectory, section);
+export async function getRawText(filePath: string): Promise<string> {
+  const fullPath = path.join(process.cwd(), filePath);
   
-  if (!fs.existsSync(sectionPath)) {
-    return [];
+  if (!fs.existsSync(fullPath)) {
+    throw new Error(`File not found: ${filePath}`);
   }
 
-  return fs.readdirSync(sectionPath)
-    .filter(name => {
-      const fullPath = path.join(sectionPath, name);
-      return fs.statSync(fullPath).isDirectory() && name.match(/^v\d+$/);
-    })
-    .sort();
+  const fileContents = fs.readFileSync(fullPath, 'utf8');
+  const { content } = matter(fileContents);
+  
+  return content;
 }

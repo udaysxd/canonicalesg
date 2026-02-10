@@ -71,8 +71,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={sourceSerif.variable}>
-      <body className="antialiased bg-white text-[#1a1a1a]" style={{ fontFamily: 'var(--font-serif), Georgia, "Times New Roman", serif' }}>
+    <html lang="en">
+      <body className="antialiased bg-white text-[#1a1a1a]" style={{ fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif' }}>
         <header className="border-b border-[#eee] bg-white">
           <div className="max-w-3xl mx-auto px-6 py-4">
             <nav className="flex items-center justify-between">

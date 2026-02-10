@@ -1,12 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Source_Serif_4 } from 'next/font/google';
-
-const sourceSerif = Source_Serif_4({
-  subsets: ['latin'],
-  variable: '--font-serif',
-  display: 'swap',
-});
 
 export const metadata: Metadata = {
   title: {
@@ -71,15 +64,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={sourceSerif.variable}>
-      <body className="antialiased bg-white text-[#1a1a1a]" style={{ fontFamily: 'var(--font-serif), Georgia, "Times New Roman", serif' }}>
+    <html lang="en">
+      <body className="antialiased bg-white text-[#1a1a1a]" style={{ fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif' }}>
         <header className="border-b border-[#eee] bg-white">
           <div className="max-w-3xl mx-auto px-6 py-4">
             <nav className="flex items-center justify-between">
               <a href="/" className="flex items-center">
                 <img 
                   src="/logo-v2.png" 
-                  alt="Canonical ESG Reference Architecture - Home" 
+                  alt="Canonical ESG" 
                   className="h-8 w-auto"
                 />
               </a>
@@ -97,15 +90,14 @@ export default function RootLayout({
         </header>
         {children}
         <footer className="border-t border-[#eee] mt-20">
-          <div className="max-w-3xl mx-auto px-6 py-12">
-            <div className="flex flex-col lg:flex-row justify-between items-start gap-10">
-              <div className="max-w-sm">
+          <div className="max-w-3xl mx-auto px-6 py-10">
+            <div className="flex flex-col lg:flex-row justify-between items-start gap-8">
+              <div className="max-w-md">
                 <p className="text-sm text-[#666] leading-relaxed">Canonical ESG Reference Architecture — Open Documentation</p>
-                <p className="text-xs text-[#888] mt-3 leading-relaxed">Content licensed under CC BY 4.0. Machine-readable schemas licensed under MIT.</p>
+                <p className="text-xs text-[#888] mt-2 leading-relaxed">Content licensed under CC BY 4.0. Machine-readable schemas licensed under MIT.</p>
               </div>
-              <ul className="flex flex-wrap gap-x-8 gap-y-4 text-sm lg:justify-end">
+              <ul className="flex flex-wrap gap-x-6 gap-y-3 text-sm">
                 <li><a href="/about" className="text-[#666] hover:text-[#1a1a1a] hover:underline">About</a></li>
-                <li><a href="/whitepapers" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Whitepapers</a></li>
                 <li><a href="/contribute" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Contribute</a></li>
                 <li><a href="/framework-coverage" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Coverage</a></li>
                 <li><a href="/applications" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Applications</a></li>
