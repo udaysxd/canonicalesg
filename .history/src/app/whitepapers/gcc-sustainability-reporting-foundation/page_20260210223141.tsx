@@ -38,24 +38,12 @@ export default async function WhitepaperPage() {
     description: 'A Practical Infrastructure Proposal for Regional Alignment',
     url: 'https://canonicalesg.org/whitepapers/gcc-sustainability-reporting-foundation',
     author: {
-      '@type': 'Person',
-      name: 'Uday Singh',
-      jobTitle: 'Founding Architect',
-      affiliation: {
-        '@type': 'Organization',
-        name: 'Canonical ESG',
-      },
+      '@type': 'Organization',
+      name: 'Canonical ESG',
     },
     publisher: {
       '@type': 'Organization',
       name: 'Canonical ESG',
-      url: 'https://canonicalesg.org',
-    },
-    datePublished: '2025-01-15',
-    dateModified: '2025-02-10',
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': 'https://canonicalesg.org/whitepapers/gcc-sustainability-reporting-foundation',
     },
   };
 
