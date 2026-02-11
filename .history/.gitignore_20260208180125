@@ -39,7 +39,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-# Draft whitepapers (work in progress - not ready for publication)
-content/whitepapers/economics-sustainability-reporting/
-src/app/whitepapers/economics-sustainability-reporting/

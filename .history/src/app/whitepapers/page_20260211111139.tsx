@@ -27,6 +27,16 @@ export default function WhitepapersPage() {
           position: 1,
           item: {
             '@type': 'Article',
+            name: 'The Economics of Sustainability Reporting: Structural Costs and Implementation Maturity',
+            description: 'An analysis of structural cost drivers and the economic case for institutional infrastructure',
+            url: 'https://canonicalesg.org/whitepapers/economics-sustainability-reporting'
+          }
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          item: {
+            '@type': 'Article',
             name: 'Stabilising ISSB Implementation: The Case for Institutional Infrastructure',
             description: 'A technical analysis of ISSB implementation challenges and the need for institutional infrastructure',
             url: 'https://canonicalesg.org/whitepapers/issb-implementation-infrastructure'
@@ -34,7 +44,7 @@ export default function WhitepapersPage() {
         },
         {
           '@type': 'ListItem',
-          position: 2,
+          position: 3,
           item: {
             '@type': 'Article',
             name: 'Building a Unified ESG Reporting Foundation for the Gulf Cooperation Council (GCC)',
@@ -63,6 +73,18 @@ export default function WhitepapersPage() {
           </p>
 
           <div className="space-y-6">
+            <Link 
+              href="/whitepapers/economics-sustainability-reporting"
+              className="block p-6 border border-[#eee] rounded-lg hover:border-[#ccc] hover:bg-[#fafafa] transition-colors"
+            >
+              <h2 className="text-[1.5rem] font-semibold text-[#111] mb-2 leading-tight">
+                The Economics of Sustainability Reporting: Structural Costs and Implementation Maturity
+              </h2>
+              <p className="text-[1rem] text-[#666] leading-relaxed">
+                An analysis of structural cost drivers and the economic case for institutional infrastructure
+              </p>
+            </Link>
+            
             <Link 
               href="/whitepapers/issb-implementation-infrastructure"
               className="block p-6 border border-[#eee] rounded-lg hover:border-[#ccc] hover:bg-[#fafafa] transition-colors"

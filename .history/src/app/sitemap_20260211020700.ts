@@ -91,6 +91,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/whitepapers/economics-sustainability-reporting`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.95,
+    },
+    {
       url: `${baseUrl}/whitepapers/issb-implementation-infrastructure`,
       lastModified: currentDate,
       changeFrequency: 'monthly',

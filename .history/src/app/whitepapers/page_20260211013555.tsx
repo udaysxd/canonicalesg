@@ -37,7 +37,7 @@ export default function WhitepapersPage() {
           position: 2,
           item: {
             '@type': 'Article',
-            name: 'Building a Unified ESG Reporting Foundation for the Gulf Cooperation Council (GCC)',
+            name: 'Building a Unified ESG Reporting Foundation for the GCC',
             description: 'A Practical Infrastructure Proposal for Regional Alignment',
             url: 'https://canonicalesg.org/whitepapers/gcc-sustainability-reporting-foundation'
           }
@@ -80,7 +80,7 @@ export default function WhitepapersPage() {
               className="block p-6 border border-[#eee] rounded-lg hover:border-[#ccc] hover:bg-[#fafafa] transition-colors"
             >
               <h2 className="text-[1.5rem] font-semibold text-[#111] mb-2 leading-tight">
-                Building a Unified ESG Reporting Foundation for the Gulf Cooperation Council (GCC)
+                Building a Unified ESG Reporting Foundation for the GCC
               </h2>
               <p className="text-[1rem] text-[#666] leading-relaxed">
                 A Practical Infrastructure Proposal for Regional Alignment

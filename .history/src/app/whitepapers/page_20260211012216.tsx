@@ -27,7 +27,7 @@ export default function WhitepapersPage() {
           position: 1,
           item: {
             '@type': 'Article',
-            name: 'Stabilising ISSB Implementation: The Case for Institutional Infrastructure',
+            name: 'From Standard to System: Strengthening the Infrastructure of ISSB Implementation',
             description: 'A technical analysis of ISSB implementation challenges and the need for institutional infrastructure',
             url: 'https://canonicalesg.org/whitepapers/issb-implementation-infrastructure'
           }
@@ -37,7 +37,7 @@ export default function WhitepapersPage() {
           position: 2,
           item: {
             '@type': 'Article',
-            name: 'Building a Unified ESG Reporting Foundation for the Gulf Cooperation Council (GCC)',
+            name: 'Building a Unified ESG Reporting Foundation for the GCC',
             description: 'A Practical Infrastructure Proposal for Regional Alignment',
             url: 'https://canonicalesg.org/whitepapers/gcc-sustainability-reporting-foundation'
           }
@@ -68,7 +68,7 @@ export default function WhitepapersPage() {
               className="block p-6 border border-[#eee] rounded-lg hover:border-[#ccc] hover:bg-[#fafafa] transition-colors"
             >
               <h2 className="text-[1.5rem] font-semibold text-[#111] mb-2 leading-tight">
-                Stabilising ISSB Implementation: The Case for Institutional Infrastructure
+                From Standard to System: Strengthening the Infrastructure of ISSB Implementation
               </h2>
               <p className="text-[1rem] text-[#666] leading-relaxed">
                 A technical analysis of ISSB implementation challenges and the need for institutional infrastructure
@@ -80,7 +80,7 @@ export default function WhitepapersPage() {
               className="block p-6 border border-[#eee] rounded-lg hover:border-[#ccc] hover:bg-[#fafafa] transition-colors"
             >
               <h2 className="text-[1.5rem] font-semibold text-[#111] mb-2 leading-tight">
-                Building a Unified ESG Reporting Foundation for the Gulf Cooperation Council (GCC)
+                Building a Unified ESG Reporting Foundation for the GCC
               </h2>
               <p className="text-[1rem] text-[#666] leading-relaxed">
                 A Practical Infrastructure Proposal for Regional Alignment
