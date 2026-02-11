@@ -100,7 +100,7 @@ export default function RootLayout({
           <div className="max-w-3xl mx-auto px-6 py-12">
             <div className="flex flex-col lg:flex-row justify-between items-start gap-10">
               <div className="max-w-sm">
-                <p className="text-xs text-[#888] mt-3 leading-relaxed">Canonical ESG is an independent, not-for-profit, non-regulatory technical initiative operating in the public interest. It does not set disclosure standards, define materiality, or exercise regulatory authority. Its role is limited to supporting interoperability, transparency, and structural coherence in sustainability reporting.</p>
+                <p className="text-xs text-[#888] mt-3 leading-relaxed">Canonical ESG is an independent, not-for-profit, non-regulatory technical initiative operating in the public interest. It does not set disclosure standards, define materiality, or exercise regulatory authority. Its role is limited to supporting interoperability, transparency, and structural coherence in sustainability reporting systems.</p>
                 <p className="text-xs text-[#888] mt-3 leading-relaxed">Content licensed under CC BY 4.0. Machine-readable schemas licensed under MIT.</p>
               </div>
               <ul className="flex flex-wrap gap-x-8 gap-y-4 text-sm lg:justify-end">
