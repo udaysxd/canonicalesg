@@ -1,10 +1,6 @@
 # Standardising the Format of Sustainability Reporting  
 ## A Structural Reform Proposal for Investor-Grade ESG Disclosure
 
-**Published:** February 2026  
-**Version:** 1.0  
-**Correspondence:** hello@canonicalesg.org  
-
 ---
 ## Executive Summary
 
@@ -180,57 +176,69 @@ The economic case for structural reform is therefore institutional rather than i
 Stabilising reporting format and semantic architecture reduces systemic inefficiency without expanding regulatory scope.
 
 ---
+## 3. Economic Modelling Estimates (Scenario-Based Analysis)
 
-## 3. Economic Modelling Estimates (Scenario Analysis)
+The economic implications of structural fragmentation in sustainability reporting can be illustrated through scenario modelling. The following estimates are directional and designed to demonstrate order-of-magnitude impact rather than provide regulatory forecasts.
 
-## Assumptions
+### Assumptions
 
-- 25,000 large globally reporting companies
-- Average ESG reporting cost: $1.2m annually
-- 30–40% of cost attributable to duplication and format inconsistency
-- Estimated average cost of capital impact from ESG uncertainty: 10–25 bps
-
----
-
-## Scenario 1 — Compliance Cost Reduction
-
-If structural standardisation reduces duplication by 25%:
-
-$1.2m × 25% = $300,000 savings per firm annually
-
-Global impact:
-
-$300,000 × 25,000 firms = $7.5 billion annual efficiency gain
+- Approximately **25,000 large companies globally** produce formal sustainability disclosures  
+- Average annual ESG reporting expenditure: **~US$1.2 million per firm**  
+- Estimated **30–40% of reporting cost attributable to duplication, format inconsistency, and cross-framework reconciliation**  
+- Estimated average **cost of capital impact linked to ESG-related uncertainty: 10–25 basis points**
 
 ---
 
-## Scenario 2 — Cost of Capital Impact
+### Scenario 1 — Compliance Cost Rationalisation
 
-If improved comparability reduces capital risk premium by 10 bps:
+If structured standardisation reduces duplication-related effort by **25%**, the impact per firm would be:
 
-For a firm with $5bn market cap:
+US$1.2 million × 25% = **~US$300,000 annual efficiency gain**
 
-10 bps reduction → ~$5m annual capital cost impact
+At global scale:
+
+US$300,000 × 25,000 firms = **~US$7.5 billion in annual efficiency improvements**
+
+This represents cost currently absorbed by format reconciliation rather than sustainability performance enhancement.
 
 ---
 
-## Scenario 3 — Audit & Assurance Efficiency
+### Scenario 2 — Cost of Capital Sensitivity
 
-Structured sustainability statements reduce:
+If improved comparability and disclosure clarity reduce perceived ESG-related risk premiums by **10 basis points**, the impact is economically material.
 
-- Manual sampling
-- Cross-referencing inconsistencies
-- Narrative interpretation time
+For a company with a **US$5 billion market capitalisation**:
 
-If assurance hours decline by 15–20%, this reduces:
+10 basis points (0.10%) equates to approximately **US$5 million in annual capital cost differential**
 
-- External audit fees
-- Internal control burden
-- Risk of audit qualification
+Even marginal improvements in disclosure comparability can therefore influence financing efficiency at scale.
 
-These are scenario estimates, not regulatory forecasts.
+---
 
-Structural immaturity carries real economic cost.
+### Scenario 3 — Audit and Assurance Efficiency
+
+Structured sustainability statements may reduce:
+
+- Manual sampling procedures  
+- Cross-referencing inconsistencies  
+- Narrative interpretation time  
+- Documentation reconciliation complexity  
+
+If sustainability assurance hours decline by **15–20%**, potential outcomes include:
+
+- Lower external assurance fees  
+- Reduced internal control burden  
+- Greater predictability in audit scoping  
+- Lower probability of qualification due to structural ambiguity  
+
+---
+
+These scenarios are illustrative rather than predictive.
+
+However, they demonstrate a clear principle:
+
+**Structural immaturity generates measurable economic cost.**
+
 
 ---
 
@@ -435,3 +443,9 @@ Canonical ESG proposes structured sustainability statements as the missing prese
 ⁹ Krüger, Philipp. "Corporate Goodness and Shareholder Wealth." Journal of Financial Economics, 2015.
 
 ¹⁰ RepRisk, ESG and Reputational Risk Studies, 2023.
+
+---
+
+**Published:** February 2026  
+**Version:** 1.0  
+**Correspondence:** hello@canonicalesg.org
