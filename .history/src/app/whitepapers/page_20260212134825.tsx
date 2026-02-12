@@ -27,7 +27,7 @@ export default function WhitepapersPage() {
           position: 1,
           item: {
             '@type': 'Article',
-            name: 'Standardising the Format of Sustainability Reporting: Why ESG Now Requires Structural Reform',
+            name: 'From Disclosure to Infrastructure: A Structural Reform Blueprint for Global ESG Reporting',
             description: 'A structural reform proposal for global ESG reporting infrastructure',
             url: 'https://canonicalesg.org/whitepapers/from-disclosure-to-infrastructure'
           }
@@ -78,7 +78,7 @@ export default function WhitepapersPage() {
               className="block p-6 border border-[#eee] rounded-lg hover:border-[#ccc] hover:bg-[#fafafa] transition-colors"
             >
               <h2 className="text-[1.5rem] font-semibold text-[#111] mb-2 leading-tight">
-                Standardising the Format of Sustainability Reporting: Why ESG Now Requires Structural Reform
+                From Disclosure to Infrastructure: A Structural Reform Blueprint for Global ESG Reporting
               </h2>
               <p className="text-[1rem] text-[#666] leading-relaxed">
                 A structural reform proposal for global ESG reporting infrastructure
