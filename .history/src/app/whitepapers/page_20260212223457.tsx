@@ -30,8 +30,8 @@ export default function WhitepapersPage() {
           position: 1,
           item: {
             '@type': 'Article',
-            name: 'A Sovereign Sustainability Framework for Emerging Economies: Institutional Policy Design from Mandate to Market Integration',
-            description: 'Institutional Policy Design from Mandate to Market Integration. A blueprint for emerging economies',
+            name: 'Designing Sovereign Sustainability Architecture in Emerging Economies: A Full-Cycle Institutional Blueprint from Policy to Digital Infrastructure',
+            description: 'A full-cycle institutional blueprint from policy to digital infrastructure for emerging economies',
             url: 'https://canonicalesg.org/whitepapers/sovereign-sustainability-architecture-emerging-economies'
           }
         },
@@ -91,10 +91,10 @@ export default function WhitepapersPage() {
               className="block p-6 border border-[#eee] rounded-lg hover:border-[#ccc] hover:bg-[#fafafa] transition-colors"
             >
               <h2 className="text-[1.5rem] font-semibold text-[#111] mb-2 leading-tight">
-                A Sovereign Sustainability Framework for Emerging Economies: Institutional Policy Design from Mandate to Market Integration
+                Designing Sovereign Sustainability Architecture in Emerging Economies: A Full-Cycle Institutional Blueprint from Policy to Digital Infrastructure
               </h2>
               <p className="text-[1rem] text-[#666] leading-relaxed">
-                Institutional Policy Design from Mandate to Market Integration. A blueprint for emerging economies
+                A full-cycle institutional blueprint from policy to digital infrastructure for emerging economies
               </p>
             </Link>
             
