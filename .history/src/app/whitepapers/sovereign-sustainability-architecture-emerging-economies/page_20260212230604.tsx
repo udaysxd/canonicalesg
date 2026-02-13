@@ -34,20 +34,15 @@ export default async function WhitepaperPage() {
     getHeadings('content/whitepapers/sovereign-sustainability-architecture-emerging-economies/index.md')
   ]);
 
-  // Split HTML to insert diagram inside Section 2, after the bullet points
-  const afterBulletListMarker = 'Cross-border interoperability ensures compatibility with global capital markets and trade systems.';
-  const section2ClosingMarker = 'These layers are cumulative rather than optional.';
+  // Split HTML to insert diagram between Section 2 and Section 3
+  const section2EndMarker = 'A mature sovereign sustainability framework therefore requires vertical coherence across the entire institutional continuum.';
+  const section3StartMarker = '<h2 id="layer-1-national-sustainability-policy-mandate">Layer 1';
   
   let htmlPart1 = html;
   let htmlPart2 = '';
   
-  // Find position after bullet list but before closing paragraphs
-  const bulletEndIndex = html.indexOf(afterBulletListMarker);
-  const closingStartIndex = html.indexOf(section2ClosingMarker);
-  
-  if (bulletEndIndex !== -1 && closingStartIndex !== -1 && closingStartIndex > bulletEndIndex) {
-    // Split after the bullet list paragraph (including the </li></ul>)
-    const splitIndex = closingStartIndex;
+  const splitIndex = html.indexOf(section3StartMarker);
+  if (splitIndex !== -1) {
     htmlPart1 = html.substring(0, splitIndex);
     htmlPart2 = html.substring(splitIndex);
   }
