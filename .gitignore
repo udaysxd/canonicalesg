@@ -40,6 +40,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# local history
+.history/
+
 # Draft whitepapers (work in progress - not ready for publication)
 content/whitepapers/economics-sustainability-reporting/
 src/app/whitepapers/economics-sustainability-reporting/

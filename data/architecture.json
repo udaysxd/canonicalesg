@@ -7,6 +7,9 @@
     {
       "id": "CERM-LAYER",
       "name": "Canonical Element Reference Model",
+      "short_name": "CERM",
+      "position": 1,
+      "scope": "Foundational data elements and structural relationships",
       "purpose": "Defines the canonical element types and their permitted relationships that constitute the foundational data layer for sustainability disclosure.",
       "responsibilities": [
         "Define canonical element types",
@@ -29,6 +32,9 @@
     {
       "id": "CDI-LAYER",
       "name": "Canonical Disclosure Intent",
+      "short_name": "CDI",
+      "position": 2,
+      "scope": "Disclosure intent semantics and structural constraints",
       "purpose": "Defines the structural layer for disclosure intent, constraints, and architectural positioning without asserting authoritative mappings.",
       "responsibilities": [
         "Define disclosure intent semantics",
@@ -51,6 +57,9 @@
     {
       "id": "CMP-LAYER",
       "name": "Canonical Mapping & Interpretation",
+      "short_name": "CMP",
+      "position": 3,
+      "scope": "Framework interpretation and non-authoritative mapping",
       "purpose": "Defines the structural layer for framework interpretation, mapping rules, and non-authoritative positioning relative to external standards.",
       "responsibilities": [
         "Document non-authoritative framework interpretations",
@@ -73,6 +82,9 @@
     {
       "id": "PRESENTATION-LAYER",
       "name": "Structured Sustainability Statements",
+      "short_name": "SSS",
+      "position": 4,
+      "scope": "Structured presentation formats and field-level mappings",
       "purpose": "Defines the presentation and disclosure layer for structured sustainability reports, annexes, and statement formats.",
       "responsibilities": [
         "Define structured statement formats",

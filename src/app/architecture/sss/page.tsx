@@ -114,7 +114,7 @@ export default function SSSPage() {
                     <h4 className="font-medium text-gray-900 mb-2">Metric Tables</h4>
                     <p className="text-sm text-gray-700 mb-2">{format.structure.metric_tables.description}</p>
                     <div className="text-sm text-gray-600">
-                      <span className="font-medium">Note:</span> {format.structure.metric_tables.no_sample_rows}
+                      <span className="font-medium">Note:</span> {format.structure.metric_tables.table_structure.no_sample_rows}
                     </div>
                   </div>
                 )}

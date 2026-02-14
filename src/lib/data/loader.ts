@@ -19,7 +19,7 @@ import {
 } from "@/lib/types/architecture"
 import type { CdiIntentRegistry } from "@/lib/types/cdi"
 import type { CmpPack } from "@/lib/types/cmp"
-import type { SssRegistry } from "@/lib/types/presentation"
+import type { SssRegistry, StructuredStatement } from "@/lib/types/presentation"
 import { validateArchitecture, validateCdiRegistry, validateCmpPack, validateSssRegistry } from "@/lib/validateArchitecture"
 
 // Import raw JSON data
@@ -547,6 +547,6 @@ validateCmpPack(ifrsS2CmpJson as CmpPack, cdiRegistry)
 // Validate SSS presentation layer at build time
 // Ensure all mapped CDIs exist in CDI registry
 const sssRegistry: SssRegistry = {
-  statements: [sssPositionStatementJson, sssTransitionAnnexJson]
+  statements: [sssPositionStatementJson as unknown as StructuredStatement, sssTransitionAnnexJson as unknown as StructuredStatement]
 }
 validateSssRegistry(sssRegistry, cdiRegistry)
