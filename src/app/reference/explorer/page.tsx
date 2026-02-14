@@ -59,23 +59,47 @@ export default function ExplorerIndexPage() {
           CDI — Canonical Disclosure Intents
         </h2>
         <p className="text-sm text-gray-600 mb-4">
-          {cdiNodes.length} disclosure intents for climate-related reporting
+          {cdiNodes.length} disclosure intents across 13 domains
         </p>
-        <div className="space-y-2">
-          {cdiNodes.map((node) => (
-            <Link
-              key={node.id}
-              href={`/reference/explorer/cdi/${node.id}`}
-              className="flex items-center justify-between border border-gray-200 p-3 hover:border-gray-400 transition-colors"
-            >
-              <div>
-                <div className="font-medium text-gray-900">{node.name}</div>
-                <div className="text-xs text-gray-500 mt-1 font-mono">{node.id}</div>
+        
+        {/* Group CDIs by domain */}
+        {(() => {
+          // Group CDIs by domain (extract domain from CDI ID)
+          const cdiByDomain = cdiNodes.reduce((acc, node) => {
+            const domain = node.id.split('-')[1].toLowerCase(); // Extract domain from CDI-[DOMAIN]-XX
+            if (!acc[domain]) {
+              acc[domain] = [];
+            }
+            acc[domain].push(node);
+            return acc;
+          }, {} as Record<string, typeof cdiNodes>);
+          
+          // Sort domains alphabetically
+          const sortedDomains = Object.keys(cdiByDomain).sort();
+          
+          return sortedDomains.map((domain) => (
+            <div key={domain} className="mb-8">
+              <h3 className="text-lg font-medium text-gray-800 mb-3 capitalize">
+                {domain} Domain
+                <span className="text-sm text-gray-500 ml-2">
+                  ({cdiByDomain[domain].length} intents)
+                </span>
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                {cdiByDomain[domain].map((node) => (
+                  <Link
+                    key={node.id}
+                    href={`/reference/explorer/cdi/${node.id}`}
+                    className="border border-gray-200 p-3 hover:border-gray-400 transition-colors text-sm"
+                  >
+                    <div className="font-medium text-gray-900">{node.name}</div>
+                    <div className="text-xs text-gray-500 mt-1 font-mono">{node.id}</div>
+                  </Link>
+                ))}
               </div>
-              <span className="text-xs text-gray-400">→</span>
-            </Link>
-          ))}
-        </div>
+            </div>
+          ));
+        })()}
       </section>
 
       {/* CMP Layer */}
