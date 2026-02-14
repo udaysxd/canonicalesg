@@ -74,13 +74,32 @@ export default function ExplorerIndexPage() {
             return acc;
           }, {} as Record<string, typeof cdiNodes>);
           
-          // Sort domains alphabetically
-          const sortedDomains = Object.keys(cdiByDomain).sort();
+          // Domain name mapping
+          const domainNames: Record<string, string> = {
+            'biod': 'Biodiversity',
+            'clim': 'Climate',
+            'comm': 'Affected Communities',
+            'cons': 'Consumers',
+            'econ': 'Economic',
+            'ener': 'Energy',
+            'govr': 'Governance',
+            'matr': 'Materials',
+            'poll': 'Pollution',
+            'vcwk': 'Value Chain Workers',
+            'waste': 'Waste',
+            'watr': 'Water',
+            'work': 'Workforce'
+          };
+          
+          // Sort domains alphabetically by full name
+          const sortedDomains = Object.keys(cdiByDomain).sort((a, b) => 
+            (domainNames[a] || a).localeCompare(domainNames[b] || b)
+          );
           
           return sortedDomains.map((domain) => (
             <div key={domain} className="mb-8">
-              <h3 className="text-lg font-medium text-gray-800 mb-3 capitalize">
-                {domain} Domain
+              <h3 className="text-lg font-medium text-gray-800 mb-3">
+                {domainNames[domain] || domain.charAt(0).toUpperCase() + domain.slice(1)} Domain
                 <span className="text-sm text-gray-500 ml-2">
                   ({cdiByDomain[domain].length} intents)
                 </span>
