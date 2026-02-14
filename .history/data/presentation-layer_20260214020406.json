@@ -1,0 +1,147 @@
+{
+  "id": "PRESENTATION-LAYER",
+  "name": "Structured Sustainability Statements",
+  "short_name": "SSS",
+  "version": "1.0",
+  "description": "Presentation and disclosure layer defining structural formats for sustainability reports, annexes, and statement formats without including sample disclosures or illustrative metrics.",
+  "purpose": "SSS establishes the structural framework for presenting sustainability disclosures in formal, structured formats including the main disclosure document and supporting annexes, while strictly avoiding instance data, example values, or illustrative content.",
+  "responsibilities": [
+    "Define structured statement formats for sustainability disclosures",
+    "Specify field-level mappings to CDI intents",
+    "Document presentation roles and data types for each field",
+    "Maintain format-only discipline without creating disclosure obligations",
+    "Establish table structures and column definitions without sample data"
+  ],
+  "constraints": [
+    "SSS defines structure only—no sample disclosures",
+    "SSS does not include example metric values",
+    "SSS does not provide illustrative narratives",
+    "SSS does not instantiate CERM elements with actual data",
+    "SSS table formats define columns and data types without sample rows",
+    "SSS maintains formal separation from CDI disclosure slots (presentation vs. intent)"
+  ],
+  "relation_to_cdi": "SSS provides the presentation format for information intended by CDI disclosure slots. SSS handles how disclosures appear; CDI defines what categories of information belong in disclosures. This separation ensures presentation can evolve independently of disclosure intent architecture.",
+  "non_goals": [
+    "SSS is not a disclosure concept dictionary—definitions belong in CDI layer",
+    "SSS is not a metric identifier registry—those belong in CERM",
+    "SSS is not a framework mapping tool—that is CMP layer responsibility",
+    "SSS does not provide guidance on materiality assessments",
+    "SSS does not include sector-specific disclosure templates",
+    "SSS does not provide implementation examples"
+  ],
+  "structural_formats": [
+    {
+      "id": "SSS-FORMAT-DISCLOSURE-STATEMENT",
+      "name": "Structured Disclosure Statement",
+      "definition": "Main presentation document format for sustainability disclosures, organized into defined sections without prescribing specific content.",
+      "structure": {
+        "header_section": {
+          "description": "Entity identification, reporting period, boundary definitions",
+          "required_fields": [
+            "Entity identifier field",
+            "Time Period reference field",
+            "Boundary scope field"
+          ],
+          "field_types": "Reference to CERM element types, not actual values"
+        },
+        "metric_tables": {
+          "description": "Structured tables for metric presentation",
+          "table_structure": {
+            "columns": [
+              "Metric Identifier reference",
+              "Time Period reference",
+              "Value field (data type: numeric or categorical)",
+              "Unit of measure reference",
+              "Methodology reference",
+              "Boundary reference"
+            ],
+            "no_sample_rows": "Table defines column structure only"
+          }
+        },
+        "assertion_section": {
+          "description": "Formal declarations and assurance references",
+          "structure": {
+            "assertion_blocks": [
+              "Assertion type field",
+              "Subject matter reference",
+              "Evidence reference list",
+              "Assurance reference field"
+            ]
+          }
+        },
+        "narrative_sections": {
+          "description": "Structured positions for qualitative disclosure",
+          "structure": {
+            "section_slots": [
+              "Section identifier",
+              "CDI disclosure slot reference",
+              "Narrative content field (free text, no example)",
+              "Related metric references"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "SSS-FORMAT-TRANSITION-ANNEX",
+      "name": "Transition & Target Annex",
+      "definition": "Supporting document format for target definitions, trajectory disclosures, and transition pathway presentations.",
+      "structure": {
+        "target_summary_table": {
+          "description": "Overview of all targets with structural references",
+          "columns": [
+            "Target identifier field",
+            "Referenced Metric identifier",
+            "Baseline Time Period reference",
+            "Target Time Period reference",
+            "Target type field",
+            "Trajectory reference"
+          ],
+          "no_target_values": "Columns define structure, no example targets"
+        },
+        "trajectory_detail_table": {
+          "description": "Time-series structure for target pathways",
+          "columns": [
+            "Trajectory identifier field",
+            "Associated Target reference",
+            "Time Period sequence",
+            "Milestone marker fields",
+            "Methodology reference"
+          ],
+          "no_trajectory_values": "Columns define structure, no example pathways"
+        },
+        "methodology_reference_section": {
+          "description": "Structured presentation of methodologies governing targets and trajectories",
+          "structure": {
+            "methodology_blocks": [
+              "Methodology identifier",
+              "Scope description field",
+              "Governing entity reference",
+              "Version reference",
+              "CERM Methodology element reference"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "versioning_rules": [
+    "SSS major version: Breaking changes to table structures or format definitions",
+    "SSS minor version: Additive changes (new table columns, new sections) without breaking existing formats",
+    "SSS patch version: Clarifications, documentation updates, non-structural corrections",
+    "SSS version changes do not affect CERM, CDI, or CMP layer versions",
+    "Presentation format evolution is independent of data architecture evolution",
+    "All version changes require governance review for structural integrity"
+  ],
+  "governance_positioning": {
+    "authority": "Canonical ESG Technical Committee defines SSS structural formats",
+    "structural_integrity": "SSS must preserve formal separation from instance data and example content",
+    "review_criteria": [
+      "Does the format include any sample values or example data?",
+      "Does the format properly reference CERM element types without instantiation?",
+      "Does the format maintain separation from CDI disclosure intent definitions?",
+      "Is the table structure complete and unambiguous?",
+      "Is versioning properly incremented for structural changes?"
+    ]
+  }
+}

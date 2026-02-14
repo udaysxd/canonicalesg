@@ -1,0 +1,98 @@
+{
+  "id": "CMP-LAYER-ARCHITECTURE-1.0",
+  "name": "Canonical Mapping & Interpretation Layer",
+  "short_name": "CMP",
+  "version": "1.0",
+  "description": "Structural layer for framework interpretation, mapping rules, and non-authoritative positioning relative to external standards without defining actual framework mappings.",
+  "purpose": "CMP establishes the architectural framework for interpreting external disclosure standards (GRI, SASB, ESRS, TCFD, etc.) and mapping them to Canonical ESG structures, while explicitly maintaining non-authoritative positioning and structural independence.",
+  "responsibilities": [
+    "Define structural approach to external framework interpretation without asserting specific mappings",
+    "Establish mapping rule types without implementing them for specific standards",
+    "Maintain explicit non-authoritative positioning relative to external standards",
+    "Define structural independence rules—external frameworks do not alter CERM/CDI definitions",
+    "Establish evolution rules for managing external framework version changes",
+    "Preserve formal separation between canonical architecture and external standard content"
+  ],
+  "non_authoritative_positioning": [
+    "CMP does not assert that Canonical ESG definitions supersede external standards",
+    "CMP does not claim authoritative interpretation of GRI, SASB, ESRS, TCFD, or other frameworks",
+    "CMP mappings are structural convenience, not standard-setting",
+    "External frameworks remain authoritative for disclosure requirements",
+    "Canonical ESG maintains structural independence from external framework evolution",
+    "CMP mappings are versioned independently from external framework versions"
+  ],
+  "independence_rules": [
+    "External framework concepts do not alter CERM element definitions",
+    "External framework disclosure requirements do not modify CDI structural slots",
+    "External framework updates do not automatically trigger Canonical ESG version changes",
+    "CMP mappings are additive overlays, not canonical replacements",
+    "Structural integrity of CERM and CDI is preserved regardless of external framework alignment",
+    "Canonical ESG architecture may evolve independently of external standard revisions"
+  ],
+  "evolution_rules": [
+    "CMP major version: Breaking changes to mapping rule structures or independence principles",
+    "CMP minor version: Additive changes (new mapping rule types, new framework categories) without breaking existing mappings",
+    "CMP patch version: Clarifications, documentation updates, non-structural corrections",
+    "External framework updates (GRI 2021 to 2024, ESRS changes) do not automatically change CMP version",
+    "CMP mappings may be updated to reflect external framework changes without structural CMP changes",
+    "All CMP updates must preserve non-authoritative positioning"
+  ],
+  "structural_components": [
+    {
+      "id": "CMP-COMPONENT-FRAMEWORK-CATEGORY",
+      "name": "Framework Category",
+      "definition": "A classification of external disclosure standards by type—voluntary, mandatory, sector-specific, thematic—without asserting specific framework content.",
+      "characteristics": [
+        "Defined as structural categories only",
+        "May be referenced by mapping rules",
+        "Does not prescribe specific framework requirements",
+        "Subject to CMP versioning"
+      ]
+    },
+    {
+      "id": "CMP-COMPONENT-MAPPING-RULE-TYPE",
+      "name": "Mapping Rule Type",
+      "definition": "A defined approach for relating external framework concepts to CERM elements or CDI slots without implementing specific mappings.",
+      "characteristics": [
+        "Defines rule structure (one-to-one, many-to-one, conditional)",
+        "May specify transformation logic categories",
+        "Does not assert specific external-to-canonical mappings",
+        "Subject to CMP versioning"
+      ]
+    },
+    {
+      "id": "CMP-COMPONENT-INTERPRETATION-SLOT",
+      "name": "Interpretation Slot",
+      "definition": "A structural position for expressing how external framework concepts may be understood in canonical terms without asserting authoritative interpretation.",
+      "characteristics": [
+        "Has explicit non-authoritative disclaimer",
+        "References CERM element types",
+        "References external framework categories",
+        "Subject to CMP versioning"
+      ]
+    },
+    {
+      "id": "CMP-COMPONENT-VERSION-MANAGEMENT",
+      "name": "Version Management",
+      "definition": "Structural rules for managing external framework version changes without breaking existing Canonical ESG implementations.",
+      "characteristics": [
+        "Defines versioning independence principles",
+        "Establishes mapping update procedures",
+        "Preserves backward compatibility rules",
+        "Subject to CMP versioning"
+      ]
+    }
+  ],
+  "governance_positioning": {
+    "authority": "Canonical ESG Technical Committee defines CMP structural architecture",
+    "non_authoritative_on_frameworks": "CMP does not claim to authoritatively interpret or replace external standards",
+    "structural_integrity": "CMP must preserve formal independence between canonical architecture and external frameworks",
+    "review_criteria": [
+      "Does the change maintain non-authoritative positioning?",
+      "Does the change preserve structural independence from external frameworks?",
+      "Does the change avoid asserting specific framework mappings?",
+      "Is versioning properly incremented for structural changes?",
+      "Does the change preserve CERM/CDI integrity?"
+    ]
+  }
+}

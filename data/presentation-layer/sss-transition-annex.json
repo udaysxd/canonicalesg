@@ -1,0 +1,90 @@
+{
+  "id": "SSS-002",
+  "name": "Transition & Target Annex",
+  "purpose": "Structured presentation of forward-looking climate targets, trajectories, and transition planning disclosures",
+  "nonAuthoritativeNote": "This annex standardises presentation format only and does not create disclosure obligations, assert compliance, or interpret regulatory requirements.",
+  "fields": [
+    {
+      "id": "SSS-FIELD-010",
+      "label": "Target Type",
+      "mappedCdi": "CDI-CLIMATE-007",
+      "dataType": "text",
+      "unit": null,
+      "assuranceApplicable": false,
+      "presentationRole": "target_descriptor"
+    },
+    {
+      "id": "SSS-FIELD-011",
+      "label": "Base Year",
+      "mappedCdi": "CDI-CLIMATE-007",
+      "dataType": "text",
+      "unit": null,
+      "assuranceApplicable": false,
+      "presentationRole": "target_descriptor"
+    },
+    {
+      "id": "SSS-FIELD-012",
+      "label": "Target Year",
+      "mappedCdi": "CDI-CLIMATE-007",
+      "dataType": "text",
+      "unit": null,
+      "assuranceApplicable": false,
+      "presentationRole": "target_descriptor"
+    },
+    {
+      "id": "SSS-FIELD-013",
+      "label": "Interim Milestones",
+      "mappedCdi": "CDI-CLIMATE-008",
+      "dataType": "text",
+      "unit": null,
+      "assuranceApplicable": false,
+      "presentationRole": "progress_indicator"
+    },
+    {
+      "id": "SSS-FIELD-014",
+      "label": "Scope Coverage",
+      "mappedCdi": "CDI-CLIMATE-007",
+      "dataType": "text",
+      "unit": null,
+      "assuranceApplicable": false,
+      "presentationRole": "target_descriptor"
+    },
+    {
+      "id": "SSS-FIELD-015",
+      "label": "Offsets Included",
+      "mappedCdi": "CDI-CLIMATE-004",
+      "dataType": "text",
+      "unit": null,
+      "assuranceApplicable": false,
+      "presentationRole": "target_descriptor"
+    },
+    {
+      "id": "SSS-FIELD-016",
+      "label": "Progress",
+      "mappedCdi": "CDI-CLIMATE-008",
+      "dataType": "numeric",
+      "unit": "tCO2e",
+      "assuranceApplicable": true,
+      "presentationRole": "progress_indicator"
+    },
+    {
+      "id": "SSS-FIELD-017",
+      "label": "Methodology",
+      "mappedCdi": "CDI-CLIMATE-001",
+      "dataType": "text",
+      "unit": null,
+      "assuranceApplicable": false,
+      "presentationRole": "methodology_descriptor"
+    },
+    {
+      "id": "SSS-FIELD-018",
+      "label": "Assurance Level",
+      "mappedCdi": "CDI-CLIMATE-008",
+      "dataType": "text",
+      "unit": null,
+      "assuranceApplicable": false,
+      "presentationRole": "assurance_indicator"
+    }
+  ],
+  "version": "1.0"
+}

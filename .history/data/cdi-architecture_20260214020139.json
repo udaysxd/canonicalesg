@@ -1,0 +1,90 @@
+{
+  "id": "CDI-LAYER",
+  "name": "Canonical Disclosure Intent Layer",
+  "short_name": "CDI",
+  "version": "1.0",
+  "description": "Structural layer defining disclosure intent, constraints, and architectural positioning without asserting authoritative mappings or disclosure concept definitions.",
+  "purpose": "CDI establishes the structural framework for expressing disclosure requirements, constraints, and intended audiences without defining actual disclosure concepts or asserting authoritative mappings to external standards.",
+  "responsibilities": [
+    "Define structural slots for disclosure intent without populating them with disclosure concepts",
+    "Establish constraint types that may govern disclosure (materiality, jurisdiction, sector, etc.)",
+    "Specify intended audience categories without prescribing content",
+    "Define structural relationship to CERM without asserting data values",
+    "Establish versioning independence from external frameworks",
+    "Maintain formal separation from authoritative standard-setting"
+  ],
+  "constraints": [
+    "CDI does not define disclosure concepts—only their structural placement",
+    "CDI does not assert authoritative mappings to GRI, SASB, ESRS, or other frameworks",
+    "CDI cannot override CERM structural definitions",
+    "CDI cannot introduce instance data or example values",
+    "CDI must remain stable across external framework version changes",
+    "CDI cannot assume specific jurisdictional requirements"
+  ],
+  "interaction_with_cerm": "CDI operates on top of CERM by defining which structural elements from the Canonical Element Reference Model may be relevant for disclosure purposes. CDI does not alter CERM definitions; it only references them for disclosure intent expression.",
+  "structural_components": [
+    {
+      "id": "CDI-COMPONENT-DISCLOSURE-SLOT",
+      "name": "Disclosure Slot",
+      "definition": "A structural position within CDI intended to hold disclosure intent without defining the actual disclosure concept. Slots have identifiers, structural types, and constraint references.",
+      "characteristics": [
+        "Has unique identifier within CDI namespace",
+        "References constraint types without asserting specific constraints",
+        "May map to CERM element types without asserting specific instances",
+        "Subject to versioning independent of external frameworks"
+      ]
+    },
+    {
+      "id": "CDI-COMPONENT-CONSTRAINT-TYPE",
+      "name": "Constraint Type",
+      "definition": "A category of limitation or boundary that may govern disclosure slots—such as materiality thresholds, jurisdictional scope, sector applicability, or temporal relevance.",
+      "characteristics": [
+        "Defined structurally without specific values",
+        "May be referenced by multiple disclosure slots",
+        "Subject to CDI versioning",
+        "Cannot prescribe specific external standard requirements"
+      ]
+    },
+    {
+      "id": "CDI-COMPONENT-INTENDED-AUDIENCE",
+      "name": "Intended Audience",
+      "definition": "A structural classification of disclosure recipients—investors, regulators, civil society, internal management—without prescribing what must be disclosed to each.",
+      "characteristics": [
+        "Defined as audience categories only",
+        "May be linked to disclosure slots",
+        "Does not assert information content requirements",
+        "Subject to CDI versioning"
+      ]
+    },
+    {
+      "id": "CDI-COMPONENT-CERM-REFERENCE",
+      "name": "CERM Reference",
+      "definition": "A structural pointer from CDI to CERM element types, establishing which canonical elements may be relevant for disclosure without asserting specific data values.",
+      "characteristics": [
+        "References CERM element types (Entity, Activity, Metric, etc.)",
+        "Does not instantiate specific elements",
+        "Maintains CERM structural integrity",
+        "Version-controlled with CDI updates"
+      ]
+    }
+  ],
+  "versioning_rules": [
+    "CDI major version: Breaking changes to disclosure slot structure or constraint type definitions",
+    "CDI minor version: Additive changes (new slots, new constraint types) without breaking existing structures",
+    "CDI patch version: Clarifications, documentation updates, non-structural corrections",
+    "CDI version changes do not automatically track external framework updates (GRI, SASB, ESRS)",
+    "External framework alignment is handled in CMP layer, not CDI",
+    "All version changes require governance review"
+  ],
+  "governance_positioning": {
+    "authority": "Canonical ESG Technical Committee defines CDI structural architecture",
+    "non_authoritative_on_disclosure": "CDI does not assert what must be disclosed—that authority rests with external standard setters",
+    "structural_integrity": "CDI must preserve formal separation between canonical structure and external framework requirements",
+    "review_criteria": [
+      "Does the change maintain structural separation from external frameworks?",
+      "Does the change preserve CERM reference integrity?",
+      "Does the change avoid asserting disclosure content?",
+      "Is versioning properly incremented for structural changes?"
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "id": "SSS-001",
+  "name": "Primary Sustainability Position Statement",
+  "purpose": "Standardised anchor table for core climate metrics providing structured presentation format for emissions disclosures",
+  "nonAuthoritativeNote": "This structured statement is a presentation format only and does not create disclosure obligations, assert compliance, or interpret regulatory requirements.",
+  "fields": [
+    {
+      "id": "SSS-FIELD-001",
+      "label": "Scope 1 Emissions",
+      "mappedCdi": "CDI-CLIMATE-001",
+      "dataType": "numeric",
+      "unit": "tCO2e",
+      "assuranceApplicable": true,
+      "presentationRole": "metric"
+    },
+    {
+      "id": "SSS-FIELD-002",
+      "label": "Scope 2 Emissions",
+      "mappedCdi": "CDI-CLIMATE-002",
+      "dataType": "numeric",
+      "unit": "tCO2e",
+      "assuranceApplicable": true,
+      "presentationRole": "metric"
+    },
+    {
+      "id": "SSS-FIELD-003",
+      "label": "Scope 3 Emissions",
+      "mappedCdi": "CDI-CLIMATE-003",
+      "dataType": "numeric",
+      "unit": "tCO2e",
+      "assuranceApplicable": true,
+      "presentationRole": "metric"
+    },
+    {
+      "id": "SSS-FIELD-004",
+      "label": "Carbon Removals",
+      "mappedCdi": "CDI-CLIMATE-004",
+      "dataType": "numeric",
+      "unit": "tCO2e",
+      "assuranceApplicable": true,
+      "presentationRole": "metric"
+    },
+    {
+      "id": "SSS-FIELD-005",
+      "label": "Net Emissions",
+      "mappedCdi": "CDI-CLIMATE-005",
+      "dataType": "numeric",
+      "unit": "tCO2e",
+      "assuranceApplicable": true,
+      "presentationRole": "metric"
+    },
+    {
+      "id": "SSS-FIELD-006",
+      "label": "Emissions Intensity",
+      "mappedCdi": "CDI-CLIMATE-006",
+      "dataType": "numeric",
+      "unit": null,
+      "assuranceApplicable": true,
+      "presentationRole": "metric"
+    },
+    {
+      "id": "SSS-FIELD-007",
+      "label": "Baseline Year",
+      "mappedCdi": "CDI-CLIMATE-007",
+      "dataType": "text",
+      "unit": null,
+      "assuranceApplicable": false,
+      "presentationRole": "target_descriptor"
+    },
+    {
+      "id": "SSS-FIELD-008",
+      "label": "Target Year",
+      "mappedCdi": "CDI-CLIMATE-007",
+      "dataType": "text",
+      "unit": null,
+      "assuranceApplicable": false,
+      "presentationRole": "target_descriptor"
+    },
+    {
+      "id": "SSS-FIELD-009",
+      "label": "Gap to Target",
+      "mappedCdi": "CDI-CLIMATE-008",
+      "dataType": "numeric",
+      "unit": "tCO2e",
+      "assuranceApplicable": true,
+      "presentationRole": "progress_indicator"
+    }
+  ],
+  "version": "1.0"
+}

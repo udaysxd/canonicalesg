@@ -1,0 +1,190 @@
+{
+  "id": "CDI-INTENT-REGISTRY-CLIMATE-1.0",
+  "name": "Canonical Disclosure Intent Registry — Climate",
+  "version": "1.0",
+  "description": "Semantic disclosure intents for climate-related sustainability reporting. Framework-agnostic, structurally defined, institutionally durable.",
+  "intents": [
+    {
+      "id": "CDI-CLIMATE-001",
+      "name": "Gross Scope 1 Emissions",
+      "definition": "Total direct greenhouse gas emissions occurring from sources that are owned or controlled by the entity. Includes emissions from combustion in owned or controlled boilers, furnaces, vehicles; emissions from chemical production in owned or controlled process equipment.",
+      "referencedElements": [
+        "CERM-ELEMENT-ENTITY",
+        "CERM-ELEMENT-METRIC",
+        "CERM-ELEMENT-METRIC-IDENTIFIER",
+        "CERM-ELEMENT-BOUNDARY",
+        "CERM-ELEMENT-TIME-PERIOD"
+      ],
+      "boundaryApplicability": "Organizational boundary defined by equity share or operational control. Geospatial boundary at facility or entity level.",
+      "temporalApplicability": "Reporting period aligned to fiscal or calendar year. Annual aggregation with optional sub-annual disaggregation.",
+      "calculationRole": "measured",
+      "stabilityNote": "Definitionally stable since Kyoto Protocol. Methodological variations exist but core concept endures across all major frameworks. Resilient to framework evolution.",
+      "version": "1.0"
+    },
+    {
+      "id": "CDI-CLIMATE-002",
+      "name": "Gross Scope 2 Emissions",
+      "definition": "Indirect greenhouse gas emissions from the generation of purchased or acquired electricity, steam, heating, or cooling consumed by the entity. Represents emissions occurring at the facility where energy is generated, not where consumed.",
+      "referencedElements": [
+        "CERM-ELEMENT-ENTITY",
+        "CERM-ELEMENT-ACTIVITY",
+        "CERM-ELEMENT-METRIC",
+        "CERM-ELEMENT-METRIC-IDENTIFIER",
+        "CERM-ELEMENT-BOUNDARY",
+        "CERM-ELEMENT-TIME-PERIOD",
+        "CERM-ELEMENT-METHODOLOGY"
+      ],
+      "boundaryApplicability": "Organizational boundary aligned to energy consumption accounting. Geographic boundary defined by energy delivery network.",
+      "temporalApplicability": "Reporting period synchronized to energy billing cycles where feasible. Annual aggregation standard.",
+      "calculationRole": "derived",
+      "stabilityNote": "Core concept stable since introduction of Scope categorization. Dual methodological approaches (location-based, market-based) represent calculation variations, not definitional changes.",
+      "version": "1.0"
+    },
+    {
+      "id": "CDI-CLIMATE-003",
+      "name": "Gross Scope 3 Emissions",
+      "definition": "All indirect greenhouse gas emissions not included in Scope 2 that occur in the value chain of the entity, including both upstream and downstream emissions. Upstream includes purchased goods and services, capital goods, fuel and energy-related activities, upstream transportation and distribution. Downstream includes downstream transportation, processing of sold products, use of sold products, end-of-life treatment of sold products.",
+      "referencedElements": [
+        "CERM-ELEMENT-ENTITY",
+        "CERM-ELEMENT-ACTIVITY",
+        "CERM-ELEMENT-METRIC",
+        "CERM-ELEMENT-METRIC-IDENTIFIER",
+        "CERM-ELEMENT-BOUNDARY",
+        "CERM-ELEMENT-GEOSPATIAL-BOUNDARY",
+        "CERM-ELEMENT-TIME-PERIOD",
+        "CERM-ELEMENT-METHODOLOGY"
+      ],
+      "boundaryApplicability": "Value chain boundary defined by entity's goods and services flow. Spans organizational boundary to encompass suppliers, logistics, product lifecycle, and end-of-life.",
+      "temporalApplicability": "Reporting period may vary by category. Some categories annual by default; others event-triggered or multi-year.",
+      "calculationRole": "derived",
+      "stabilityNote": "Broadest and most methodologically diverse scope. Fifteen upstream and downstream categories defined structurally. Category definitions stable; measurement approaches continue evolving. Framework-agnostic structure preserved regardless of specific framework category mappings.",
+      "version": "1.0"
+    },
+    {
+      "id": "CDI-CLIMATE-004",
+      "name": "Carbon Removals",
+      "definition": "Quantified removal of greenhouse gases from the atmosphere through biological, chemical, or physical processes. Includes nature-based removals through forest management, soil carbon enhancement, wetland restoration. Includes technology-based removals through direct air capture, bioenergy with carbon capture.",
+      "referencedElements": [
+        "CERM-ELEMENT-ENTITY",
+        "CERM-ELEMENT-ACTIVITY",
+        "CERM-ELEMENT-METRIC",
+        "CERM-ELEMENT-METRIC-IDENTIFIER",
+        "CERM-ELEMENT-GEOSPATIAL-BOUNDARY",
+        "CERM-ELEMENT-TIME-PERIOD",
+        "CERM-ELEMENT-METHODOLOGY",
+        "CERM-ELEMENT-EVIDENCE"
+      ],
+      "boundaryApplicability": "Boundary defined by ownership or control of removal activity. Nature-based removals subject to land ownership or management rights. Technology-based removals subject to operational control of facility.",
+      "temporalApplicability": "Temporal applicability defined by durability period of removal. Short-term removals distinguished from long-term storage. Reporting period captures vintage year of removal.",
+      "calculationRole": "measured",
+      "stabilityNote": "Emerging disclosure intent gaining structural prominence. Distinguishing removals from avoided emissions is definitional and stable. Methodological measurement approaches under active development but core semantic stable.",
+      "version": "1.0"
+    },
+    {
+      "id": "CDI-CLIMATE-005",
+      "name": "Net Emissions",
+      "definition": "Algebraic sum of gross greenhouse gas emissions across all scopes minus quantified carbon removals. Represents net contribution to atmospheric greenhouse gas concentration change over reporting period.",
+      "referencedElements": [
+        "CERM-ELEMENT-ENTITY",
+        "CERM-ELEMENT-METRIC",
+        "CERM-ELEMENT-METRIC-IDENTIFIER",
+        "CERM-ELEMENT-TIME-PERIOD",
+        "CERM-ELEMENT-METHODOLOGY"
+      ],
+      "boundaryApplicability": "Boundary determined by aggregation of component metrics. Organizational boundary alignment across Scope 1, 2, 3 essential for meaningful net calculation. Geospatial boundary inherited from component metrics.",
+      "temporalApplicability": "Temporal alignment across component metrics required. Net calculation valid only for identical or harmonized time periods.",
+      "calculationRole": "derived",
+      "stabilityNote": "Arithmetically definitional: emissions minus removals. Semantic stability absolute. Interpretive debates concern component inclusion, not net concept itself. Endures across all framework contexts.",
+      "version": "1.0"
+    },
+    {
+      "id": "CDI-CLIMATE-006",
+      "name": "Emissions Intensity",
+      "definition": "Ratio of greenhouse gas emissions to a specified denominator representing entity output, activity, or scale. Denominator may be physical (units produced, area operated) or economic (revenue, value added). Enables comparability across entity sizes and normalization for economic analysis.",
+      "referencedElements": [
+        "CERM-ELEMENT-ENTITY",
+        "CERM-ELEMENT-METRIC",
+        "CERM-ELEMENT-METRIC-IDENTIFIER",
+        "CERM-ELEMENT-ACTIVITY",
+        "CERM-ELEMENT-TIME-PERIOD",
+        "CERM-ELEMENT-METHODOLOGY"
+      ],
+      "boundaryApplicability": "Boundary defined by numerator metric. Intensity ratio inherits boundary scoping from underlying emissions metric. Denominator boundary defined separately by financial or operational accounting convention.",
+      "temporalApplicability": "Temporal alignment of numerator and denominator required. Both metrics must cover identical or harmonized time periods for valid ratio calculation.",
+      "calculationRole": "derived",
+      "stabilityNote": "Ratiometric concept structurally stable. Methodological variation concerns denominator selection, not intensity construct itself. Durable across frameworks and time. Enables longitudinal and cross-sectional comparison.",
+      "version": "1.0"
+    },
+    {
+      "id": "CDI-CLIMATE-007",
+      "name": "Existence of Emissions Reduction Target",
+      "definition": "Declarative disclosure indicating whether the entity has established a formal target for reducing greenhouse gas emissions. Target existence is a governance and strategic posture disclosure, independent of target ambition or achievement trajectory.",
+      "referencedElements": [
+        "CERM-ELEMENT-ENTITY",
+        "CERM-ELEMENT-TARGET",
+        "CERM-ELEMENT-METRIC",
+        "CERM-ELEMENT-TIME-PERIOD"
+      ],
+      "boundaryApplicability": "Boundary defined by entity's organizational perimeter. Target may apply to full entity, defined subsidiaries, or specified operational boundaries.",
+      "temporalApplicability": "Target existence assessed at reporting date. Target establishment date may be historical. Target end date defines temporal scope of commitment.",
+      "calculationRole": "declarative",
+      "stabilityNote": "Binary existence disclosure semantically simple and stable. Ambition, scope, and methodology of target are separate disclosure intents. Existence alone represents durable disclosure category.",
+      "version": "1.0"
+    },
+    {
+      "id": "CDI-CLIMATE-008",
+      "name": "Progress Against Emissions Reduction Target",
+      "definition": "Measurement of actual emissions performance relative to established reduction target baseline. Discloses deviation from target trajectory, whether positive or negative, in absolute or relative terms.",
+      "referencedElements": [
+        "CERM-ELEMENT-ENTITY",
+        "CERM-ELEMENT-TARGET",
+        "CERM-ELEMENT-TRAJECTORY",
+        "CERM-ELEMENT-METRIC",
+        "CERM-ELEMENT-TIME-PERIOD",
+        "CERM-ELEMENT-METHODOLOGY"
+      ],
+      "boundaryApplicability": "Boundary must align with target boundary. Progress measurement invalid if metric boundary diverges from target boundary.",
+      "temporalApplicability": "Progress assessed at reporting date relative to target baseline date and interim milestone dates. Cumulative and periodic progress may both be disclosed.",
+      "calculationRole": "derived",
+      "stabilityNote": "Comparative disclosure structure stable: actual versus target. Methodological variation concerns gap calculation approaches, not core disclosure concept. Endures across frameworks regardless of target specificity.",
+      "version": "1.0"
+    },
+    {
+      "id": "CDI-CLIMATE-009",
+      "name": "Existence of Climate Transition Plan",
+      "definition": "Declarative disclosure indicating whether the entity has established a formal plan describing strategic approach to transitioning operations, products, and governance to align with climate objectives. Plan existence is governance disclosure, independent of plan quality, credibility, or implementation progress.",
+      "referencedElements": [
+        "CERM-ELEMENT-ENTITY",
+        "CERM-ELEMENT-TARGET",
+        "CERM-ELEMENT-TRAJECTORY",
+        "CERM-ELEMENT-METHODOLOGY",
+        "CERM-ELEMENT-TIME-PERIOD"
+      ],
+      "boundaryApplicability": "Boundary typically at entity or consolidated group level. Plan may specify subsidiary or operational unit applicability.",
+      "temporalApplicability": "Plan existence assessed at reporting date. Plan adoption date may be historical. Plan horizon defines forward temporal scope.",
+      "calculationRole": "declarative",
+      "stabilityNote": "Binary existence disclosure semantically stable. Plan content, specificity, and validation are separate disclosure intents. Existence alone represents durable structural category gaining prominence across jurisdictions.",
+      "version": "1.0"
+    },
+    {
+      "id": "CDI-CLIMATE-010",
+      "name": "Renewable Energy Consumption",
+      "definition": "Quantity of energy consumed by the entity that is derived from renewable sources, disaggregated by energy type (electricity, thermal, transport fuel) and procurement mechanism (generated on-site, purchased with attribute claims, purchased without attribute claims).",
+      "referencedElements": [
+        "CERM-ELEMENT-ENTITY",
+        "CERM-ELEMENT-ACTIVITY",
+        "CERM-ELEMENT-METRIC",
+        "CERM-ELEMENT-METRIC-IDENTIFIER",
+        "CERM-ELEMENT-BOUNDARY",
+        "CERM-ELEMENT-TIME-PERIOD",
+        "CERM-ELEMENT-METHODOLOGY",
+        "CERM-ELEMENT-EVIDENCE"
+      ],
+      "boundaryApplicability": "Organizational boundary defined by equity share or operational control. Energy boundary distinguishes physical consumption from contractual claims.",
+      "temporalApplicability": "Reporting period aligned to energy billing and generation cycles. Annual aggregation standard with optional sub-annual granularity.",
+      "calculationRole": "measured",
+      "stabilityNote": "Core energy accounting concept stable. Methodological evolution concerns attribute tracking, renewable certification, and market boundary definitions, not fundamental disclosure intent. Framework-agnostic structure preserved across jurisdictional variations.",
+      "version": "1.0"
+    }
+  ]
+}

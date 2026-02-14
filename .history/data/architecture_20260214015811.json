@@ -1,0 +1,131 @@
+{
+  "id": "CANONICAL-ESG-ARCHITECTURE-1.0",
+  "name": "Canonical ESG Full Architecture",
+  "version": "1.0",
+  "description": "Structural definition of the Canonical ESG institutional data architecture comprising four canonical layers and cross-cutting design principles.",
+  "layers": [
+    {
+      "id": "CERM-LAYER",
+      "name": "Canonical Element Reference Model",
+      "purpose": "Defines the canonical element types and their permitted relationships that constitute the foundational data layer for sustainability disclosure.",
+      "responsibilities": [
+        "Define canonical element types",
+        "Specify permitted relationships between elements",
+        "Establish structural constraints and validation rules",
+        "Maintain element type versioning and stability"
+      ],
+      "constraints": [
+        "No external framework concepts may alter element definitions",
+        "All relationships must be explicitly directional",
+        "Element types must remain stable across minor versions"
+      ],
+      "interactionContracts": [
+        "CDI layer references CERM elements without modification",
+        "CMP layer does not create new CERM elements",
+        "SSS layer references CDI which references CERM"
+      ],
+      "version": "1.0"
+    },
+    {
+      "id": "CDI-LAYER",
+      "name": "Canonical Disclosure Intent",
+      "purpose": "Defines the structural layer for disclosure intent, constraints, and architectural positioning without asserting authoritative mappings.",
+      "responsibilities": [
+        "Define disclosure intent semantics",
+        "Specify boundary and temporal applicability",
+        "Document calculation roles and stability constraints",
+        "Reference CERM elements without creating new element types"
+      ],
+      "constraints": [
+        "No framework-specific disclosure concepts",
+        "All intents must reference existing CERM elements",
+        "Intent definitions must remain framework-agnostic"
+      ],
+      "interactionContracts": [
+        "References CERM elements for structural grounding",
+        "CMP layer maps framework requirements to CDI intents",
+        "SSS layer references CDI intents for field mappings"
+      ],
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-LAYER",
+      "name": "Canonical Mapping & Interpretation",
+      "purpose": "Defines the structural layer for framework interpretation, mapping rules, and non-authoritative positioning relative to external standards.",
+      "responsibilities": [
+        "Document non-authoritative framework interpretations",
+        "Map external framework requirements to CDI intents",
+        "Provide interpretive rationale and scope conditions",
+        "Maintain explicit non-assertion of authority"
+      ],
+      "constraints": [
+        "All mappings must be explicitly non-authoritative",
+        "No creation of new CDI intents within CMP",
+        "Framework interpretations must include rationale"
+      ],
+      "interactionContracts": [
+        "Maps framework requirements to existing CDI intents",
+        "Does not modify CERM or CDI definitions",
+        "Provides interpretive layer for SSS consumption"
+      ],
+      "version": "1.0"
+    },
+    {
+      "id": "PRESENTATION-LAYER",
+      "name": "Structured Sustainability Statements",
+      "purpose": "Defines the presentation and disclosure layer for structured sustainability reports, annexes, and statement formats.",
+      "responsibilities": [
+        "Define structured statement formats",
+        "Specify field-level CDI mappings",
+        "Document presentation roles and data types",
+        "Maintain format-only discipline without creating disclosure obligations"
+      ],
+      "constraints": [
+        "No creation of disclosure obligations",
+        "All fields must map to existing CDI intents",
+        "Format definitions must remain presentation-only"
+      ],
+      "interactionContracts": [
+        "References CDI intents for all field mappings",
+        "Does not create new metrics or disclosure requirements",
+        "Provides structured format for disclosure consumption"
+      ],
+      "version": "1.0"
+    }
+  ],
+  "cross_cutting": {
+    "design_principles": {
+      "file": "/data/design-principles.json",
+      "count": 9,
+      "principles": [
+        "Structural Neutrality",
+        "Interoperability",
+        "Auditability",
+        "Reuse",
+        "Stability",
+        "Extensibility",
+        "Transparency",
+        "Non-Assertion",
+        "Governance of Principles"
+      ]
+    }
+  },
+  "versioning_rules": {
+    "major_version": "Breaking structural changes to element definitions or relationships",
+    "minor_version": "Additive changes (new elements, new relationships) without breaking existing structures",
+    "patch_version": "Clarifications, documentation updates, non-structural corrections",
+    "governance_authority": "Canonical ESG Technical Committee",
+    "change_process": "Proposed changes require architectural review against all nine design principles. No external framework alignment justifies structural compromise."
+  },
+  "governance": {
+    "architecture_authority": "Canonical ESG Technical Committee",
+    "principle_guardian": "Canonical ESG Architecture Board",
+    "change_review_criteria": [
+      "Adherence to Structural Neutrality",
+      "Preservation of backward compatibility or explicit major version increment",
+      "Completeness of relationship definitions",
+      "Absence of external framework coupling",
+      "Clarity of versioning impact"
+    ]
+  }
+}

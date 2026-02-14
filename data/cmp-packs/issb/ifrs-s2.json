@@ -1,0 +1,72 @@
+{
+  "id": "CMP-PACK-ISSB-S2",
+  "frameworkName": "IFRS S2 Climate-related Disclosures",
+  "jurisdiction": "Global Baseline",
+  "authorityNote": "Non-authoritative interpretive mapping maintained by Canonical ESG. This pack documents interpretations of IFRS S2 requirements using Canonical ESG disclosure intents. It does not claim authoritative status relative to the ISSB standard. Users must consult official ISSB documentation for definitive requirements.",
+  "version": "1.0",
+  "mappings": [
+    {
+      "id": "CMP-ISSB-S2-001",
+      "frameworkReference": "IFRS S2 29(a)",
+      "disclosureSummary": "Disclosure of gross Scope 1 greenhouse gas emissions reflecting direct emissions from owned or controlled sources",
+      "mappedCdi": "CDI-CLIMATE-001",
+      "interpretiveRationale": "IFRS S2 requires disclosure of direct emissions. The CDI Gross Scope 1 Emissions represents the stable semantic concept corresponding to this requirement. The mapping connects the framework-specific requirement to the canonical disclosure intent without reinterpreting the underlying metric definition.",
+      "scopeConditions": "Applies to reporting entity boundary as defined under the applicable consolidation basis. Organizational boundary determination remains subject to entity-specific circumstances.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-ISSB-S2-002",
+      "frameworkReference": "IFRS S2 29(b)",
+      "disclosureSummary": "Disclosure of gross Scope 2 greenhouse gas emissions reflecting indirect emissions from purchased or acquired energy",
+      "mappedCdi": "CDI-CLIMATE-002",
+      "interpretiveRationale": "IFRS S2 requires disclosure of indirect emissions from energy consumption. The CDI Gross Scope 2 Emissions provides the canonical semantic mapping for this requirement. Methodological choices regarding location-based or market-based approaches remain independent of this intent mapping.",
+      "scopeConditions": "Energy consumption boundary defined by metering and billing arrangements. Temporal alignment between consumption and generation subject to methodological documentation.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-ISSB-S2-003",
+      "frameworkReference": "IFRS S2 29(c)",
+      "disclosureSummary": "Disclosure of gross Scope 3 greenhouse gas emissions reflecting indirect emissions across the value chain",
+      "mappedCdi": "CDI-CLIMATE-003",
+      "interpretiveRationale": "IFRS S2 requires disclosure of value chain emissions. The CDI Gross Scope 3 Emissions represents the comprehensive canonical concept spanning upstream and downstream categories. Category scoping and materiality determination remain subject to entity-specific assessment methodologies.",
+      "scopeConditions": "Value chain boundary defined by goods and services flow analysis. Category inclusion subject to entity-specific materiality assessment. Geospatial scope spans supplier and downstream partner locations.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-ISSB-S2-004",
+      "frameworkReference": "IFRS S2 29(d)",
+      "disclosureSummary": "Disclosure of emissions intensity metric relating greenhouse gas emissions to output or activity measure",
+      "mappedCdi": "CDI-CLIMATE-006",
+      "interpretiveRationale": "IFRS S2 requires disclosure of intensity metrics. The CDI Emissions Intensity provides the canonical semantic foundation for ratiometric disclosure. Denominator selection remains entity-specific and subject to methodological disclosure without reinterpretation by this mapping.",
+      "scopeConditions": "Numerator scope aligned with Scope 1, 2, or 3 determination. Denominator scope defined by operational or financial accounting convention. Temporal alignment required between numerator and denominator periods.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-ISSB-S2-005",
+      "frameworkReference": "IFRS S2 33(a)",
+      "disclosureSummary": "Disclosure of climate-related transition plans if and how such plans exist",
+      "mappedCdi": "CDI-CLIMATE-009",
+      "interpretiveRationale": "IFRS S2 requires disclosure of transition planning. The CDI Existence of Climate Transition Plan provides the binary semantic indicator for this requirement. Plan content, specificity, and validation are separate from the existence disclosure mapped here.",
+      "scopeConditions": "Entity-level scope applies. Subsidiary or operational unit applicability subject to entity-specific definition. Plan horizon scope defines temporal extent of disclosed planning.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-ISSB-S2-006",
+      "frameworkReference": "IFRS S2 33(b)",
+      "disclosureSummary": "Disclosure of quantitative climate-related targets including greenhouse gas emissions reduction targets if and how such targets exist",
+      "mappedCdi": "CDI-CLIMATE-007",
+      "interpretiveRationale": "IFRS S2 requires disclosure of target existence. The CDI Existence of Emissions Reduction Target provides the declarative semantic mapping for this governance disclosure. Target ambition, scope, and baseline are disclosed separately from the binary existence indicator.",
+      "scopeConditions": "Target boundary defined by entity's organizational perimeter. Target applicability to subsidiaries or units subject to entity-specific specification. Temporal scope defined by target establishment and end dates.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-ISSB-S2-007",
+      "frameworkReference": "IFRS S2 33(b)(ii)",
+      "disclosureSummary": "Disclosure of progress toward achieving stated climate-related targets including emissions reduction targets",
+      "mappedCdi": "CDI-CLIMATE-008",
+      "interpretiveRationale": "IFRS S2 requires disclosure of target progress. The CDI Progress Against Emissions Reduction Target provides the comparative semantic mapping for performance disclosure. Gap calculation methodologies remain entity-specific without reinterpretation by this mapping.",
+      "scopeConditions": "Progress assessment requires alignment with target boundary definition. Temporal scope encompasses baseline through current reporting period. Cumulative and periodic progress metrics both within scope of this mapping.",
+      "version": "1.0"
+    }
+  ]
+}
