@@ -5,8 +5,8 @@ import { z } from "zod"
 // ============================================================
 
 export const CdiIdSchema = z.string().regex(
-  /^CDI-CLIMATE-\d{3}$/,
-  "CDI ID must match pattern: CDI-CLIMATE-XXX where XXX is a three-digit number"
+  /^CDI-[A-Z]{4}-\d{2}$/,
+  "CDI ID must match pattern: CDI-[DOMAIN]-XX where DOMAIN is 4 letters and XX is two digits"
 )
 
 // ============================================================
@@ -21,8 +21,8 @@ export const CalculationRoleSchema = z.enum(["measured", "derived", "declarative
 
 export const CdiIntentSchema = z.object({
   id: z.string().regex(
-    /^CDI-CLIMATE-\d{3}$/,
-    "CDI ID must match pattern: CDI-CLIMATE-XXX"
+    /^CDI-[A-Z]{4}-\d{2}$/,
+    "CDI ID must match pattern: CDI-[DOMAIN]-XX"
   ),
   name: z.string().min(3, "Name must be at least 3 characters"),
   definition: z.string().min(20, "Definition must be at least 20 characters"),
@@ -54,5 +54,12 @@ export const CdiIntentRegistrySchema = z.object({
     "Version must match semantic version format"
   ),
   description: z.string().min(20, "Description must be at least 20 characters"),
-  intents: z.array(CdiIntentSchema).min(1, "At least one CDI intent is required"),
+  domains: z.record(
+    z.string().regex(/^[a-z-]+$/, "Domain key must be lowercase with hyphens"),
+    z.object({
+      name: z.string().min(3, "Domain name must be at least 3 characters"),
+      description: z.string().min(10, "Domain description must be at least 10 characters"),
+      intents: z.array(CdiIntentSchema),
+    })
+  ).refine((domains) => Object.keys(domains).length > 0, "At least one domain is required"),
 })

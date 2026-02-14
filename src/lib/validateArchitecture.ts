@@ -164,24 +164,28 @@ export function validateCdiRegistry(
     validElementIds.add(element.id)
   }
 
-  // Step 3: Validate all CDI IDs are unique
+  // Step 3: Validate all CDI IDs are unique across all domains
   const cdiIds = new Set<string>()
-  for (const intent of cdiRegistry.intents) {
-    if (cdiIds.has(intent.id)) {
-      throw new ArchitectureValidationError(
-        `Duplicate CDI ID found: ${intent.id}`
-      )
+  for (const [domainKey, domain] of Object.entries(cdiRegistry.domains)) {
+    for (const intent of domain.intents) {
+      if (cdiIds.has(intent.id)) {
+        throw new ArchitectureValidationError(
+          `Duplicate CDI ID found: ${intent.id}`
+        )
+      }
+      cdiIds.add(intent.id)
     }
-    cdiIds.add(intent.id)
   }
 
   // Step 4: Validate all referenced elements exist in CERM
-  for (const intent of cdiRegistry.intents) {
-    for (const elementId of intent.referencedElements) {
-      if (!validElementIds.has(elementId)) {
-        throw new ArchitectureValidationError(
-          `Invalid CERM reference in CDI ${intent.id}: ${elementId} does not exist in CERM dataset`
-        )
+  for (const [domainKey, domain] of Object.entries(cdiRegistry.domains)) {
+    for (const intent of domain.intents) {
+      for (const elementId of intent.referencedElements) {
+        if (!validElementIds.has(elementId)) {
+          throw new ArchitectureValidationError(
+            `Invalid CERM reference in CDI ${intent.id}: ${elementId} does not exist in CERM dataset`
+          )
+        }
       }
     }
   }
@@ -194,11 +198,13 @@ export function validateCdiRegistry(
     )
   }
 
-  for (const intent of cdiRegistry.intents) {
-    if (!versionRegex.test(intent.version)) {
-      throw new ArchitectureValidationError(
-        `Invalid version format for CDI intent ${intent.id}: ${intent.version}`
-      )
+  for (const [domainKey, domain] of Object.entries(cdiRegistry.domains)) {
+    for (const intent of domain.intents) {
+      if (!versionRegex.test(intent.version)) {
+        throw new ArchitectureValidationError(
+          `Invalid version format for CDI intent ${intent.id}: ${intent.version}`
+        )
+      }
     }
   }
 
@@ -230,8 +236,10 @@ export function validateSssRegistry(
 
   // Step 2: Extract all valid CDI IDs
   const validCdiIds = new Set<string>()
-  for (const intent of cdiRegistry.intents) {
-    validCdiIds.add(intent.id)
+  for (const [domainKey, domain] of Object.entries(cdiRegistry.domains)) {
+    for (const intent of domain.intents) {
+      validCdiIds.add(intent.id)
+    }
   }
 
   // Step 3: Validate all SSS statement IDs are unique
@@ -294,8 +302,10 @@ export function validateCmpPack(
 
   // Step 2: Extract all valid CDI IDs
   const validCdiIds = new Set<string>()
-  for (const intent of cdiRegistry.intents) {
-    validCdiIds.add(intent.id)
+  for (const [domainKey, domain] of Object.entries(cdiRegistry.domains)) {
+    for (const intent of domain.intents) {
+      validCdiIds.add(intent.id)
+    }
   }
 
   // Step 3: Validate all CMP mapping IDs are unique

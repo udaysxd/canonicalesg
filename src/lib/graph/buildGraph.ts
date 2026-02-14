@@ -4,8 +4,8 @@
 import {
   architectureDataset,
   cermElements,
+  cdiRegistry,
 } from "@/lib/data/loader"
-import cdiIntentsJson from "../../../data/cdi-intents.json"
 import ifrsS2CmpJson from "../../../data/cmp-packs/issb/ifrs-s2.json"
 import sssPositionStatementJson from "../../../data/presentation-layer/sss-position-statement.json"
 import sssTransitionAnnexJson from "../../../data/presentation-layer/sss-transition-annex.json"
@@ -98,25 +98,20 @@ export function buildGraph(): ArchitectureGraph {
   // 2. CDI INTENTS
   // ============================================================
 
-  const cdiRegistry = cdiIntentsJson as {
-    id: string
-    name: string
-    version: string
-    description: string
-    intents: Array<{
-      id: string
-      name: string
-      definition: string
-      referencedElements: string[]
-      boundaryApplicability: string
-      temporalApplicability: string
-      calculationRole: string
-      stabilityNote: string
-      version: string
-    }>
+  // Process all CDI intents across all domains
+  const allCdiIntents: any[] = []
+  
+  for (const [domainKey, domain] of Object.entries(cdiRegistry.domains)) {
+    for (const intent of domain.intents) {
+      allCdiIntents.push({
+        ...intent,
+        domain: domainKey,
+        domainName: domain.name
+      })
+    }
   }
 
-  for (const intent of cdiRegistry.intents) {
+  for (const intent of allCdiIntents) {
     const node: ExplorerNode = {
       id: intent.id,
       name: intent.name,

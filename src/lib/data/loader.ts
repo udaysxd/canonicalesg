@@ -486,6 +486,45 @@ export const architectureLayers: LayerDefinition[] = loadLayerData()
 
 export const designPrinciples: DesignPrinciple[] = loadPrinciplesData()
 
+// ============================================================
+// LOAD CDI DATA
+// ============================================================
+
+function loadCdiData(): CdiIntentRegistry {
+  if (!cdiIntentsJson || typeof cdiIntentsJson !== "object") {
+    throw new ArchitectureDataError("CDI Intents JSON is not a valid object")
+  }
+
+  const raw = cdiIntentsJson as any
+  
+  // Handle migration from old structure to new multi-domain structure
+  if (raw.intents && Array.isArray(raw.intents)) {
+    // Old format - migrate to new structure
+    return {
+      id: raw.id || "CDI-INTENT-REGISTRY-COMPLETE-1.0",
+      name: raw.name || "Canonical Disclosure Intent Registry — Complete",
+      version: raw.version || "1.0",
+      description: raw.description || "Complete registry of canonical disclosure intents across all domains",
+      domains: {
+        climate: {
+          name: "Climate",
+          description: "Climate-related disclosure intents",
+          intents: raw.intents
+        }
+      }
+    }
+  }
+  
+  // New format - validate domains structure
+  if (raw.domains && typeof raw.domains === "object") {
+    return raw as CdiIntentRegistry
+  }
+  
+  throw new ArchitectureDataError("CDI Intents JSON must have either 'intents' array (old format) or 'domains' object (new format)")
+}
+
+export const cdiRegistry: CdiIntentRegistry = loadCdiData()
+
 export const architectureDataset: ArchitectureDataset = {
   version: architectureVersion,
   cerm: cermElements,
@@ -499,15 +538,15 @@ validateArchitecture(architectureDataset)
 
 // Validate CDI registry at build time
 // Ensure all referenced elements exist in CERM
-validateCdiRegistry(cdiIntentsJson as CdiIntentRegistry, architectureDataset)
+validateCdiRegistry(cdiRegistry, architectureDataset)
 
 // Validate CMP packs at build time
 // Ensure all mapped CDIs exist in CDI registry
-validateCmpPack(ifrsS2CmpJson as CmpPack, cdiIntentsJson as CdiIntentRegistry)
+validateCmpPack(ifrsS2CmpJson as CmpPack, cdiRegistry)
 
 // Validate SSS presentation layer at build time
 // Ensure all mapped CDIs exist in CDI registry
 const sssRegistry: SssRegistry = {
   statements: [sssPositionStatementJson, sssTransitionAnnexJson]
 }
-validateSssRegistry(sssRegistry, cdiIntentsJson as CdiIntentRegistry)
+validateSssRegistry(sssRegistry, cdiRegistry)

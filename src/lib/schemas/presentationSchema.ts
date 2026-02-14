@@ -37,7 +37,7 @@ export const SssFieldSchema = z.object({
   ),
   label: z.string().min(3, "Label must be at least 3 characters"),
   mappedCdi: z.string().regex(
-    /^CDI-CLIMATE-\d{3}$/,
+    /^CDI-[A-Z]{4}-\d{2}$/,
     "Mapped CDI must be a valid CDI ID"
   ),
   dataType: z.enum(["numeric", "text", "percentage"]),

@@ -44,10 +44,16 @@ export interface CdiIntent {
 // CDI REGISTRY
 // ============================================================
 
+export interface CdiDomain {
+  name: string
+  description: string
+  intents: CdiIntent[]
+}
+
 export interface CdiIntentRegistry {
   id: string
   name: string
   version: VersionString
   description: string
-  intents: CdiIntent[]
+  domains: Record<string, CdiDomain>
 }

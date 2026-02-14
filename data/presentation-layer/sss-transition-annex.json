@@ -7,7 +7,7 @@
     {
       "id": "SSS-FIELD-010",
       "label": "Target Type",
-      "mappedCdi": "CDI-CLIMATE-007",
+      "mappedCdi": "CDI-CLIM-07",
       "dataType": "text",
       "unit": null,
       "assuranceApplicable": false,
@@ -16,7 +16,7 @@
     {
       "id": "SSS-FIELD-011",
       "label": "Base Year",
-      "mappedCdi": "CDI-CLIMATE-007",
+      "mappedCdi": "CDI-CLIM-07",
       "dataType": "text",
       "unit": null,
       "assuranceApplicable": false,
@@ -25,7 +25,7 @@
     {
       "id": "SSS-FIELD-012",
       "label": "Target Year",
-      "mappedCdi": "CDI-CLIMATE-007",
+      "mappedCdi": "CDI-CLIM-07",
       "dataType": "text",
       "unit": null,
       "assuranceApplicable": false,
@@ -34,7 +34,7 @@
     {
       "id": "SSS-FIELD-013",
       "label": "Interim Milestones",
-      "mappedCdi": "CDI-CLIMATE-008",
+      "mappedCdi": "CDI-CLIM-08",
       "dataType": "text",
       "unit": null,
       "assuranceApplicable": false,
@@ -43,7 +43,7 @@
     {
       "id": "SSS-FIELD-014",
       "label": "Scope Coverage",
-      "mappedCdi": "CDI-CLIMATE-007",
+      "mappedCdi": "CDI-CLIM-07",
       "dataType": "text",
       "unit": null,
       "assuranceApplicable": false,
@@ -52,7 +52,7 @@
     {
       "id": "SSS-FIELD-015",
       "label": "Offsets Included",
-      "mappedCdi": "CDI-CLIMATE-004",
+      "mappedCdi": "CDI-CLIM-04",
       "dataType": "text",
       "unit": null,
       "assuranceApplicable": false,
@@ -61,7 +61,7 @@
     {
       "id": "SSS-FIELD-016",
       "label": "Progress",
-      "mappedCdi": "CDI-CLIMATE-008",
+      "mappedCdi": "CDI-CLIM-08",
       "dataType": "numeric",
       "unit": "tCO2e",
       "assuranceApplicable": true,
@@ -70,7 +70,7 @@
     {
       "id": "SSS-FIELD-017",
       "label": "Methodology",
-      "mappedCdi": "CDI-CLIMATE-001",
+      "mappedCdi": "CDI-CLIM-01",
       "dataType": "text",
       "unit": null,
       "assuranceApplicable": false,
@@ -79,7 +79,7 @@
     {
       "id": "SSS-FIELD-018",
       "label": "Assurance Level",
-      "mappedCdi": "CDI-CLIMATE-008",
+      "mappedCdi": "CDI-CLIM-08",
       "dataType": "text",
       "unit": null,
       "assuranceApplicable": false,

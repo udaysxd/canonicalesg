@@ -7,7 +7,7 @@
     {
       "id": "SSS-FIELD-001",
       "label": "Scope 1 Emissions",
-      "mappedCdi": "CDI-CLIMATE-001",
+      "mappedCdi": "CDI-CLIM-01",
       "dataType": "numeric",
       "unit": "tCO2e",
       "assuranceApplicable": true,
@@ -16,7 +16,7 @@
     {
       "id": "SSS-FIELD-002",
       "label": "Scope 2 Emissions",
-      "mappedCdi": "CDI-CLIMATE-002",
+      "mappedCdi": "CDI-CLIM-02",
       "dataType": "numeric",
       "unit": "tCO2e",
       "assuranceApplicable": true,
@@ -25,7 +25,7 @@
     {
       "id": "SSS-FIELD-003",
       "label": "Scope 3 Emissions",
-      "mappedCdi": "CDI-CLIMATE-003",
+      "mappedCdi": "CDI-CLIM-03",
       "dataType": "numeric",
       "unit": "tCO2e",
       "assuranceApplicable": true,
@@ -34,7 +34,7 @@
     {
       "id": "SSS-FIELD-004",
       "label": "Carbon Removals",
-      "mappedCdi": "CDI-CLIMATE-004",
+      "mappedCdi": "CDI-CLIM-04",
       "dataType": "numeric",
       "unit": "tCO2e",
       "assuranceApplicable": true,
@@ -43,7 +43,7 @@
     {
       "id": "SSS-FIELD-005",
       "label": "Net Emissions",
-      "mappedCdi": "CDI-CLIMATE-005",
+      "mappedCdi": "CDI-CLIM-05",
       "dataType": "numeric",
       "unit": "tCO2e",
       "assuranceApplicable": true,
@@ -52,7 +52,7 @@
     {
       "id": "SSS-FIELD-006",
       "label": "Emissions Intensity",
-      "mappedCdi": "CDI-CLIMATE-006",
+      "mappedCdi": "CDI-CLIM-06",
       "dataType": "numeric",
       "unit": null,
       "assuranceApplicable": true,
@@ -61,7 +61,7 @@
     {
       "id": "SSS-FIELD-007",
       "label": "Baseline Year",
-      "mappedCdi": "CDI-CLIMATE-007",
+      "mappedCdi": "CDI-CLIM-07",
       "dataType": "text",
       "unit": null,
       "assuranceApplicable": false,
@@ -70,7 +70,7 @@
     {
       "id": "SSS-FIELD-008",
       "label": "Target Year",
-      "mappedCdi": "CDI-CLIMATE-007",
+      "mappedCdi": "CDI-CLIM-07",
       "dataType": "text",
       "unit": null,
       "assuranceApplicable": false,
@@ -79,7 +79,7 @@
     {
       "id": "SSS-FIELD-009",
       "label": "Gap to Target",
-      "mappedCdi": "CDI-CLIMATE-008",
+      "mappedCdi": "CDI-CLIM-08",
       "dataType": "numeric",
       "unit": "tCO2e",
       "assuranceApplicable": true,

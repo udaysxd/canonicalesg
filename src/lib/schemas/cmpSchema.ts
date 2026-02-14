@@ -26,8 +26,8 @@ export const CmpMappingSchema = z.object({
   frameworkReference: z.string().min(5, "Framework reference must be at least 5 characters"),
   disclosureSummary: z.string().min(20, "Disclosure summary must be at least 20 characters"),
   mappedCdi: z.string().regex(
-    /^CDI-CLIMATE-\d{3}$/,
-    "Mapped CDI must match pattern: CDI-CLIMATE-XXX"
+    /^CDI-[A-Z]{4}-\d{2}$/,
+    "Mapped CDI must match pattern: CDI-[DOMAIN]-XX"
   ),
   interpretiveRationale: z.string().min(50, "Interpretive rationale must be at least 50 characters"),
   scopeConditions: z.string().min(20, "Scope conditions must be at least 20 characters"),
