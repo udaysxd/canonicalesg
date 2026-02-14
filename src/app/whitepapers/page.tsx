@@ -69,71 +69,84 @@ export default function WhitepapersPage() {
     }
   };
 
+  const whitepapers = [
+    {
+      id: 'sovereign-sustainability-architecture-emerging-economies',
+      title: 'A Sovereign Sustainability Framework for Emerging Economies',
+      subtitle: 'Institutional Policy Design from Mandate to Market Integration',
+      description: 'A blueprint for emerging economies to develop sustainable finance infrastructure',
+      icon: '🏛️'
+    },
+    {
+      id: 'standardising-esg-reporting-format',
+      title: 'Standardising the Format of Sustainability Reporting',
+      subtitle: 'Why ESG Now Requires Structural Reform',
+      description: 'A structural reform proposal for global ESG reporting infrastructure',
+      icon: '📋'
+    },
+    {
+      id: 'issb-implementation-infrastructure',
+      title: 'Stabilising ISSB Implementation',
+      subtitle: 'The Case for Institutional Infrastructure',
+      description: 'A technical analysis of ISSB implementation challenges and the need for institutional infrastructure',
+      icon: '🏗️'
+    },
+    {
+      id: 'gcc-sustainability-reporting-foundation',
+      title: 'Building a Unified ESG Reporting Foundation for the GCC',
+      subtitle: 'A Practical Infrastructure Proposal for Regional Alignment',
+      description: 'Regional alignment framework for Gulf Cooperation Council countries',
+      icon: '🌍'
+    }
+  ];
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <main className="max-w-3xl mx-auto px-6 py-12">
-        <div>
-          <h1 className="text-[2.25rem] font-semibold text-[#111] mb-4 leading-tight">
+      <main className="max-w-6xl mx-auto px-6 py-16">
+        <div className="mb-12">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
             Whitepapers
           </h1>
-          
-          <p className="text-[1.0625rem] text-[#1a1a1a] mb-10 leading-relaxed">
+          <p className="text-lg text-gray-600 leading-relaxed max-w-3xl">
             In-depth research and analysis on sustainability reporting infrastructure, framework interoperability, and regional alignment.
           </p>
+        </div>
 
-          <div className="space-y-6">
-            <Link 
-              href="/whitepapers/sovereign-sustainability-architecture-emerging-economies"
-              className="block p-6 border border-[#eee] rounded-lg hover:border-[#ccc] hover:bg-[#fafafa] transition-colors"
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {whitepapers.map((paper) => (
+            <Link
+              key={paper.id}
+              href={`/whitepapers/${paper.id}`}
+              className="group block p-8 bg-white border border-gray-200 rounded-xl hover:border-blue-300 hover:shadow-lg transition-all duration-200"
             >
-              <h2 className="text-[1.5rem] font-semibold text-[#111] mb-2 leading-tight">
-                A Sovereign Sustainability Framework for Emerging Economies: Institutional Policy Design from Mandate to Market Integration
-              </h2>
-              <p className="text-[1rem] text-[#666] leading-relaxed">
-                Institutional Policy Design from Mandate to Market Integration. A blueprint for emerging economies
+              <div className="flex items-start gap-4 mb-4">
+                <div className="text-4xl group-hover:scale-110 transition-transform">
+                  {paper.icon}
+                </div>
+                <div className="flex-1">
+                  <h2 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                    {paper.title}
+                  </h2>
+                  <p className="text-sm text-gray-500 font-medium">
+                    {paper.subtitle}
+                  </p>
+                </div>
+              </div>
+              <p className="text-gray-600 leading-relaxed">
+                {paper.description}
               </p>
+              <div className="mt-6 flex items-center text-blue-600 font-medium text-sm group-hover:underline">
+                Read more
+                <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
             </Link>
-            
-            <Link 
-              href="/whitepapers/standardising-esg-reporting-format"
-              className="block p-6 border border-[#eee] rounded-lg hover:border-[#ccc] hover:bg-[#fafafa] transition-colors"
-            >
-              <h2 className="text-[1.5rem] font-semibold text-[#111] mb-2 leading-tight">
-                Standardising the Format of Sustainability Reporting: Why ESG Now Requires Structural Reform
-              </h2>
-              <p className="text-[1rem] text-[#666] leading-relaxed">
-                A structural reform proposal for global ESG reporting infrastructure
-              </p>
-            </Link>
-            
-            <Link 
-              href="/whitepapers/issb-implementation-infrastructure"
-              className="block p-6 border border-[#eee] rounded-lg hover:border-[#ccc] hover:bg-[#fafafa] transition-colors"
-            >
-              <h2 className="text-[1.5rem] font-semibold text-[#111] mb-2 leading-tight">
-                Stabilising ISSB Implementation: The Case for Institutional Infrastructure
-              </h2>
-              <p className="text-[1rem] text-[#666] leading-relaxed">
-                A technical analysis of ISSB implementation challenges and the need for institutional infrastructure
-              </p>
-            </Link>
-            
-            <Link 
-              href="/whitepapers/gcc-sustainability-reporting-foundation"
-              className="block p-6 border border-[#eee] rounded-lg hover:border-[#ccc] hover:bg-[#fafafa] transition-colors"
-            >
-              <h2 className="text-[1.5rem] font-semibold text-[#111] mb-2 leading-tight">
-                Building a Unified ESG Reporting Foundation for the Gulf Cooperation Council (GCC)
-              </h2>
-              <p className="text-[1rem] text-[#666] leading-relaxed">
-                A Practical Infrastructure Proposal for Regional Alignment
-              </p>
-            </Link>
-          </div>
+          ))}
         </div>
       </main>
     </>

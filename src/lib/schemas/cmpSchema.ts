@@ -5,8 +5,8 @@ import { z } from "zod"
 // ============================================================
 
 export const CmpIdSchema = z.string().regex(
-  /^CMP-ISSB-S2-\d{3}$/,
-  "CMP ID must match pattern: CMP-ISSB-S2-XXX where XXX is a three-digit number"
+  /^CMP-(ISSB-S[12]|ESRS-EU-S[12]|GRI|UNSDG|CDP|SASB|TNFD)-\d{3}$/,
+  "CMP ID must match pattern: CMP-(ISSB-S[12]|ESRS-EU-S[12]|GRI|UNSDG|CDP|SASB|TNFD)-XXX where XXX is a three-digit number"
 )
 
 export const CmpPackIdSchema = z.string().regex(
@@ -20,8 +20,8 @@ export const CmpPackIdSchema = z.string().regex(
 
 export const CmpMappingSchema = z.object({
   id: z.string().regex(
-    /^CMP-ISSB-S2-\d{3}$/,
-    "CMP mapping ID must match pattern: CMP-ISSB-S2-XXX"
+    /^CMP-(ISSB-S[12]|ESRS-EU-S[12]|GRI|UNSDG|CDP|SASB|TNFD)-\d{3}$/,
+    "CMP mapping ID must match pattern: CMP-(ISSB-S[12]|ESRS-EU-S[12]|GRI|UNSDG|CDP|SASB|TNFD)-XXX"
   ),
   frameworkReference: z.string().min(5, "Framework reference must be at least 5 characters"),
   disclosureSummary: z.string().min(20, "Disclosure summary must be at least 20 characters"),

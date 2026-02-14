@@ -1,0 +1,144 @@
+{
+  "id": "CMP-PACK-ISSB-S1",
+  "frameworkName": "IFRS S1 General Requirements for Disclosure of Sustainability Information",
+  "jurisdiction": "Global Baseline",
+  "authorityNote": "Non-authoritative interpretive mapping maintained by Canonical ESG. This pack documents interpretations of IFRS S1 requirements using Canonical ESG disclosure intents. It does not claim authoritative status relative to the ISSB standard. Users must consult official ISSB documentation for definitive requirements.",
+  "version": "1.0",
+  "mappings": [
+    {
+      "id": "CMP-ISSB-S1-001",
+      "frameworkReference": "IFRS S1 20(a)",
+      "disclosureSummary": "Disclosure of governance processes, controls and procedures used to monitor, manage and oversee sustainability-related risks and opportunities",
+      "mappedCdi": "CDI-GOVR-01",
+      "interpretiveRationale": "IFRS S1 requires disclosure of governance processes for sustainability matters. The CDI Board-level oversight of sustainability matters provides the canonical semantic mapping for board-level governance disclosure. Management processes and controls are disclosed through related governance CDIs.",
+      "scopeConditions": "Governance scope applies to the highest governing body and related management structures within the entity's organizational boundary. Temporal scope covers the reporting period.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-ISSB-S1-002",
+      "frameworkReference": "IFRS S1 20(b)",
+      "disclosureSummary": "Disclosure of the respective responsibilities of governance bodies and management in monitoring and managing sustainability-related risks and opportunities",
+      "mappedCdi": "CDI-GOVR-04",
+      "interpretiveRationale": "IFRS S1 requires disclosure of responsibility allocation for sustainability matters. The CDI Assignment of sustainability governance responsibilities provides the canonical semantic mapping for role-based governance disclosure. Board and management responsibilities are disclosed separately through related governance CDIs.",
+      "scopeConditions": "Responsibility scope covers all organizational roles with sustainability governance duties. Temporal scope assessed at reporting date.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-ISSB-S1-003",
+      "frameworkReference": "IFRS S1 21(a)",
+      "disclosureSummary": "Disclosure of the processes used to identify and assess sustainability-related risks and opportunities",
+      "mappedCdi": "CDI-ECON-01",
+      "interpretiveRationale": "IFRS S1 requires disclosure of risk and opportunity identification processes. The CDI Sustainability risk identification processes provides the canonical semantic mapping for systematic risk assessment disclosure. Opportunity identification is covered through related economic CDIs.",
+      "scopeConditions": "Process scope covers all systematic approaches to risk and opportunity identification within the entity. Temporal scope covers the reporting period.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-ISSB-S1-004",
+      "frameworkReference": "IFRS S1 21(b)",
+      "disclosureSummary": "Disclosure of the processes used to prioritize sustainability-related risks and opportunities",
+      "mappedCdi": "CDI-ECON-02",
+      "interpretiveRationale": "IFRS S1 requires disclosure of prioritization processes for sustainability risks and opportunities. The CDI Sustainability risk prioritization methodology provides the canonical semantic mapping for systematic prioritization disclosure. Methodological approaches remain entity-specific.",
+      "scopeConditions": "Prioritization scope covers all systematic approaches to risk and opportunity ranking. Temporal scope assessed at reporting date.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-ISSB-S1-005",
+      "frameworkReference": "IFRS S1 22(a)",
+      "disclosureSummary": "Disclosure of whether and how sustainability-related risks and opportunities are integrated into overall risk management processes",
+      "mappedCdi": "CDI-ECON-03",
+      "interpretiveRationale": "IFRS S1 requires disclosure of integration of sustainability risks into overall risk management. The CDI Integration of sustainability risks into enterprise risk management provides the canonical semantic mapping for integrated risk management disclosure. Integration approaches remain entity-specific.",
+      "scopeConditions": "Integration scope covers all enterprise risk management processes within the entity. Temporal scope assessed at reporting date.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-ISSB-S1-006",
+      "frameworkReference": "IFRS S1 23(a)",
+      "disclosureSummary": "Disclosure of the entity's strategy for managing sustainability-related risks and opportunities",
+      "mappedCdi": "CDI-ECON-04",
+      "interpretiveRationale": "IFRS S1 requires disclosure of strategy for managing sustainability risks and opportunities. The CDI Sustainability strategy documentation provides the canonical semantic mapping for strategic approach disclosure. Strategy content and implementation remain entity-specific.",
+      "scopeConditions": "Strategy scope covers all organizational approaches to sustainability risk and opportunity management. Temporal scope assessed at reporting date.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-ISSB-S1-007",
+      "frameworkReference": "IFRS S1 24(a)",
+      "disclosureSummary": "Disclosure of the entity's resilience in relation to sustainability-related risks and opportunities",
+      "mappedCdi": "CDI-ECON-05",
+      "interpretiveRationale": "IFRS S1 requires disclosure of resilience assessment. The CDI Resilience assessment against sustainability risks provides the canonical semantic mapping for resilience disclosure. Resilience methodologies and scenarios remain entity-specific.",
+      "scopeConditions": "Resilience scope covers all organizational approaches to sustainability risk and opportunity resilience. Temporal scope covers forward-looking assessment periods.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-ISSB-S1-008",
+      "frameworkReference": "IFRS S1 25(a)",
+      "disclosureSummary": "Disclosure of the metrics used by the entity to monitor and manage sustainability-related risks and opportunities",
+      "mappedCdi": "CDI-ECON-06",
+      "interpretiveRationale": "IFRS S1 requires disclosure of metrics for monitoring sustainability risks and opportunities. The CDI Sustainability risk monitoring metrics provides the canonical semantic mapping for metric disclosure. Metric selection and calculation remain entity-specific.",
+      "scopeConditions": "Metric scope covers all quantitative and qualitative approaches to sustainability risk and opportunity monitoring. Temporal scope covers the reporting period.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-ISSB-S1-009",
+      "frameworkReference": "IFRS S1 26(a)",
+      "disclosureSummary": "Disclosure of the entity's targets in relation to sustainability-related risks and opportunities",
+      "mappedCdi": "CDI-ECON-07",
+      "interpretiveRationale": "IFRS S1 requires disclosure of targets for sustainability risks and opportunities. The CDI Sustainability risk management targets provides the canonical semantic mapping for target disclosure. Target setting and ambition remain entity-specific.",
+      "scopeConditions": "Target scope covers all organizational targets for sustainability risk and opportunity management. Temporal scope covers target establishment and achievement periods.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-ISSB-S1-010",
+      "frameworkReference": "IFRS S1 27(a)",
+      "disclosureSummary": "Disclosure of the entity's performance against its targets in relation to sustainability-related risks and opportunities",
+      "mappedCdi": "CDI-ECON-08",
+      "interpretiveRationale": "IFRS S1 requires disclosure of performance against targets. The CDI Performance against sustainability risk targets provides the canonical semantic mapping for performance disclosure. Performance calculation methodologies remain entity-specific.",
+      "scopeConditions": "Performance scope covers all organizational performance against sustainability risk and opportunity targets. Temporal scope covers target achievement periods.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-ISSB-S1-011",
+      "frameworkReference": "IFRS S1 28(a)",
+      "disclosureSummary": "Disclosure of the entity's approach to stakeholder engagement in relation to sustainability-related risks and opportunities",
+      "mappedCdi": "CDI-GOVR-19",
+      "interpretiveRationale": "IFRS S1 requires disclosure of stakeholder engagement approaches. The CDI Stakeholder engagement in governance matters provides the canonical semantic mapping for stakeholder engagement disclosure. Engagement methodologies and frequency remain entity-specific.",
+      "scopeConditions": "Engagement scope covers all formal stakeholder engagement processes for sustainability matters. Temporal scope covers the reporting period.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-ISSB-S1-012",
+      "frameworkReference": "IFRS S1 29(a)",
+      "disclosureSummary": "Disclosure of the entity's approach to materiality determination in relation to sustainability-related risks and opportunities",
+      "mappedCdi": "CDI-ECON-09",
+      "interpretiveRationale": "IFRS S1 requires disclosure of materiality determination approach. The CDI Sustainability materiality assessment methodology provides the canonical semantic mapping for materiality disclosure. Materiality thresholds and criteria remain entity-specific.",
+      "scopeConditions": "Materiality scope covers all systematic approaches to determining material sustainability matters. Temporal scope assessed at reporting date.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-ISSB-S1-013",
+      "frameworkReference": "IFRS S1 30(a)",
+      "disclosureSummary": "Disclosure of the entity's approach to reporting boundary determination in relation to sustainability-related risks and opportunities",
+      "mappedCdi": "CDI-GOVR-20",
+      "interpretiveRationale": "IFRS S1 requires disclosure of reporting boundary approach. The CDI Governance reporting boundary provides the canonical semantic mapping for boundary disclosure. Boundary determination methodologies remain entity-specific.",
+      "scopeConditions": "Boundary scope covers all organizational approaches to defining sustainability reporting boundaries. Temporal scope assessed at reporting date.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-ISSB-S1-014",
+      "frameworkReference": "IFRS S1 31(a)",
+      "disclosureSummary": "Disclosure of the entity's approach to the preparation and presentation of sustainability-related financial information",
+      "mappedCdi": "CDI-ECON-10",
+      "interpretiveRationale": "IFRS S1 requires disclosure of financial information preparation approach. The CDI Sustainability-related financial disclosures provides the canonical semantic mapping for financial disclosure methodology. Financial integration approaches remain entity-specific.",
+      "scopeConditions": "Financial scope covers all approaches to preparing sustainability-related financial information. Temporal scope covers the reporting period.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-ISSB-S1-015",
+      "frameworkReference": "IFRS S1 32(a)",
+      "disclosureSummary": "Disclosure of the entity's approach to the use of estimates and assumptions in sustainability-related disclosures",
+      "mappedCdi": "CDI-ECON-11",
+      "interpretiveRationale": "IFRS S1 requires disclosure of estimates and assumptions approach. The CDI Sustainability disclosure estimates and assumptions provides the canonical semantic mapping for estimation methodology disclosure. Estimation techniques remain entity-specific.",
+      "scopeConditions": "Estimation scope covers all approaches to determining estimates and assumptions in sustainability disclosures. Temporal scope covers the reporting period.",
+      "version": "1.0"
+    }
+  ]
+}

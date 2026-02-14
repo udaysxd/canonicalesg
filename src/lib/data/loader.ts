@@ -30,7 +30,14 @@ import sssJson from "../../../data/presentation-layer.json"
 import principlesJson from "../../../data/design-principles.json"
 import architectureJson from "../../../data/architecture.json"
 import cdiIntentsJson from "../../../data/cdi-intents.json"
+import cdpCmpJson from "../../../data/cmp-packs/cdp/cdp.json"
+import esrsEuS1CmpJson from "../../../data/cmp-packs/esrs/esrs-eu-s1.json"
+import griCmpJson from "../../../data/cmp-packs/gri/gri.json"
+import ifrsS1CmpJson from "../../../data/cmp-packs/issb/ifrs-s1.json"
 import ifrsS2CmpJson from "../../../data/cmp-packs/issb/ifrs-s2.json"
+import sasbCmpJson from "../../../data/cmp-packs/sasb/sasb.json"
+import tnfdCmpJson from "../../../data/cmp-packs/tnfd/tnfd.json"
+import unsdCmpJson from "../../../data/cmp-packs/unsd/unsd.json"
 import sssPositionStatementJson from "../../../data/presentation-layer/sss-position-statement.json"
 import sssTransitionAnnexJson from "../../../data/presentation-layer/sss-transition-annex.json"
 
@@ -542,7 +549,14 @@ validateCdiRegistry(cdiRegistry, architectureDataset)
 
 // Validate CMP packs at build time
 // Ensure all mapped CDIs exist in CDI registry
+validateCmpPack(cdpCmpJson as CmpPack, cdiRegistry)
+validateCmpPack(esrsEuS1CmpJson as CmpPack, cdiRegistry)
+validateCmpPack(griCmpJson as CmpPack, cdiRegistry)
+validateCmpPack(ifrsS1CmpJson as CmpPack, cdiRegistry)
 validateCmpPack(ifrsS2CmpJson as CmpPack, cdiRegistry)
+validateCmpPack(sasbCmpJson as CmpPack, cdiRegistry)
+validateCmpPack(tnfdCmpJson as CmpPack, cdiRegistry)
+validateCmpPack(unsdCmpJson as CmpPack, cdiRegistry)
 
 // Validate SSS presentation layer at build time
 // Ensure all mapped CDIs exist in CDI registry

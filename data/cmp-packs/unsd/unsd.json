@@ -1,0 +1,144 @@
+{
+  "id": "CMP-PACK-UNSDG",
+  "frameworkName": "UN Sustainable Development Goals",
+  "jurisdiction": "Global",
+  "authorityNote": "Non-authoritative interpretive mapping maintained by Canonical ESG. This pack documents interpretations of UN SDG requirements using Canonical ESG disclosure intents. It does not claim authoritative status relative to the UN SDG framework. Users must consult official UN SDG documentation for definitive requirements.",
+  "version": "1.0",
+  "mappings": [
+    {
+      "id": "CMP-UNSDG-001",
+      "frameworkReference": "SDG 1: No Poverty",
+      "disclosureSummary": "Disclosure of economic inclusion and poverty reduction initiatives",
+      "mappedCdi": "CDI-ECON-01",
+      "interpretiveRationale": "SDG 1 requires disclosure of poverty reduction efforts. The CDI Sustainability risk identification processes provides the canonical semantic mapping for economic inclusion disclosure. Poverty reduction initiatives are disclosed through related economic CDIs.",
+      "scopeConditions": "Economic scope covers all poverty reduction initiatives within the entity's operations. Temporal scope covers the reporting period.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-UNSDG-002",
+      "frameworkReference": "SDG 2: Zero Hunger",
+      "disclosureSummary": "Disclosure of food security and nutrition initiatives",
+      "mappedCdi": "CDI-ECON-02",
+      "interpretiveRationale": "SDG 2 requires disclosure of food security efforts. The CDI Sustainability risk prioritization methodology provides the canonical semantic mapping for food security disclosure. Nutrition initiatives are disclosed through related economic CDIs.",
+      "scopeConditions": "Food security scope covers all nutrition initiatives within the entity's operations. Temporal scope covers the reporting period.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-UNSDG-003",
+      "frameworkReference": "SDG 3: Good Health and Well-being",
+      "disclosureSummary": "Disclosure of health and wellbeing initiatives",
+      "mappedCdi": "CDI-ECON-03",
+      "interpretiveRationale": "SDG 3 requires disclosure of health initiatives. The CDI Integration of sustainability risks into enterprise risk management provides the canonical semantic mapping for health disclosure. Wellbeing initiatives are disclosed through related economic CDIs.",
+      "scopeConditions": "Health scope covers all wellbeing initiatives within the entity's operations. Temporal scope covers the reporting period.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-UNSDG-004",
+      "frameworkReference": "SDG 4: Quality Education",
+      "disclosureSummary": "Disclosure of education and skill development initiatives",
+      "mappedCdi": "CDI-ECON-04",
+      "interpretiveRationale": "SDG 4 requires disclosure of education initiatives. The CDI Sustainability strategy documentation provides the canonical semantic mapping for education disclosure. Skill development initiatives are disclosed through related economic CDIs.",
+      "scopeConditions": "Education scope covers all skill development initiatives within the entity's operations. Temporal scope covers the reporting period.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-UNSDG-005",
+      "frameworkReference": "SDG 5: Gender Equality",
+      "disclosureSummary": "Disclosure of gender equality and empowerment initiatives",
+      "mappedCdi": "CDI-ECON-05",
+      "interpretiveRationale": "SDG 5 requires disclosure of gender equality efforts. The CDI Resilience assessment against sustainability risks provides the canonical semantic mapping for gender disclosure. Empowerment initiatives are disclosed through related economic CDIs.",
+      "scopeConditions": "Gender scope covers all empowerment initiatives within the entity's operations. Temporal scope covers the reporting period.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-UNSDG-006",
+      "frameworkReference": "SDG 6: Clean Water and Sanitation",
+      "disclosureSummary": "Disclosure of water management and sanitation initiatives",
+      "mappedCdi": "CDI-WATR-01",
+      "interpretiveRationale": "SDG 6 requires disclosure of water management efforts. The CDI Water resources management provides the canonical semantic mapping for water disclosure. Sanitation initiatives are disclosed through related water CDIs.",
+      "scopeConditions": "Water scope covers all water management initiatives within the entity's operations. Temporal scope covers the reporting period.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-UNSDG-007",
+      "frameworkReference": "SDG 7: Affordable and Clean Energy",
+      "disclosureSummary": "Disclosure of energy access and clean energy initiatives",
+      "mappedCdi": "CDI-ENER-01",
+      "interpretiveRationale": "SDG 7 requires disclosure of clean energy efforts. The CDI Energy consumption and production provides the canonical semantic mapping for energy disclosure. Clean energy initiatives are disclosed through related energy CDIs.",
+      "scopeConditions": "Energy scope covers all clean energy initiatives within the entity's operations. Temporal scope covers the reporting period.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-UNSDG-008",
+      "frameworkReference": "SDG 8: Decent Work and Economic Growth",
+      "disclosureSummary": "Disclosure of economic growth and decent work initiatives",
+      "mappedCdi": "CDI-ECON-06",
+      "interpretiveRationale": "SDG 8 requires disclosure of economic growth efforts. The CDI Sustainability risk monitoring metrics provides the canonical semantic mapping for economic disclosure. Decent work initiatives are disclosed through related economic CDIs.",
+      "scopeConditions": "Economic scope covers all growth initiatives within the entity's operations. Temporal scope covers the reporting period.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-UNSDG-009",
+      "frameworkReference": "SDG 9: Industry, Innovation and Infrastructure",
+      "disclosureSummary": "Disclosure of industrial innovation and infrastructure initiatives",
+      "mappedCdi": "CDI-ECON-07",
+      "interpretiveRationale": "SDG 9 requires disclosure of innovation efforts. The CDI Sustainability risk management targets provides the canonical semantic mapping for innovation disclosure. Infrastructure initiatives are disclosed through related economic CDIs.",
+      "scopeConditions": "Innovation scope covers all infrastructure initiatives within the entity's operations. Temporal scope covers the reporting period.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-UNSDG-010",
+      "frameworkReference": "SDG 10: Reduced Inequalities",
+      "disclosureSummary": "Disclosure of inequality reduction initiatives",
+      "mappedCdi": "CDI-ECON-08",
+      "interpretiveRationale": "SDG 10 requires disclosure of inequality reduction efforts. The CDI Performance against sustainability risk targets provides the canonical semantic mapping for inequality disclosure. Reduction initiatives are disclosed through related economic CDIs.",
+      "scopeConditions": "Inequality scope covers all reduction initiatives within the entity's operations. Temporal scope covers the reporting period.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-UNSDG-011",
+      "frameworkReference": "SDG 11: Sustainable Cities and Communities",
+      "disclosureSummary": "Disclosure of sustainable urban development initiatives",
+      "mappedCdi": "CDI-ECON-09",
+      "interpretiveRationale": "SDG 11 requires disclosure of sustainable city efforts. The CDI Sustainability materiality assessment methodology provides the canonical semantic mapping for urban disclosure. Development initiatives are disclosed through related economic CDIs.",
+      "scopeConditions": "Urban scope covers all development initiatives within the entity's operations. Temporal scope covers the reporting period.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-UNSDG-012",
+      "frameworkReference": "SDG 12: Responsible Consumption and Production",
+      "disclosureSummary": "Disclosure of sustainable consumption and production initiatives",
+      "mappedCdi": "CDI-MATR-01",
+      "interpretiveRationale": "SDG 12 requires disclosure of consumption efforts. The CDI Materials and circularity provides the canonical semantic mapping for consumption disclosure. Production initiatives are disclosed through related materials CDIs.",
+      "scopeConditions": "Consumption scope covers all production initiatives within the entity's operations. Temporal scope covers the reporting period.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-UNSDG-013",
+      "frameworkReference": "SDG 13: Climate Action",
+      "disclosureSummary": "Disclosure of climate action and emissions reduction initiatives",
+      "mappedCdi": "CDI-CLIM-01",
+      "interpretiveRationale": "SDG 13 requires disclosure of climate action efforts. The CDI Gross Scope 1 Emissions provides the canonical semantic mapping for climate disclosure. Emissions reduction initiatives are disclosed through related climate CDIs.",
+      "scopeConditions": "Climate scope covers all action initiatives within the entity's operations. Temporal scope covers the reporting period.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-UNSDG-014",
+      "frameworkReference": "SDG 14: Life Below Water",
+      "disclosureSummary": "Disclosure of marine conservation initiatives",
+      "mappedCdi": "CDI-BIOD-01",
+      "interpretiveRationale": "SDG 14 requires disclosure of marine conservation efforts. The CDI Biodiversity and ecosystems provides the canonical semantic mapping for marine disclosure. Conservation initiatives are disclosed through related biodiversity CDIs.",
+      "scopeConditions": "Marine scope covers all conservation initiatives within the entity's operations. Temporal scope covers the reporting period.",
+      "version": "1.0"
+    },
+    {
+      "id": "CMP-UNSDG-015",
+      "frameworkReference": "SDG 15: Life on Land",
+      "disclosureSummary": "Disclosure of terrestrial conservation initiatives",
+      "mappedCdi": "CDI-BIOD-02",
+      "interpretiveRationale": "SDG 15 requires disclosure of terrestrial conservation efforts. The CDI Biodiversity and ecosystems provides the canonical semantic mapping for terrestrial disclosure. Conservation initiatives are disclosed through related biodiversity CDIs.",
+      "scopeConditions": "Terrestrial scope covers all conservation initiatives within the entity's operations. Temporal scope covers the reporting period.",
+      "version": "1.0"
+    }
+  ]
+}

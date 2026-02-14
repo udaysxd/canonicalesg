@@ -6,7 +6,14 @@ import {
   cermElements,
   cdiRegistry,
 } from "@/lib/data/loader"
+import cdpCmpJson from "../../../data/cmp-packs/cdp/cdp.json"
+import esrsEuS1CmpJson from "../../../data/cmp-packs/esrs/esrs-eu-s1.json"
+import griCmpJson from "../../../data/cmp-packs/gri/gri.json"
+import ifrsS1CmpJson from "../../../data/cmp-packs/issb/ifrs-s1.json"
 import ifrsS2CmpJson from "../../../data/cmp-packs/issb/ifrs-s2.json"
+import sasbCmpJson from "../../../data/cmp-packs/sasb/sasb.json"
+import tnfdCmpJson from "../../../data/cmp-packs/tnfd/tnfd.json"
+import unsdCmpJson from "../../../data/cmp-packs/unsd/unsd.json"
 import sssPositionStatementJson from "../../../data/presentation-layer/sss-position-statement.json"
 import sssTransitionAnnexJson from "../../../data/presentation-layer/sss-transition-annex.json"
 
@@ -138,7 +145,16 @@ export function buildGraph(): ArchitectureGraph {
   // 3. CMP PACKS
   // ============================================================
 
-  const cmpPack = ifrsS2CmpJson as {
+  const cmpPacks = [
+    cdpCmpJson,
+    esrsEuS1CmpJson,
+    griCmpJson,
+    ifrsS1CmpJson,
+    ifrsS2CmpJson,
+    sasbCmpJson,
+    tnfdCmpJson,
+    unsdCmpJson,
+  ] as Array<{
     id: string
     frameworkName: string
     jurisdiction: string
@@ -153,48 +169,50 @@ export function buildGraph(): ArchitectureGraph {
       scopeConditions: string
       version: string
     }>
-  }
+  }>
 
-  // Add CMP Pack as node
-  const cmpPackNode: ExplorerNode = {
-    id: cmpPack.id,
-    name: cmpPack.frameworkName,
-    layer: "cmp",
-    version: cmpPack.version,
-    purpose: `Jurisdiction: ${cmpPack.jurisdiction}`,
-    definition: cmpPack.authorityNote,
-    raw: cmpPack,
-  }
-  nodes.push(cmpPackNode)
-
-  // Add individual mappings as nodes
-  for (const mapping of cmpPack.mappings) {
-    const node: ExplorerNode = {
-      id: mapping.id,
-      name: mapping.frameworkReference,
+  for (const cmpPack of cmpPacks) {
+    // Add CMP Pack as node
+    const cmpPackNode: ExplorerNode = {
+      id: cmpPack.id,
+      name: cmpPack.frameworkName,
       layer: "cmp",
-      version: mapping.version,
-      definition: mapping.disclosureSummary,
-      purpose: mapping.interpretiveRationale.slice(0, 100) + "...",
-      raw: mapping,
+      version: cmpPack.version,
+      purpose: `Jurisdiction: ${cmpPack.jurisdiction}`,
+      definition: cmpPack.authorityNote,
+      raw: cmpPack,
     }
-    nodes.push(node)
+    nodes.push(cmpPackNode)
 
-    // Build edge to mapped CDI
-    addEdge(mapping.id, {
-      targetId: mapping.mappedCdi,
-      targetLayer: "cdi",
-      label: "maps to CDI",
-      relationship: "maps-to",
-    })
+    // Add individual mappings as nodes
+    for (const mapping of cmpPack.mappings) {
+      const node: ExplorerNode = {
+        id: mapping.id,
+        name: mapping.frameworkReference,
+        layer: "cmp",
+        version: mapping.version,
+        definition: mapping.disclosureSummary,
+        purpose: mapping.interpretiveRationale.slice(0, 100) + "...",
+        raw: mapping,
+      }
+      nodes.push(node)
 
-    // Build edge from CMP Pack to mapping
-    addEdge(cmpPack.id, {
-      targetId: mapping.id,
-      targetLayer: "cmp",
-      label: "contains mapping",
-      relationship: "contains",
-    })
+      // Build edge to mapped CDI
+      addEdge(mapping.id, {
+        targetId: mapping.mappedCdi,
+        targetLayer: "cdi",
+        label: "maps to CDI",
+        relationship: "maps-to",
+      })
+
+      // Build edge from CMP Pack to mapping
+      addEdge(cmpPack.id, {
+        targetId: mapping.id,
+        targetLayer: "cmp",
+        label: "contains mapping",
+        relationship: "contains",
+      })
+    }
   }
 
   // ============================================================

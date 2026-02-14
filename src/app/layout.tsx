@@ -70,46 +70,69 @@ export default function RootLayout({
   return (
     <html lang="en" className={sourceSerif.variable}>
       <body className="antialiased bg-white text-[#1a1a1a]" style={{ fontFamily: 'var(--font-serif), Georgia, "Times New Roman", serif' }}>
-        <header className="border-b border-[#eee] bg-white">
-          <div className="max-w-3xl mx-auto px-6 py-4">
+        <header className="bg-white border-b border-gray-200 shadow-sm">
+          <div className="max-w-6xl mx-auto px-6 py-5">
             <nav className="flex items-center justify-between">
-              <a href="/" className="flex items-center">
+              <a href="/" className="flex items-center group">
                 <img 
                   src="/logo-v2.png" 
                   alt="Canonical ESG Reference Architecture - Home" 
-                  className="h-8 w-auto"
+                  className="h-10 w-auto transition-transform group-hover:scale-105"
                 />
               </a>
-              <ul className="flex gap-6 text-sm">
-                <li><a href="/cerm" className="text-[#666] hover:text-[#1a1a1a] hover:underline">CERM</a></li>
-                <li><a href="/cdi" className="text-[#666] hover:text-[#1a1a1a] hover:underline">CDI</a></li>
-                <li><a href="/cmp" className="text-[#666] hover:text-[#1a1a1a] hover:underline">CMP</a></li>
-                <li><a href="/reference/explorer" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Explorer</a></li>
-                <li><a href="/whitepapers" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Whitepapers</a></li>
-                <li><a href="/governance" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Governance</a></li>
+              <ul className="flex gap-8 text-sm font-medium">
+                <li><a href="/cerm" className="text-gray-600 hover:text-blue-600 hover:underline transition-colors">CERM</a></li>
+                <li><a href="/cdi" className="text-gray-600 hover:text-blue-600 hover:underline transition-colors">CDI</a></li>
+                <li><a href="/cmp" className="text-gray-600 hover:text-blue-600 hover:underline transition-colors">CMP</a></li>
+                <li><a href="/reference/explorer" className="text-gray-600 hover:text-blue-600 hover:underline transition-colors">Explorer</a></li>
+                <li><a href="/whitepapers" className="text-gray-600 hover:text-blue-600 hover:underline transition-colors">Whitepapers</a></li>
+                <li><a href="/governance" className="text-gray-600 hover:text-blue-600 hover:underline transition-colors">Governance</a></li>
               </ul>
             </nav>
           </div>
         </header>
         {children}
-        <footer className="border-t border-[#eee] mt-20">
-          <div className="max-w-3xl mx-auto px-6 py-12">
-            <div className="flex flex-col lg:flex-row justify-between items-start gap-10">
-              <div className="max-w-sm">
-                <p className="text-xs text-[#888] mt-3 leading-relaxed">Canonical ESG is an independent, not-for-profit, non-regulatory technical initiative operating in the public interest. It does not set disclosure standards, define materiality, or exercise regulatory authority. Its role is limited to supporting interoperability, transparency, and structural coherence in sustainability reporting.</p>
-                <p className="text-xs text-[#888] mt-3 leading-relaxed">Content licensed under CC BY 4.0. Machine-readable schemas licensed under MIT.</p>
+        <footer className="bg-gradient-to-br from-gray-50 to-gray-100 border-t border-gray-200 mt-20">
+          <div className="max-w-6xl mx-auto px-6 py-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+              {/* Brand Section */}
+              <div className="lg:col-span-2">
+                <div className="mb-4">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Canonical ESG</h3>
+                  <p className="text-sm text-gray-600">Architecture for Sustainability Reporting</p>
+                </div>
+                <p className="text-sm text-gray-600 leading-relaxed mt-2">
+                  An independent, not-for-profit, non-regulatory technical initiative operating in the public interest. Supporting interoperability, transparency, and structural coherence in sustainability reporting.
+                </p>
               </div>
-              <ul className="flex flex-wrap gap-x-8 gap-y-4 text-sm lg:justify-end">
-                <li><a href="/about" className="text-[#666] hover:text-[#1a1a1a] hover:underline">About</a></li>
-                <li><a href="/reference/explorer" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Explorer</a></li>
-                <li><a href="/schemas" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Schemas</a></li>
-                <li><a href="/resources" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Resources</a></li>
-                <li><a href="/contribute" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Contribute</a></li>
-                <li><a href="/framework-coverage" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Coverage</a></li>
-                <li><a href="/applications" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Applications</a></li>
-                <li><a href="/contact" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Contact</a></li>
-                <li><a href="/licensing" className="text-[#666] hover:text-[#1a1a1a] hover:underline">Licensing</a></li>
-              </ul>
+
+              {/* Quick Links */}
+              <div>
+                <ul className="space-y-3">
+                  <li><a href="/about" className="text-gray-600 hover:text-blue-600 hover:underline transition-colors">About</a></li>
+                  <li><a href="/reference/explorer" className="text-gray-600 hover:text-blue-600 hover:underline transition-colors">Explorer</a></li>
+                  <li><a href="/schemas" className="text-gray-600 hover:text-blue-600 hover:underline transition-colors">Schemas</a></li>
+                  <li><a href="/resources" className="text-gray-600 hover:text-blue-600 hover:underline transition-colors">Resources</a></li>
+                  <li><a href="/contribute" className="text-gray-600 hover:text-blue-600 hover:underline transition-colors">Contribute</a></li>
+                </ul>
+              </div>
+
+              {/* Framework Coverage */}
+              <div>
+                <ul className="space-y-3">
+                  <li><a href="/framework-coverage" className="text-gray-600 hover:text-blue-600 hover:underline transition-colors">Coverage</a></li>
+                  <li><a href="/applications" className="text-gray-600 hover:text-blue-600 hover:underline transition-colors">Applications</a></li>
+                  <li><a href="/contact" className="text-gray-600 hover:text-blue-600 hover:underline transition-colors">Contact</a></li>
+                  <li><a href="/licensing" className="text-gray-600 hover:text-blue-600 hover:underline transition-colors">Licensing</a></li>
+                </ul>
+              </div>
+            </div>
+            
+            {/* Legal & Info */}
+            <div className="mt-8 border-t border-gray-200 pt-8">
+              <p className="text-xs text-gray-500 whitespace-nowrap">
+                Content licensed under CC BY 4.0; Schemas licensed under MIT
+              </p>
             </div>
           </div>
         </footer>
